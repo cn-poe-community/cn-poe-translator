@@ -1,0 +1,29 @@
+{
+  "name": "cn-poe-translator",
+  "version": "0.1.0",
+  "packageManager": "yarn@3.5.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint --ext .ts .",
+    "format": "prettier --write .",
+    "test": "jest",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test && yarn lint"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "jest": "^29.5.0",
+    "prettier": "2.8.7",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.3"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
