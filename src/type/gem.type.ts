@@ -1,9 +1,8 @@
 export interface Gem {
-    skills: {
-        [id: string]: {
-            text: {
-                [id: string]: string;
-            };
-        };
-    };
+    skills: Skill[];
+}
+
+export interface Skill {
+    zh: string;
+    en: string;
 }

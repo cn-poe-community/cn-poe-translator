@@ -12,24 +12,21 @@ const PROPERTY_NAMES = new Map([
 ]);
 
 export class GemService {
-    private readonly gemProvider: GemProvider;
-    constructor(gemProvider: GemProvider) {
-        this.gemProvider = gemProvider;
-    }
+    constructor(private readonly gemProvider: GemProvider) {}
 
     public translateBaseType(zhBaseType: string): string | undefined {
         zhBaseType = zhBaseType.replace("(", "（").replace(")", "）");
-        return this.gemProvider.provideSkills().get(zhBaseType);
+        return this.gemProvider.provideSkill(zhBaseType)?.en;
     }
 
     public translateTypeLine(zhTypeLine: string): string | undefined {
         let qualityTypePrefix = "";
         let zhSkill = zhTypeLine;
         for (const [zh, en] of QUALITY_TYPES) {
-            const zhQualityTypePrefix = `${zh} `;
-            if (zhSkill.startsWith(zhQualityTypePrefix)) {
+            const prefix = `${zh} `;
+            if (zhSkill.startsWith(prefix)) {
                 qualityTypePrefix = `${en} `;
-                zhSkill = zhTypeLine.substring(zhQualityTypePrefix.length);
+                zhSkill = zhTypeLine.substring(prefix.length);
                 break;
             }
         }

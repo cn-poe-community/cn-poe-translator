@@ -1,4 +1,3 @@
-import stats from "../asset/stats.json";
 import { Stat, CompoundedStatIndexEntry, COMPOUNDED_STAT_LINE_SEPARATOR } from "../type/stat.type";
 import { StatUtil } from "../util/stat.util";
 
@@ -9,8 +8,7 @@ export class StatProvider {
         CompoundedStatIndexEntry
     >();
 
-    constructor() {
-        const statList = stats as unknown as Stat[];
+    constructor(statList: Stat[]) {
         for (const stat of statList) {
             const zh = stat.zh;
             const body = StatUtil.getBodyOfZhTemplate(zh);

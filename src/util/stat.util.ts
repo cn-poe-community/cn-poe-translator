@@ -10,17 +10,7 @@ export class StatUtil {
     }
 
     private static getNonAsciiOrPer(str: string): string {
-        const arr = new Uint16Array(str.length);
-        let size = 0;
-
-        for (let i = 0; i < str.length; i++) {
-            const char = str.charCodeAt(i);
-            if (char == 37 || char > 127) {
-                arr[size++] = char;
-            }
-        }
-
-        return Buffer.from(arr.buffer, 0, size * 2).toString("utf16le");
+        return str.replace(/[\u{0000}-\u{0024}\u{0026}-\u{007F}]/gu, "");
     }
 
     public static render(

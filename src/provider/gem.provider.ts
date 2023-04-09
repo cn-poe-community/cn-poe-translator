@@ -1,23 +1,18 @@
-import gems from "../asset/gems.json";
-import { Gem } from "../type/gem.type";
-import { Language } from "../type/language.type";
+import { Gem, Skill } from "../type/gem.type";
 
 export class GemProvider {
-    private readonly skillsIndexByZh = new Map<string, string>();
+    private readonly skillsIndexedByZh = new Map<string, Skill>();
 
-    constructor() {
-        for (const gem in gems) {
-            const data = (gems as { [id: string]: Gem })[gem] as Gem;
-            const skills = data.skills;
-            for (const skill in skills) {
-                const skillData = skills[skill];
-                const zhSkill = skillData.text[Language.CHINESE];
-                this.skillsIndexByZh.set(zhSkill, skill);
+    constructor(gems: Gem[]) {
+        for (const gem of gems) {
+            const skills = gem.skills;
+            for (const skill of skills) {
+                this.skillsIndexedByZh.set(skill.zh, skill);
             }
         }
     }
 
-    public provideSkills(): Map<string, string> {
-        return this.skillsIndexByZh;
+    public provideSkill(zh: string): Skill | undefined {
+        return this.skillsIndexedByZh.get(zh);
     }
 }

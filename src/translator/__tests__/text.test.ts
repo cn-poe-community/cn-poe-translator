@@ -13,22 +13,41 @@ import { PassiveSkillService } from "../../service/passiveskill.service";
 import { PropertyService } from "../../service/property.service";
 import { RequirementSerivce } from "../../service/requirement.service";
 import { StatService } from "../../service/stat.service";
+import { BaseType } from "../../type/basetype.type";
 import { TextTranslator } from "../text.translator";
+import {
+    accessories,
+    armour,
+    flasks,
+    jewels,
+    weapons,
+    requirements,
+    requirementSuffixes,
+    properties,
+    gems,
+    ascendant,
+    keystones,
+    notables,
+    stats,
+    attributes,
+} from "../../asset/assets";
 
-const baseTypeProvider = new BaseTypeProvider();
+const baseTypesList: BaseType[][] = [accessories, armour, flasks, jewels, weapons];
+
+const baseTypeProvider = new BaseTypeProvider(baseTypesList);
 const baseTypeService = new BaseTypeService(baseTypeProvider);
 const itemService = new ItemService(baseTypeProvider);
-const requirementProvider = new RequirementProvider();
+const requirementProvider = new RequirementProvider(requirements, requirementSuffixes);
 const requirementService = new RequirementSerivce(requirementProvider);
-const propertyProvider = new PropertyProvider();
+const propertyProvider = new PropertyProvider(properties);
 const propertySerivce = new PropertyService(propertyProvider);
-const gemProvider = new GemProvider();
+const gemProvider = new GemProvider(gems);
 const gemService = new GemService(gemProvider);
-const passiveSkillProvider = new PassiveSkillProvider();
+const passiveSkillProvider = new PassiveSkillProvider(notables, keystones, ascendant);
 const passiveSkillService = new PassiveSkillService(passiveSkillProvider);
-const statProvider = new StatProvider();
+const statProvider = new StatProvider(stats);
 const statService = new StatService(passiveSkillService, statProvider);
-const attributeProvider = new AttributeProvider();
+const attributeProvider = new AttributeProvider(attributes);
 const attributeService = new AttributeService(attributeProvider);
 
 const textTranslator = new TextTranslator(

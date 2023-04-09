@@ -1,19 +1,15 @@
-import requirements from "../asset/requirements.json";
-import suffixes from "../asset/requirement_suffixes.json";
-import { Requirement, Suffix } from "../type/requirement.type";
+import { Requirement, RequirementSuffix as RequirementSuffix } from "../type/requirement.type";
 
 export class RequirementProvider {
     private readonly requirementsIndexedByZh = new Map<string, Requirement>();
-    private readonly suffixesIndexedByZh = new Map<string, Suffix>();
+    private readonly suffixesIndexedByZh = new Map<string, RequirementSuffix>();
 
-    constructor() {
-        const requirementList = requirements as unknown as Array<Requirement>;
+    constructor(requirementList: Requirement[], suffixList: RequirementSuffix[]) {
         for (const r of requirementList) {
             const zh = r.zh;
             this.requirementsIndexedByZh.set(zh, r);
         }
 
-        const suffixList = suffixes as unknown as Array<Suffix>;
         for (const s of suffixList) {
             const zh = s.zh;
             this.suffixesIndexedByZh.set(zh, s);
@@ -24,7 +20,7 @@ export class RequirementProvider {
         return this.requirementsIndexedByZh.get(zh);
     }
 
-    public provideSuffix(zh: string): Suffix | undefined {
+    public provideSuffix(zh: string): RequirementSuffix | undefined {
         return this.suffixesIndexedByZh.get(zh);
     }
 }

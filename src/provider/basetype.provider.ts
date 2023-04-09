@@ -1,22 +1,11 @@
 import { BaseType } from "../type/basetype.type";
 
-import weapons from "../asset/weapons.json";
-import accessories from "../asset/accessories.json";
-import armour from "../asset/armour.json";
-import flasks from "../asset/flasks.json";
-import jewels from "../asset/jewels.json";
-import { EquipmentCategory } from "../type/category.type";
-
 export class BaseTypeProvider {
     private readonly baseTypesIndexedByZh = new Map<string, BaseType[]>();
     private readonly baseTypesIndexedByUniqueZh = new Map<string, BaseType[]>();
 
-    constructor() {
-        const categories = Object.values(EquipmentCategory).filter((x) => isNaN(Number(x)));
-
-        for (const category of categories) {
-            const baseTypeList = this.provideBaseTypesByCategory(category);
-
+    constructor(baseTypesList: BaseType[][]) {
+        for (const baseTypeList of baseTypesList) {
             for (const baseType of baseTypeList) {
                 const zh = baseType.zh;
                 if (Array.isArray(zh)) {
@@ -45,21 +34,6 @@ export class BaseTypeProvider {
                     }
                 }
             }
-        }
-    }
-
-    private provideBaseTypesByCategory(category: EquipmentCategory): BaseType[] {
-        switch (category) {
-            case EquipmentCategory.WEAPON:
-                return weapons;
-            case EquipmentCategory.ACCESSORY:
-                return accessories;
-            case EquipmentCategory.ARMOUR:
-                return armour;
-            case EquipmentCategory.FLASK:
-                return flasks;
-            case EquipmentCategory.JEWEL:
-                return jewels;
         }
     }
 

@@ -15,3 +15,5 @@ export { RequirementSerivce } from "./service/requirement.service";
 export { StatService } from "./service/stat.service";
 export { JsonTranslator } from "./translator/json.translator";
 export { TextTranslator } from "./translator/text.translator";
+
+export * from "./asset/assets";

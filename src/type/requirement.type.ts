@@ -9,7 +9,7 @@ export interface RequirementValue {
     en: string;
 }
 
-export interface Suffix {
+export interface RequirementSuffix {
     zh: string;
     en: string;
 }
