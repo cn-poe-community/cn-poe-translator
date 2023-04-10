@@ -8,4 +8,4 @@ plugins:
   - "@typescript-eslint"
 root: true
 ignorePatterns:
-  - lib/*
+  - dist/*
