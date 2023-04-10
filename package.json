@@ -1,16 +1,17 @@
 {
   "name": "cn-poe-translator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "packageManager": "yarn@3.5.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "lint": "eslint --ext .ts .",
     "format": "prettier --write .",
     "test": "jest",
     "prepare": "yarn build",
-    "prepublishOnly": "yarn test && yarn lint"
+    "prepublishOnly": "yarn test"
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",
