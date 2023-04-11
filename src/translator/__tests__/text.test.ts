@@ -1,64 +1,7 @@
-import { AttributeProvider } from "../../provider/attribute.provider";
-import { BaseTypeProvider } from "../../provider/basetype.provider";
-import { GemProvider } from "../../provider/gem.provider";
-import { PassiveSkillProvider } from "../../provider/passiveskill.provider";
-import { PropertyProvider } from "../../provider/property.provider";
-import { RequirementProvider } from "../../provider/requirement.provider";
-import { StatProvider } from "../../provider/stat.provider";
-import { AttributeService } from "../../service/attribute.service";
-import { BaseTypeService } from "../../service/basetype.service";
-import { GemService } from "../../service/gem.service";
-import { ItemService } from "../../service/item.service";
-import { PassiveSkillService } from "../../service/passiveskill.service";
-import { PropertyService } from "../../service/property.service";
-import { RequirementSerivce } from "../../service/requirement.service";
-import { StatService } from "../../service/stat.service";
-import { BaseType } from "../../type/basetype.type";
-import { TextTranslator } from "../text.translator";
-import {
-    accessories,
-    armour,
-    flasks,
-    jewels,
-    weapons,
-    requirements,
-    requirementSuffixes,
-    properties,
-    gems,
-    ascendant,
-    keystones,
-    notables,
-    stats,
-    attributes,
-} from "../../asset/assets";
+import { TranslatorFactory } from "../../index";
 
-const baseTypesList: BaseType[][] = [accessories, armour, flasks, jewels, weapons];
-
-const baseTypeProvider = new BaseTypeProvider(baseTypesList);
-const baseTypeService = new BaseTypeService(baseTypeProvider);
-const itemService = new ItemService(baseTypeProvider);
-const requirementProvider = new RequirementProvider(requirements, requirementSuffixes);
-const requirementService = new RequirementSerivce(requirementProvider);
-const propertyProvider = new PropertyProvider(properties);
-const propertySerivce = new PropertyService(propertyProvider);
-const gemProvider = new GemProvider(gems);
-const gemService = new GemService(gemProvider);
-const passiveSkillProvider = new PassiveSkillProvider(notables, keystones, ascendant);
-const passiveSkillService = new PassiveSkillService(passiveSkillProvider);
-const statProvider = new StatProvider(stats);
-const statService = new StatService(passiveSkillService, statProvider);
-const attributeProvider = new AttributeProvider(attributes);
-const attributeService = new AttributeService(attributeProvider);
-
-const textTranslator = new TextTranslator(
-    baseTypeService,
-    itemService,
-    requirementService,
-    propertySerivce,
-    gemService,
-    statService,
-    attributeService
-);
+const factory = TranslatorFactory.Default();
+const textTranslator = factory.getTextTranslator();
 
 const itemTranslationTestCases: string[] = [];
 const itemTranslationTestCaseAnswers: string[] = [];

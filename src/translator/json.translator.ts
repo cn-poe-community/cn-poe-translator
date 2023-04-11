@@ -69,7 +69,7 @@ export class JsonTranslator {
         }
     }
 
-    public translateItems(data: any) {
+    translateItems(data: any) {
         const items = data.items;
         const translatedItems = [];
         for (const item of items) {
