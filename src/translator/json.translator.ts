@@ -276,6 +276,18 @@ export class JsonTranslator {
                 }
             }
         }
+
+        if (item.crucibleMods) {
+            for (let i = 0; i < item.crucibleMods.length; i++) {
+                const zhStat = item.crucibleMods[i];
+                const res = this.statService.translateMod(zhStat);
+                if (res) {
+                    item.crucibleMods[i] = res;
+                } else {
+                    console.log(`warning: should be translated: stat: ${zhStat}`);
+                }
+            }
+        }
     }
 
     translateGem(item: any) {
