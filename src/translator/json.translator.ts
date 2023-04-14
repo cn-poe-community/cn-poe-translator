@@ -278,14 +278,36 @@ export class JsonTranslator {
         }
 
         if (item.crucibleMods) {
-            for (let i = 0; i < item.crucibleMods.length; i++) {
-                const zhStat = item.crucibleMods[i];
-                const res = this.statService.translateMod(zhStat);
+            const mods = item.crucibleMods;
+            for (let i = 0; i < mods.length; ) {
+                const zhMod = mods[i];
+                if (i !== item.crucibleMods.length - 1) {
+                    // check compounded modifier first
+                    const maxSize = this.statService.getMaxLineSizeOfCompoundedMod(zhMod);
+                    if (maxSize > 0) {
+                        const slice = item.crucibleMods.slice(
+                            i,
+                            Math.min(i + maxSize, mods.length)
+                        );
+                        const translation = this.statService.translateCompoundedMod(slice);
+                        if (translation !== undefined) {
+                            const subMods = translation.result.split("\n");
+                            for (let j = 0; j < translation.lineSize; j++) {
+                                mods[i + j] = subMods[j];
+                            }
+                            i += translation.lineSize;
+                            continue;
+                        }
+                    }
+                }
+
+                const res = this.statService.translateMod(zhMod);
                 if (res) {
                     item.crucibleMods[i] = res;
                 } else {
-                    console.log(`warning: should be translated: stat: ${zhStat}`);
+                    console.log(`warning: should be translated: stat: ${zhMod}`);
                 }
+                i++;
             }
         }
     }

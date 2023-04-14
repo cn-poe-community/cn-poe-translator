@@ -1,6 +1,6 @@
 {
   "name": "cn-poe-translator",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "packageManager": "yarn@3.5.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
