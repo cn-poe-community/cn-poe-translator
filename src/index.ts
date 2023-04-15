@@ -36,6 +36,7 @@ import { BaseType } from "./type/basetype.type";
 export abstract class TranslatorFactory {
     public abstract getJsonTranslator(): JsonTranslator;
     public abstract getTextTranslator(): TextTranslator;
+    public abstract getBaseTypeService(): BaseTypeService;
 
     public static Default(): TranslatorFactory {
         return new DefaultTranslatorFactory();
@@ -104,6 +105,9 @@ class DefaultTranslatorFactory extends TranslatorFactory {
     }
     public getTextTranslator(): TextTranslator {
         return this.textTranslator;
+    }
+    public getBaseTypeService(): BaseTypeService {
+        return this.baseTypeService;
     }
 }
 

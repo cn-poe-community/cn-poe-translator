@@ -11,7 +11,8 @@ export class BaseTypeService {
 
     /**
      *
-     * @param zhName item's zh name. There may be duplicate zh basetypes, uniques's zh name can help translating.
+     * @param zhName item's zh name.
+     * There may be duplicate zh basetypes, uniques's zh name can help translating.
      */
     public getBaseTypeByZh(zh: string, zhName?: string): BaseType | undefined {
         const list = this.baseTypeProvider.provideBaseTypesByZh(zh);
@@ -30,7 +31,8 @@ export class BaseTypeService {
                 }
             }
         }
-        return undefined;
+        //If there is no unique matched, return the first one.
+        return list[0];
     }
 
     /**
