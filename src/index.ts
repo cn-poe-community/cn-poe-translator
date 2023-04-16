@@ -37,6 +37,7 @@ export abstract class TranslatorFactory {
     public abstract getJsonTranslator(): JsonTranslator;
     public abstract getTextTranslator(): TextTranslator;
     public abstract getBaseTypeService(): BaseTypeService;
+    public abstract getPassiveSkillService(): PassiveSkillService;
 
     public static Default(): TranslatorFactory {
         return new DefaultTranslatorFactory();
@@ -108,6 +109,9 @@ class DefaultTranslatorFactory extends TranslatorFactory {
     }
     public getBaseTypeService(): BaseTypeService {
         return this.baseTypeService;
+    }
+    public getPassiveSkillService(): PassiveSkillService {
+        return this.passiveSkillService;
     }
 }
 

@@ -1,44 +1,33 @@
-import { Language } from "../type/language.type";
-import { Node, NodeMap } from "../type/passiveskill.type";
+import { Node } from "../type/passiveskill.type";
 
 export class PassiveSkillProvider {
-    private readonly notablesIndexByZhName = new Map<string, Node>();
-    private readonly keystonesIndexByZhName = new Map<string, Node>();
-    private readonly ascendantIndexByZhName = new Map<string, Node>();
+    private readonly notablesIndexedByZh = new Map<string, Node>();
+    private readonly keystonesIndexedByZh = new Map<string, Node>();
+    private readonly ascendantIndexedByZh = new Map<string, Node>();
 
-    constructor(notableMap: NodeMap, keystoneMap: NodeMap, ascendantMap: NodeMap) {
-        for (const id in notableMap) {
-            const data = notableMap[id];
-            //跳过具有重复中文名的天赋大点
-            if (data.stats !== undefined) {
-                continue;
-            }
-            const zhName = data["name"][Language.CHINESE];
-            this.notablesIndexByZhName.set(zhName, data);
+    constructor(notables: Node[], keystones: Node[], ascendants: Node[]) {
+        for (const node of notables) {
+            this.notablesIndexedByZh.set(node.zh, node);
         }
 
-        for (const id in keystoneMap) {
-            const data = keystoneMap[id];
-            const zhName = data["name"][Language.CHINESE];
-            this.keystonesIndexByZhName.set(zhName, data);
+        for (const node of keystones) {
+            this.keystonesIndexedByZh.set(node.zh, node);
         }
 
-        for (const id in ascendantMap) {
-            const data = ascendantMap[id];
-            const zhName = data["name"][Language.CHINESE];
-            this.ascendantIndexByZhName.set(zhName, data);
+        for (const node of ascendants) {
+            this.ascendantIndexedByZh.set(node.zh, node);
         }
     }
 
-    public provideNotableByZhName(zhName: string): Node | undefined {
-        return this.notablesIndexByZhName.get(zhName);
+    public provideNotableByZh(zhName: string): Node | undefined {
+        return this.notablesIndexedByZh.get(zhName);
     }
 
-    public provideKeystoneByZhName(zhName: string): Node | undefined {
-        return this.keystonesIndexByZhName.get(zhName);
+    public provideKeystoneByZh(zhName: string): Node | undefined {
+        return this.keystonesIndexedByZh.get(zhName);
     }
 
-    public provideAscendantByZhName(zhName: string): Node | undefined {
-        return this.ascendantIndexByZhName.get(zhName);
+    public provideAscendantByZh(zhName: string): Node | undefined {
+        return this.ascendantIndexedByZh.get(zhName);
     }
 }

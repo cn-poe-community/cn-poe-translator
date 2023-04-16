@@ -1,5 +1,4 @@
 import { PassiveSkillProvider } from "../provider/passiveskill.provider";
-import { Language } from "../type/language.type";
 
 export class PassiveSkillService {
     private readonly passiveSkillProvider: PassiveSkillProvider;
@@ -9,27 +8,27 @@ export class PassiveSkillService {
     }
 
     public translateNotable(zh: string): string | undefined {
-        const node = this.passiveSkillProvider.provideNotableByZhName(zh);
+        const node = this.passiveSkillProvider.provideNotableByZh(zh);
         if (node !== undefined) {
-            return node.name[Language.ENGLISH];
+            return node.en;
         }
 
         return undefined;
     }
 
     public translateKeystone(zh: string): string | undefined {
-        const node = this.passiveSkillProvider.provideKeystoneByZhName(zh);
+        const node = this.passiveSkillProvider.provideKeystoneByZh(zh);
         if (node !== undefined) {
-            return node.name[Language.ENGLISH];
+            return node.en;
         }
 
         return undefined;
     }
 
     public translateAscendant(zh: string): string | undefined {
-        const node = this.passiveSkillProvider.provideAscendantByZhName(zh);
+        const node = this.passiveSkillProvider.provideAscendantByZh(zh);
         if (node !== undefined) {
-            return node.name[Language.ENGLISH];
+            return node.en;
         }
 
         return undefined;
