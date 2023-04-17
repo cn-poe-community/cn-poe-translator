@@ -8,20 +8,11 @@ export class BaseTypeProvider {
         for (const baseTypeList of baseTypesList) {
             for (const baseType of baseTypeList) {
                 const zh = baseType.zh;
-                if (Array.isArray(zh)) {
-                    for (const text of zh) {
-                        if (this.baseTypesIndexedByZh.has(text)) {
-                            this.baseTypesIndexedByZh.get(text)?.push(baseType);
-                        } else {
-                            this.baseTypesIndexedByZh.set(text, [baseType]);
-                        }
-                    }
+
+                if (this.baseTypesIndexedByZh.has(zh)) {
+                    this.baseTypesIndexedByZh.get(zh)?.push(baseType);
                 } else {
-                    if (this.baseTypesIndexedByZh.has(zh)) {
-                        this.baseTypesIndexedByZh.get(zh)?.push(baseType);
-                    } else {
-                        this.baseTypesIndexedByZh.set(zh, [baseType]);
-                    }
+                    this.baseTypesIndexedByZh.set(zh, [baseType]);
                 }
 
                 const uniques = baseType.uniques;

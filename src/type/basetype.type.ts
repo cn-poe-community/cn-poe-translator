@@ -1,5 +1,5 @@
 export interface BaseType {
-    zh: string | string[];
+    zh: string;
     en: string;
     uniques: Unique[];
 }
