@@ -70,6 +70,56 @@ Synthesised Item
 出售获得通货:非绑定`
 );
 
+itemTranslationTestCases.push(
+`物品类别: 珠宝
+稀 有 度: 传奇
+禁断之火
+赤红珠宝
+--------
+仅限: 1
+--------
+需求:
+职业：: 贵族
+--------
+物品等级: 86
+--------
+禁断之肉上有匹配的词缀则配置 暗影
+--------
+被洁净之火彻底看透的人
+还在继续做梦，祈求平安……
+--------
+放置到一个天赋树的珠宝插槽中以产生效果。右键点击以移出插槽。
+--------
+已腐化
+--------
+出售获得通货:非绑定`
+);
+
+itemTranslationTestCaseAnswers.push(
+`Item Class: Jewels
+Rarity: Unique
+Forbidden Flame
+Crimson Jewel
+--------
+Limited to: 1
+--------
+Requirements: 
+Class:: Scion
+--------
+Item Level: 86
+--------
+Allocates Assassin if you have the matching modifier on Forbidden Flesh
+--------
+被洁净之火彻底看透的人
+还在继续做梦，祈求平安……
+--------
+放置到一个天赋树的珠宝插槽中以产生效果。右键点击以移出插槽。
+--------
+Corrupted
+--------
+出售获得通货:非绑定`
+);
+
 test("item translation", () => {
     for (let i = 0; i < itemTranslationTestCases.length; i++) {
         const testCase = itemTranslationTestCases[i];

@@ -12,7 +12,7 @@ crucibleModsTestCase.items = [
         ilvl: 75,
         crucibleMods: [
             "该装备附加 30 - 47 基础火焰伤害",
-            "攻击速度降低 6%",
+            "攻击速度减慢 6%",
             "暴击几率提高 +1.2%",
             "-500 命中值",
         ],
