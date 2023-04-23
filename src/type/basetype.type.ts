@@ -1,7 +1,7 @@
 export interface BaseType {
     zh: string;
     en: string;
-    uniques: Unique[];
+    uniques?: Unique[];
 }
 
 export interface Unique {

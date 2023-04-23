@@ -20,9 +20,11 @@ export class ItemService {
         if (baseTypes !== undefined) {
             for (const baseType of baseTypes) {
                 const uniques = baseType.uniques;
-                for (const unique of uniques) {
-                    if (unique.zh === zhName) {
-                        return unique.en;
+                if (uniques !== undefined) {
+                    for (const unique of uniques) {
+                        if (unique.zh === zhName) {
+                            return unique.en;
+                        }
                     }
                 }
             }

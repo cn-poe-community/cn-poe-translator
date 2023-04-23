@@ -25,9 +25,11 @@ export class BaseTypeService {
         }
 
         for (const b of list) {
-            for (const unique of b.uniques) {
-                if (unique.zh === zhName) {
-                    return b;
+            if (b.uniques !== undefined) {
+                for (const unique of b.uniques) {
+                    if (unique.zh === zhName) {
+                        return b;
+                    }
                 }
             }
         }

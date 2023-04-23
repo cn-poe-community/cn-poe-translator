@@ -16,12 +16,14 @@ export class BaseTypeProvider {
                 }
 
                 const uniques = baseType.uniques;
-                for (const unique of uniques) {
-                    const zh = unique.zh;
-                    if (zh in this.baseTypesIndexedByUniqueZh) {
-                        this.baseTypesIndexedByUniqueZh.get(zh)?.push(baseType);
-                    } else {
-                        this.baseTypesIndexedByUniqueZh.set(zh, [baseType]);
+                if (uniques !== undefined) {
+                    for (const unique of uniques) {
+                        const zh = unique.zh;
+                        if (zh in this.baseTypesIndexedByUniqueZh) {
+                            this.baseTypesIndexedByUniqueZh.get(zh)?.push(baseType);
+                        } else {
+                            this.baseTypesIndexedByUniqueZh.set(zh, [baseType]);
+                        }
                     }
                 }
             }
