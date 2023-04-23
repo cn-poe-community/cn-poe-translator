@@ -71,7 +71,7 @@ Synthesised Item
 );
 
 itemTranslationTestCases.push(
-`物品类别: 珠宝
+    `物品类别: 珠宝
 稀 有 度: 传奇
 禁断之火
 赤红珠宝
@@ -96,7 +96,7 @@ itemTranslationTestCases.push(
 );
 
 itemTranslationTestCaseAnswers.push(
-`Item Class: Jewels
+    `Item Class: Jewels
 Rarity: Unique
 Forbidden Flame
 Crimson Jewel
@@ -118,6 +118,42 @@ Allocates Assassin if you have the matching modifier on Forbidden Flesh
 Corrupted
 --------
 出售获得通货:非绑定`
+);
+
+itemTranslationTestCases.push(
+    `物品类别: 珠宝
+稀 有 度: 传奇
+无所遁形
+翠绿珠宝
+--------
+仅限: 1
+范围: 小
+--------
+物品等级: 87
+--------
+狂热誓言范围内的天赋可以在
+未连结至天赋树的情况下配置
+--------
+已腐化
+`
+);
+
+itemTranslationTestCaseAnswers.push(
+    `Item Class: Jewels
+Rarity: Unique
+Impossible Escape
+Viridian Jewel
+--------
+Limited to: 1
+Radius: Small
+--------
+Item Level: 87
+--------
+Passives in Radius of Zealot's Oath can be Allocated
+without being connected to your tree
+--------
+Corrupted
+`
 );
 
 test("item translation", () => {

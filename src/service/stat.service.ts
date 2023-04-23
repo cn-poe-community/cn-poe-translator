@@ -3,7 +3,6 @@ import { COMPOUNDED_STAT_LINE_SEPARATOR, Stat } from "../type/stat.type";
 import { StatUtil, Template } from "../util/stat.util";
 import { PassiveSkillService } from "./passiveskill.service";
 
-const ZH_IMPOSSIBLE_ESCAPE_MOD_REGEXP = /^(.+)范围内的天赋可以在\n未连结至天赋树的情况下配置$/;
 const ZH_ANOINTED_MOD_REGEXP = /^配置 (.+)$/;
 const ZH_FORBIDDEN_FLESH_MOD_REGEXP = /^禁断之火上有匹配的词缀则配置 (.+)$/;
 const ZH_FORBIDDEN_FLAME_MOD_REGEXP = /^禁断之肉上有匹配的词缀则配置 (.+)$/;
@@ -18,10 +17,6 @@ export class StatService {
     }
 
     public translateMod(zhMod: string): string | undefined {
-        if (this.isImpossibleEscapeMod(zhMod)) {
-            return this.translateImpossibleEscapeMod(zhMod);
-        }
-
         if (this.isAnointedMod(zhMod)) {
             return this.translateAnointedMod(zhMod);
         }
@@ -43,23 +38,6 @@ export class StatService {
                 if (result !== undefined) {
                     return result;
                 }
-            }
-        }
-
-        return undefined;
-    }
-
-    isImpossibleEscapeMod(zhMod: string): boolean {
-        return ZH_IMPOSSIBLE_ESCAPE_MOD_REGEXP.test(zhMod);
-    }
-
-    translateImpossibleEscapeMod(zhMod: string): string | undefined {
-        const matches = ZH_IMPOSSIBLE_ESCAPE_MOD_REGEXP.exec(zhMod);
-        if (matches !== null) {
-            const zhKeystone = matches[1];
-            const keystone = this.passiveSkillService.translateKeystone(zhKeystone);
-            if (keystone !== undefined) {
-                return `Passives in Radius of ${keystone} can be Allocated\nwithout being connected to your tree`;
             }
         }
 
