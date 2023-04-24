@@ -5,6 +5,11 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cn-poe-community/cn-poe-translator.git"
+  },
+  "license": "MIT",
   "scripts": {
     "build": "rimraf dist && rollup -c rollup.config.js",
     "lint": "eslint --ext .ts .",

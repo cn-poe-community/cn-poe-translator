@@ -6,12 +6,16 @@ Json data(include items and passive skills) and text data are supported. Only eq
 
 # Usage
 
+```
+npm i cn-poe-translator
+```
+
 Use `JsonTranslator` to translate json data and use `TextTranslator` to translate text data.
 
 A demo show how to translate text item:
 
 ```ts
-import { TranslatorFactory } from "../../index";
+import { TranslatorFactory } from "cn-poe-translator";
 
 const text = `物品类别: 腰带
 稀 有 度: 稀有
