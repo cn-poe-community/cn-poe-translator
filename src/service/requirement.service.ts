@@ -25,7 +25,7 @@ export class RequirementSerivce {
     public translateName(zhName: string): string | undefined {
         const r = this.requirementProvider.provideRequirement(zhName);
         if (r) {
-            return r.zh;
+            return r.en;
         }
     }
 
