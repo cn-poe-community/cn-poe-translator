@@ -13,7 +13,7 @@ export default [
   {
     input: "src/index.global.ts",
     output: {
-      file: "dist/translator.global.min.js",
+      file: "dist/translator.global.js",
       format: "iife",
       name: "CnPoeTranslator",
     },
