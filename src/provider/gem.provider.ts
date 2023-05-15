@@ -1,4 +1,4 @@
-import { Gem, Skill } from "../type/gem.type";
+import { Gem, Skill } from "../type/gem.type.js";
 
 export class GemProvider {
     private readonly skillsIndexedByZh = new Map<string, Skill>();

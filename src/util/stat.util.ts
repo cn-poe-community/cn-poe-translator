@@ -1,4 +1,4 @@
-import { escapeRegExp } from "./text.util";
+import { escapeRegExp } from "./text.util.js";
 
 export class StatUtil {
     public static getBodyOfZhTemplate(template: string): string {

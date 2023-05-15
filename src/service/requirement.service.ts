@@ -1,4 +1,4 @@
-import { RequirementProvider } from "../provider/requirement.provider";
+import { RequirementProvider } from "../provider/requirement.provider.js";
 
 export class RequirementSerivce {
     constructor(private readonly requirementProvider: RequirementProvider) {}

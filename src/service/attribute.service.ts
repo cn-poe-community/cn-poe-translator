@@ -1,4 +1,4 @@
-import { AttributeProvider } from "../provider/attribute.provider";
+import { AttributeProvider } from "../provider/attribute.provider.js";
 
 export class AttributeService {
     private readonly attrProvider: AttributeProvider;

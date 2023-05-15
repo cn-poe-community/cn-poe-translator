@@ -1,5 +1,5 @@
-import { BaseTypeProvider } from "../provider/basetype.provider";
-import { BaseType } from "../type/basetype.type";
+import { BaseTypeProvider } from "../provider/basetype.provider.js";
+import { BaseType } from "../type/basetype.type.js";
 
 const ZH_SUPERIOR_PREFIX = "精良的 ";
 const SUPERIOR_PREFIX = "Superior ";

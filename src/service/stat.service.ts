@@ -1,7 +1,7 @@
-import { StatProvider } from "../provider/stat.provider";
-import { COMPOUNDED_STAT_LINE_SEPARATOR, Stat } from "../type/stat.type";
-import { StatUtil, Template } from "../util/stat.util";
-import { PassiveSkillService } from "./passiveskill.service";
+import { StatProvider } from "../provider/stat.provider.js";
+import { COMPOUNDED_STAT_LINE_SEPARATOR, Stat } from "../type/stat.type.js";
+import { StatUtil, Template } from "../util/stat.util.js";
+import { PassiveSkillService } from "./passiveskill.service.js";
 
 const ZH_ANOINTED_MOD_REGEXP = /^配置 (.+)$/;
 const ZH_FORBIDDEN_FLESH_MOD_REGEXP = /^禁断之火上有匹配的词缀则配置 (.+)$/;

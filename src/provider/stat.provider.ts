@@ -1,5 +1,9 @@
-import { Stat, CompoundedStatIndexEntry, COMPOUNDED_STAT_LINE_SEPARATOR } from "../type/stat.type";
-import { StatUtil } from "../util/stat.util";
+import {
+    Stat,
+    CompoundedStatIndexEntry,
+    COMPOUNDED_STAT_LINE_SEPARATOR,
+} from "../type/stat.type.js";
+import { StatUtil } from "../util/stat.util.js";
 
 export class StatProvider {
     private readonly statsIndexedByZhBody = new Map<string, Stat[]>();

@@ -1,4 +1,4 @@
-import { BaseTypeProvider } from "../provider/basetype.provider";
+import { BaseTypeProvider } from "../provider/basetype.provider.js";
 
 const DEFAULT_NAME = "Item";
 

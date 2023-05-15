@@ -1,4 +1,4 @@
-import { BaseType } from "../type/basetype.type";
+import { BaseType } from "../type/basetype.type.js";
 
 export class BaseTypeProvider {
     private readonly baseTypesIndexedByZh = new Map<string, BaseType[]>();

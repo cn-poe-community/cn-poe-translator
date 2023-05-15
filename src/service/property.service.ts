@@ -1,4 +1,4 @@
-import { PropertyProvider } from "../provider/property.provider";
+import { PropertyProvider } from "../provider/property.provider.js";
 
 export class PropertyService {
     private readonly propProvider: PropertyProvider;

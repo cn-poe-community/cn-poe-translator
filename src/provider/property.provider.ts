@@ -1,4 +1,4 @@
-import { Property } from "../type/property.type";
+import { Property } from "../type/property.type.js";
 
 export class PropertyProvider {
     private readonly propertyIndexByZhName = new Map<string, Property>();

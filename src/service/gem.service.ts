@@ -1,4 +1,4 @@
-import { GemProvider } from "../provider/gem.provider";
+import { GemProvider } from "../provider/gem.provider.js";
 
 const QUALITY_TYPES = new Map([
     ["分歧", "Divergent"],

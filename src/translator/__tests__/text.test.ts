@@ -1,6 +1,7 @@
-import { TranslatorFactory } from "../../index";
+import { BasicTranslatorFactory } from "../../index.js";
+import Assets from "cn-poe-export-db";
 
-const factory = TranslatorFactory.Default();
+const factory = new BasicTranslatorFactory(Assets);
 const textTranslator = factory.getTextTranslator();
 
 const itemTranslationTestCases: string[] = [];

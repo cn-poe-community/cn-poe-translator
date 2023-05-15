@@ -1,11 +1,11 @@
-import { BaseTypeService } from "../service/basetype.service";
-import { GemService } from "../service/gem.service";
-import { ItemService } from "../service/item.service";
-import { PropertyService } from "../service/property.service";
-import { RequirementSerivce } from "../service/requirement.service";
-import { StatService } from "../service/stat.service";
-import { ZH_PROPERTY_NAME_LIMITED_TO, ZH_PROPERTY_NAME_RADIUS } from "../type/property.type";
-import { ZH_REQUIREMENT_NAME_CLASS } from "../type/requirement.type";
+import { BaseTypeService } from "../service/basetype.service.js";
+import { GemService } from "../service/gem.service.js";
+import { ItemService } from "../service/item.service.js";
+import { PropertyService } from "../service/property.service.js";
+import { RequirementSerivce } from "../service/requirement.service.js";
+import { StatService } from "../service/stat.service.js";
+import { ZH_PROPERTY_NAME_LIMITED_TO, ZH_PROPERTY_NAME_RADIUS } from "../type/property.type.js";
+import { ZH_REQUIREMENT_NAME_CLASS } from "../type/requirement.type.js";
 
 const ZH_THIEFS_TRINKET = "赏金猎人饰品";
 export const ZH_FORBIDDEN_FLESH = "禁断之肉";

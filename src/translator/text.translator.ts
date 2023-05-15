@@ -4,15 +4,15 @@ import {
     ZH_FORBIDDEN_FLESH,
     ZH_PASSIVESKILL_ASCENDANT_ASSASSIN,
     ZH_PASSIVESKILL_ASCENDANT_ASSASSIN_FIXED,
-} from "./json.translator";
-import { AttributeService } from "../service/attribute.service";
-import { BaseTypeService } from "../service/basetype.service";
-import { GemService } from "../service/gem.service";
-import { ItemService } from "../service/item.service";
-import { PropertyService } from "../service/property.service";
-import { RequirementSerivce } from "../service/requirement.service";
-import { StatService } from "../service/stat.service";
-import { COMPOUNDED_STAT_LINE_SEPARATOR } from "../type/stat.type";
+} from "./json.translator.js";
+import { AttributeService } from "../service/attribute.service.js";
+import { BaseTypeService } from "../service/basetype.service.js";
+import { GemService } from "../service/gem.service.js";
+import { ItemService } from "../service/item.service.js";
+import { PropertyService } from "../service/property.service.js";
+import { RequirementSerivce } from "../service/requirement.service.js";
+import { StatService } from "../service/stat.service.js";
+import { COMPOUNDED_STAT_LINE_SEPARATOR } from "../type/stat.type.js";
 
 export class TextTranslator {
     constructor(

@@ -1,4 +1,4 @@
-import { Attribute } from "../type/attribute.type";
+import { Attribute } from "../type/attribute.type.js";
 
 export class AttributeProvider {
     private readonly attrIndexedByZhName = new Map<string, Attribute>();

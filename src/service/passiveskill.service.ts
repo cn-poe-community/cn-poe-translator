@@ -1,4 +1,4 @@
-import { PassiveSkillProvider } from "../provider/passiveskill.provider";
+import { PassiveSkillProvider } from "../provider/passiveskill.provider.js";
 
 export class PassiveSkillService {
     private readonly passiveSkillProvider: PassiveSkillProvider;

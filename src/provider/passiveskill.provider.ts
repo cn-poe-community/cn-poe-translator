@@ -1,4 +1,4 @@
-import { Node } from "../type/passiveskill.type";
+import { Node } from "../type/passiveskill.type.js";
 
 export class PassiveSkillProvider {
     private readonly notablesIndexedByZh = new Map<string, Node>();

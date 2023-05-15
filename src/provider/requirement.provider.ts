@@ -1,4 +1,4 @@
-import { Requirement, RequirementSuffix as RequirementSuffix } from "../type/requirement.type";
+import { Requirement, RequirementSuffix as RequirementSuffix } from "../type/requirement.type.js";
 
 export class RequirementProvider {
     private readonly requirementsIndexedByZh = new Map<string, Requirement>();
