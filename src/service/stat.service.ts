@@ -7,6 +7,11 @@ const ZH_ANOINTED_MOD_REGEXP = /^配置 (.+)$/;
 const ZH_FORBIDDEN_FLESH_MOD_REGEXP = /^禁断之火上有匹配的词缀则配置 (.+)$/;
 const ZH_FORBIDDEN_FLAME_MOD_REGEXP = /^禁断之肉上有匹配的词缀则配置 (.+)$/;
 
+const ZH_UNIQUE_ENEMY_IN_YOUR_PRESENCE = "有一个传奇怪物出现在你面前：";
+const EN_UNIQUE_ENEMY_IN_YOUR_PRESENCE = "While a Unique Enemy is in your Presence, ";
+const ZH_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENC = "有一个异界图鉴最终首领出现在你面前：";
+const EN_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENC = "While a Pinnacle Atlas Boss is in your Presence, ";
+
 export class StatService {
     private readonly passiveSkillService: PassiveSkillService;
     private readonly statProvider: StatProvider;
@@ -29,6 +34,14 @@ export class StatService {
             return this.translateForbiddenFleshMod(zhMod);
         }
 
+        if (this.isEldritchImplicitMod(zhMod)) {
+            return this.translateEldritchImplicitMod(zhMod);
+        }
+
+        return this.translateModInner(zhMod);
+    }
+
+    translateModInner(zhMod: string): string | undefined {
         const body = StatUtil.getBodyOfZhModifier(zhMod);
         const stats = this.statProvider.provideStatsByZhBody(body);
 
@@ -90,6 +103,33 @@ export class StatService {
                 return `Allocates ${ascendant} if you have the matching modifier on Forbidden Flame`;
             }
         }
+        return undefined;
+    }
+
+    isEldritchImplicitMod(zhMod: string): boolean {
+        return (
+            zhMod.startsWith(ZH_UNIQUE_ENEMY_IN_YOUR_PRESENCE) ||
+            zhMod.startsWith(ZH_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENC)
+        );
+    }
+
+    translateEldritchImplicitMod(zhMod: string): string | undefined {
+        if (zhMod.startsWith(ZH_UNIQUE_ENEMY_IN_YOUR_PRESENCE)) {
+            const subMod = this.translateMod(
+                zhMod.substring(ZH_UNIQUE_ENEMY_IN_YOUR_PRESENCE.length)
+            );
+            if (subMod !== undefined) {
+                return EN_UNIQUE_ENEMY_IN_YOUR_PRESENCE + subMod;
+            }
+        } else if (zhMod.startsWith(ZH_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENC)) {
+            const subMod = this.translateMod(
+                zhMod.substring(ZH_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENC.length)
+            );
+            if (subMod !== undefined) {
+                return EN_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENC + subMod;
+            }
+        }
+
         return undefined;
     }
 
