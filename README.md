@@ -15,7 +15,8 @@ Use `JsonTranslator` to translate json data and use `TextTranslator` to translat
 A demo show how to translate text item:
 
 ```ts
-import { TranslatorFactory } from "cn-poe-translator";
+import { BasicTranslatorFactory } from "cn-poe-translator";
+import Assets from "cn-poe-export-db";
 
 const text = `物品类别: 腰带
 稀 有 度: 稀有
@@ -42,7 +43,7 @@ const text = `物品类别: 腰带
 --------
 忆境物品`;
 
-const factory = TranslatorFactory.Default();
+const factory = new BasicTranslatorFactory(Assets);
 const textTranslator = factory.getTextTranslator();
 console.log(textTranslator.translate(text));
 ```
