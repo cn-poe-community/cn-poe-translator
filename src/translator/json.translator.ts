@@ -346,13 +346,15 @@ export class JsonTranslator {
                 }
                 if (value.stats) {
                     const stats: string[] = value.stats;
-                    for (let i = 0; i < stats.length - 1; i++) {
+                    for (let i = 0; i < stats.length; i++) {
                         const stat = stats[i];
                         const result = this.statService.translateMod(stat);
                         if (result !== undefined) {
                             stats[i] = result;
                         } else {
-                            console.log(`warning: should be translated: stat: ${stat}`);
+                            if (i < stats.length - 1) {
+                                console.log(`warning: should be translated: stat: ${stat}`);
+                            }
                         }
                     }
 
