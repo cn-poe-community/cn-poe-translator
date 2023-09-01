@@ -1,0 +1,115 @@
+{
+  "hashes": [
+    465, 1461, 2185, 3042, 4269, 4481, 5082, 6427, 6538, 6654, 6799, 6913, 7488, 8001, 8458, 9206,
+    9469, 11678, 12412, 12801, 12948, 13375, 14292, 14804, 15290, 15842, 16079, 18670, 18770, 19069,
+    19858, 20807, 20953, 22266, 23912, 24848, 25067, 25178, 25260, 25511, 26067, 26528, 27444,
+    27788, 28658, 28995, 29454, 30679, 30894, 30969, 31039, 31315, 31508, 32117, 32477, 32514,
+    32555, 32657, 32681, 34317, 34678, 36221, 36281, 36287, 37504, 38149, 38662, 38995, 39665,
+    39718, 40362, 41119, 41250, 41536, 41866, 42104, 42632, 42964, 44306, 44316, 45035, 45202,
+    45313, 45593, 46277, 47212, 48099, 48508, 48614, 49391, 49459, 49621, 49820, 49900, 50338,
+    51881, 52714, 53114, 53615, 54142, 55750, 55880, 56646, 57080, 57240, 58271, 58302, 59220,
+    59606, 59837, 60180, 60735, 61627, 62712, 62744, 63194, 63251, 63618, 64028, 64265, 64878,
+    65210, 65224, 65427, 65502
+  ],
+  "hashes_ex": [],
+  "mastery_effects": {
+    "6427": 56951,
+    "3042": 47642,
+    "58302": 64775,
+    "44316": 38454,
+    "34317": 17942,
+    "31039": 2987,
+    "49820": 45317,
+    "32657": 2800,
+    "53615": 28638,
+    "7488": 62252,
+    "47212": 14813,
+    "49391": 64511,
+    "48508": 32279
+  },
+  "skill_overrides": {
+    "32555": {
+      "name": "巨蜥的尊贵文身",
+      "icon": "Art/2DArt/SkillIcons/passives/accuracyint.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/HinekoraPassiveBG.png",
+      "grantedStrength": 4,
+      "grantedDexterity": 4,
+      "grantedIntelligence": 4,
+      "isTattoo": true,
+      "stats": ["+4 全属性"],
+      "reminderText": ["(属性分为力量，敏捷和智慧三种)"]
+    },
+    "38662": {
+      "name": "巨蜥的尊贵文身",
+      "icon": "Art/2DArt/SkillIcons/passives/accuracyint.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/HinekoraPassiveBG.png",
+      "grantedStrength": 4,
+      "grantedDexterity": 4,
+      "grantedIntelligence": 4,
+      "isTattoo": true,
+      "stats": ["+4 全属性"],
+      "reminderText": ["(属性分为力量，敏捷和智慧三种)"]
+    },
+    "36287": {
+      "name": "阿华纳的忠诚文身",
+      "icon": "Art/2DArt/SkillIcons/RamakoTribeSkill.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/RamakoTribePassiveBG.png",
+      "isTattoo": true,
+      "stats": ["压制传奇敌人的法术伤害时\n触发召唤阿华纳之魂技能", "仅限 1 个忠诚文身 个"]
+    },
+    "20807": {
+      "name": "塔赫亚玛坎卡的文身",
+      "icon": "Art/2DArt/SkillIcons/passives/FireResistNode.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/TawhoaTribePassiveBG.png",
+      "isTattoo": true,
+      "stats": ["你身上的药剂效果提高 8%"]
+    },
+    "52714": {
+      "name": "高山的尊贵文身",
+      "icon": "Art/2DArt/SkillIcons/passives/HinekoraPassiveIcon1.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/HinekoraPassiveBG.png",
+      "isNotable": true,
+      "isTattoo": true,
+      "stats": ["+1% 火焰抗性上限", "耐力球数量上限 +1", "仅限 1 个属性核心文身 个"],
+      "reminderText": ["（抗性上限不能超过 90%）"]
+    }
+  },
+  "items": [
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL3VuaXF1ZTciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/05e61f124f/unique7.png",
+      "league": "S23赛季",
+      "id": "405d967a85555a02a2ea66a4b125515c908be808ff70d54ce8059a67e9ba8466",
+      "name": "求知的热情",
+      "typeLine": "赤红珠宝",
+      "baseType": "赤红珠宝",
+      "identified": true,
+      "ilvl": 80,
+      "properties": [
+        {
+          "name": "范围",
+          "values": [["小", 0]],
+          "displayMode": 0,
+          "type": 24
+        }
+      ],
+      "explicitMods": [
+        "若范围内配置了 4 个关键天赋点，当你击败稀有怪物时，你会获得该怪物的 1 属性修正 20 秒"
+      ],
+      "descrText": "放置到一个天赋树的珠宝插槽中以产生效果。右键点击以移出插槽。",
+      "flavourText": ["光是打赢战役，而不知从中学习\r", "还是注定一败涂地。"],
+      "frameType": 3,
+      "x": 4,
+      "y": 0,
+      "inventoryId": "PassiveJewels"
+    }
+  ],
+  "jewel_data": {
+    "4": {
+      "type": "JewelStr",
+      "radius": 960
+    }
+  }
+}

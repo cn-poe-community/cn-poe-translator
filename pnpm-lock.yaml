@@ -21,8 +21,8 @@ devDependencies:
     specifier: ^5.57.1
     version: 5.57.1(eslint@8.37.0)(typescript@5.0.3)
   cn-poe-export-db:
-    specifier: ^0.0.7
-    version: 0.0.7
+    specifier: ^0.0.12
+    version: 0.0.12
   eslint:
     specifier: ^8.37.0
     version: 8.37.0
@@ -2131,10 +2131,10 @@ packages:
       wrap-ansi: 7.0.0
     dev: true
 
-  /cn-poe-export-db@0.0.7:
+  /cn-poe-export-db@0.0.12:
     resolution:
       {
-        integrity: sha512-ouskeY659EX9BiyptaaJUFNqtwFjMzqPIvkimjYGn3i5v8jyGM1MTUrOGDRWdWdF2JquuHpK6Qcfgz8sRLt8sQ==,
+        integrity: sha512-lsNvmyCuLhmlREPRJceybfrP/ojXXDI+BB5hRUjNdqMpMe2uWtyZHdVI3/MQpoYoeUzL5gACKQQy2l5Z5erf+Q==,
       }
     dev: true
 

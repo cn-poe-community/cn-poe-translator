@@ -332,5 +332,36 @@ export class JsonTranslator {
                 this.translateItem(item);
             }
         }
+
+        if (data.skill_overrides) {
+            for (const [key, value] of Object.entries<any>(data.skill_overrides)) {
+                if (value.name) {
+                    const name = value.name;
+                    const result = this.baseTypeService.translateBaseType(name, undefined);
+                    if (result !== undefined) {
+                        value.name = result;
+                    } else {
+                        console.log(`warning: should be translated: base type, ${name}`);
+                    }
+                }
+                if (value.stats) {
+                    const stats: string[] = value.stats;
+                    for (let i = 0; i < stats.length - 1; i++) {
+                        const stat = stats[i];
+                        const result = this.statService.translateMod(stat);
+                        if (result !== undefined) {
+                            stats[i] = result;
+                        } else {
+                            console.log(`warning: should be translated: stat: ${stat}`);
+                        }
+                    }
+
+                    // limit stat is useless and hard to transalte
+                    if (stats.length > 0 && stats[stats.length - 1].startsWith("仅限 ")) {
+                        value.stats = stats.slice(0, stats.length - 1);
+                    }
+                }
+            }
+        }
     }
 }

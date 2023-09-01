@@ -52,6 +52,7 @@ export interface Assets {
     keystones: Node[];
     notables: Node[];
     stats: Stat[];
+    tattoos: BaseType[];
 }
 
 export class BasicTranslatorFactory extends TranslatorFactory {
@@ -75,6 +76,7 @@ export class BasicTranslatorFactory extends TranslatorFactory {
             assets.flasks,
             assets.jewels,
             assets.weapons,
+            assets.tattoos,
         ];
         const baseTypeProvider = new BaseTypeProvider(baseTypesList);
         this.baseTypeService = new BaseTypeService(baseTypeProvider);
