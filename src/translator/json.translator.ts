@@ -1,6 +1,7 @@
 import { BaseTypeService } from "../service/basetype.service.js";
 import { GemService } from "../service/gem.service.js";
 import { ItemService } from "../service/item.service.js";
+import { PassiveSkillService } from "../service/passiveskill.service.js";
 import { PropertyService } from "../service/property.service.js";
 import { RequirementSerivce } from "../service/requirement.service.js";
 import { StatService } from "../service/stat.service.js";
@@ -15,28 +16,15 @@ export const ZH_PASSIVESKILL_ASCENDANT_ASSASSIN_FIXED = "暗影（贵族）";
 export const ZH_CLASS_SCION = "贵族";
 
 export class JsonTranslator {
-    private readonly baseTypeService: BaseTypeService;
-    private readonly itemService: ItemService;
-    private readonly requirementService: RequirementSerivce;
-    private readonly propertySerivce: PropertyService;
-    private readonly gemService: GemService;
-    private readonly statService: StatService;
-
     constructor(
-        baseTypeService: BaseTypeService,
-        itemService: ItemService,
-        requirementService: RequirementSerivce,
-        propertySerivce: PropertyService,
-        gemService: GemService,
-        statService: StatService
-    ) {
-        this.baseTypeService = baseTypeService;
-        this.itemService = itemService;
-        this.requirementService = requirementService;
-        this.propertySerivce = propertySerivce;
-        this.gemService = gemService;
-        this.statService = statService;
-    }
+        private readonly baseTypeService: BaseTypeService,
+        private readonly itemService: ItemService,
+        private readonly requirementService: RequirementSerivce,
+        private readonly propertySerivce: PropertyService,
+        private readonly gemService: GemService,
+        private readonly statService: StatService,
+        private readonly passiveSkillService: PassiveSkillService
+    ) {}
 
     preHandleItem(item: any) {
         if (item.name && (item.name === ZH_FORBIDDEN_FLAME || item.name === ZH_FORBIDDEN_FLESH)) {
@@ -337,11 +325,20 @@ export class JsonTranslator {
             for (const [key, value] of Object.entries<any>(data.skill_overrides)) {
                 if (value.name) {
                     const name = value.name;
-                    const result = this.baseTypeService.translateBaseType(name, undefined);
-                    if (result !== undefined) {
-                        value.name = result;
+                    if (value.isKeystone) {
+                        const result = this.passiveSkillService.translateKeystone(name);
+                        if (result !== undefined) {
+                            value.name = result;
+                        } else {
+                            console.log(`warning: should be translated: keystone, ${name}`);
+                        }
                     } else {
-                        console.log(`warning: should be translated: base type, ${name}`);
+                        const result = this.baseTypeService.translateBaseType(name, undefined);
+                        if (result !== undefined) {
+                            value.name = result;
+                        } else {
+                            console.log(`warning: should be translated: base type, ${name}`);
+                        }
                     }
                 }
                 if (value.stats) {
@@ -352,15 +349,8 @@ export class JsonTranslator {
                         if (result !== undefined) {
                             stats[i] = result;
                         } else {
-                            if (i < stats.length - 1) {
-                                console.log(`warning: should be translated: stat: ${stat}`);
-                            }
+                            console.log(`warning: should be translated: stat: ${stat}`);
                         }
-                    }
-
-                    // limit stat is useless and hard to transalte
-                    if (stats.length > 0 && stats[stats.length - 1].startsWith("仅限 ")) {
-                        value.stats = stats.slice(0, stats.length - 1);
                     }
                 }
             }

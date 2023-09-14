@@ -112,7 +112,8 @@ export class BasicTranslatorFactory extends TranslatorFactory {
             this.requirementService,
             this.propertySerivce,
             this.gemService,
-            this.statService
+            this.statService,
+            this.passiveSkillService
         );
 
         this.textTranslator = new TextTranslator(
