@@ -3,12 +3,12 @@ import { Gem, Skill } from "../type/gem.type.js";
 export class GemProvider {
     private readonly skillsIndexedByZh = new Map<string, Skill>();
 
-    constructor(gems: Gem[]) {
+    constructor(gems: Gem[], hybridSkills: Skill[]) {
         for (const gem of gems) {
-            const skills = gem.skills;
-            for (const skill of skills) {
-                this.skillsIndexedByZh.set(skill.zh, skill);
-            }
+            this.skillsIndexedByZh.set(gem.zh, gem);
+        }
+        for (const skill of hybridSkills) {
+            this.skillsIndexedByZh.set(skill.zh, skill);
         }
     }
 

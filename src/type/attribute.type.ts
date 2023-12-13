@@ -1,10 +1,1 @@
-export interface Attribute {
-    zh: string;
-    en: string;
-    values?: AttributeValue[];
-}
-
-export interface AttributeValue {
-    zh: string;
-    en: string;
-}
+export { Attribute, AttributeValue } from "cn-poe-export-db/dist/types.js";

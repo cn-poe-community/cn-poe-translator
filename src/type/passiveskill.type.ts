@@ -1,5 +1,1 @@
-export interface Node {
-    id: string;
-    zh: string;
-    en: string;
-}
+export { Node } from "cn-poe-export-db/dist/types.js";

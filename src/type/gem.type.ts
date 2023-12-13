@@ -1,8 +1,1 @@
-export interface Gem {
-    skills: Skill[];
-}
-
-export interface Skill {
-    zh: string;
-    en: string;
-}
+export { Gem, Skill } from "cn-poe-export-db/dist/types.js";

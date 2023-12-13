@@ -1,7 +1,5 @@
-export interface Stat {
-    zh: string;
-    en: string;
-}
+import { Stat } from "cn-poe-export-db/dist/types.js";
+export { Stat } from "cn-poe-export-db/dist/types.js";
 
 export interface CompoundedStatIndexEntry {
     maxLineSize: number;

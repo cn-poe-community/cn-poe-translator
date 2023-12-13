@@ -1,10 +1,1 @@
-export interface BaseType {
-    zh: string;
-    en: string;
-    uniques?: Unique[];
-}
-
-export interface Unique {
-    zh: string;
-    en: string;
-}
+export { BaseType, Unique } from "cn-poe-export-db/dist/types.js";

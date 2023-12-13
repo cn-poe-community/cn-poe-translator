@@ -1,3 +1,4 @@
+import { Assets } from "cn-poe-export-db/dist/types.js";
 import { AttributeProvider } from "./provider/attribute.provider.js";
 import { BaseTypeProvider } from "./provider/basetype.provider.js";
 import { GemProvider } from "./provider/gem.provider.js";
@@ -16,14 +17,6 @@ import { StatService } from "./service/stat.service.js";
 import { JsonTranslator } from "./translator/json.translator.js";
 import { TextTranslator } from "./translator/text.translator.js";
 
-import { Attribute } from "./type/attribute.type.js";
-import { BaseType } from "./type/basetype.type.js";
-import { Gem } from "./type/gem.type.js";
-import { Node } from "./type/passiveskill.type.js";
-import { Property } from "./type/property.type.js";
-import { Requirement, RequirementSuffix } from "./type/requirement.type.js";
-import { Stat } from "./type/stat.type.js";
-
 export abstract class TranslatorFactory {
     public abstract getJsonTranslator(): JsonTranslator;
     public abstract getTextTranslator(): TextTranslator;
@@ -35,24 +28,6 @@ export abstract class TranslatorFactory {
     public abstract getPropertiesService(): PropertyService;
     public abstract getRequirementService(): RequirementSerivce;
     public abstract getStatService(): StatService;
-}
-
-export interface Assets {
-    accessories: BaseType[];
-    armour: BaseType[];
-    weapons: BaseType[];
-    flasks: BaseType[];
-    jewels: BaseType[];
-    gems: Gem[];
-    attributes: Attribute[];
-    properties: Property[];
-    requirements: Requirement[];
-    requirementSuffixes: RequirementSuffix[];
-    ascendant: Node[];
-    keystones: Node[];
-    notables: Node[];
-    stats: Stat[];
-    tattoos: BaseType[];
 }
 
 export class BasicTranslatorFactory extends TranslatorFactory {
@@ -90,7 +65,7 @@ export class BasicTranslatorFactory extends TranslatorFactory {
 
         const propertyProvider = new PropertyProvider(assets.properties);
         this.propertySerivce = new PropertyService(propertyProvider);
-        const gemProvider = new GemProvider(assets.gems);
+        const gemProvider = new GemProvider(assets.gems, assets.hybridSkills);
         this.gemService = new GemService(gemProvider);
 
         const passiveSkillProvider = new PassiveSkillProvider(
