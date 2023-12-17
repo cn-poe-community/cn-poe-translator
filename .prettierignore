@@ -1,4 +1,3 @@
 dist
-.yarn
-.pnp.*
-src/asset/*
+README.md
+pnpm-lock.yaml

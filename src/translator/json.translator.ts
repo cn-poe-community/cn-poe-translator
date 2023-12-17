@@ -61,17 +61,24 @@ export class JsonTranslator {
         const items = data.items;
         const translatedItems = [];
         for (const item of items) {
-            //Skip non-build items
-            if (item.inventoryId === "MainInventory" || item.baseType === ZH_THIEFS_TRINKET) {
-                continue;
+            if (this.isPobItem(item)) {
+                this.translateItem(item);
+                translatedItems.push(item);
             }
-
-            this.translateItem(item);
-
-            translatedItems.push(item);
         }
         data.items = translatedItems;
         return data;
+    }
+
+    isPobItem(item: any): boolean {
+        if (
+            item.inventoryId === "MainInventory" ||
+            item.inventoryId === "ExpandedMainInventory" ||
+            item.baseType === ZH_THIEFS_TRINKET
+        ) {
+            return false;
+        }
+        return true;
     }
 
     translateItem(item: any) {
