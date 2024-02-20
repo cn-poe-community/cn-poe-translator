@@ -7,11 +7,8 @@ import { BasicTranslatorFactory } from "./index.js";
  * @returns 
  * @deprecated replaced by BasicTranslatorFactory
  */
-function newBasicTranslatorFactory(assets: Assets) {
+export function newBasicTranslatorFactory(assets: Assets) {
     return new BasicTranslatorFactory(assets);
 }
 
-export default {
-    newBasicTranslatorFactory,
-    BasicTranslatorFactory,
-};
+export { BasicTranslatorFactory } from "./index.js";
