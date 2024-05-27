@@ -157,6 +157,68 @@ Corrupted
 `
 );
 
+itemTranslationTestCases.push(
+    `物品类别: 细剑
+稀 有 度: 传奇
+悖论
+瓦尔细剑
+--------
+单手剑
+物理伤害: 49-194 (augmented)
+攻击暴击率: 6.50%
+每秒攻击次数: 1.56 (augmented)
+武器范围：1.4 米
+--------
+需求:
+等级: 66
+敏捷: 212
+--------
+插槽: G-G 
+--------
+物品等级: 85
+--------
++25% 全域暴击伤害加成 (implicit)
+--------
++27 敏捷与智慧
+物理伤害提高 123%
+攻击速度加快 20%
+击中时 23% 的几率造成流血
+该武器的攻击伤害翻倍
+--------
+什么独来独往，却又成双成对？`
+);
+
+itemTranslationTestCaseAnswers.push(
+    `Item Class: Thrusting One Hand Swords
+Rarity: Unique
+Paradoxica
+Vaal Rapier
+--------
+One Handed Sword
+Physical Damage: 49-194 (augmented)
+Critical Strike Chance: 6.50%
+Attacks per Second: 1.56 (augmented)
+Weapon Range: 1.4 metres
+--------
+Requirements: 
+Level: 66
+Dex: 212
+--------
+Sockets: G-G 
+--------
+Item Level: 85
+--------
++25% to Global Critical Strike Multiplier (implicit)
+--------
++27 to Dexterity and Intelligence
+123% increased Physical Damage
+20% increased Attack Speed
+23% chance to cause Bleeding on Hit
+Attacks with this Weapon deal Double Damage
+--------
+什么独来独往，却又成双成对？`
+);
+
 test("item translation", () => {
     for (let i = 0; i < itemTranslationTestCases.length; i++) {
         const testCase = itemTranslationTestCases[i];
