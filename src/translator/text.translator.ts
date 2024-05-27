@@ -2,15 +2,15 @@ import {
     ZH_CLASS_SCION,
     ZH_FORBIDDEN_FLAME,
     ZH_FORBIDDEN_FLESH,
-    ZH_PASSIVESKILL_ASCENDANT_ASSASSIN,
-    ZH_PASSIVESKILL_ASCENDANT_ASSASSIN_FIXED,
+    ZH_PASSIVE_SKILL_ASCENDANT_ASSASSIN,
+    ZH_PASSIVE_SKILL_ASCENDANT_ASSASSIN_FIXED,
 } from "./json.translator.js";
 import { AttributeService } from "../service/attribute.service.js";
 import { BaseTypeService } from "../service/basetype.service.js";
 import { GemService } from "../service/gem.service.js";
 import { ItemService } from "../service/item.service.js";
 import { PropertyService } from "../service/property.service.js";
-import { RequirementSerivce } from "../service/requirement.service.js";
+import { RequirementService } from "../service/requirement.service.js";
 import { StatService } from "../service/stat.service.js";
 import { COMPOUNDED_STAT_LINE_SEPARATOR } from "../type/stat.type.js";
 
@@ -18,8 +18,8 @@ export class TextTranslator {
     constructor(
         readonly baseTypeService: BaseTypeService,
         readonly itemService: ItemService,
-        readonly requirementService: RequirementSerivce,
-        readonly propertySerivce: PropertyService,
+        readonly requirementService: RequirementService,
+        readonly propertyService: PropertyService,
         readonly gemService: GemService,
         readonly statService: StatService,
         readonly attributeService: AttributeService
@@ -37,8 +37,8 @@ export class TextTranslator {
         if (content.includes(ZH_FORBIDDEN_FLESH) || content.includes(ZH_FORBIDDEN_FLAME)) {
             if (content.includes(ZH_CLASS_SCION)) {
                 content = content.replace(
-                    ZH_PASSIVESKILL_ASCENDANT_ASSASSIN,
-                    ZH_PASSIVESKILL_ASCENDANT_ASSASSIN_FIXED
+                    ZH_PASSIVE_SKILL_ASCENDANT_ASSASSIN,
+                    ZH_PASSIVE_SKILL_ASCENDANT_ASSASSIN_FIXED
                 );
             }
         }
@@ -98,10 +98,10 @@ class Part {
             if (maxSize > 0) {
                 const mod = this.lines.slice(i, Math.min(i + maxSize, this.lines.length));
                 const translation = translator.statService.translateCompoundedMod(
-                    mod.map((line) => (line instanceof ModiferLine ? line.modifier : line.content))
+                    mod.map((line) => (line instanceof ModifierLine ? line.modifier : line.content))
                 );
                 if (translation !== undefined) {
-                    buf.push(this.fillSuffixsOfCompoundedModTranslation(mod, translation.result));
+                    buf.push(this.fillSuffixesOfCompoundedModTranslation(mod, translation.result));
                     i += translation.lineSize;
                     continue;
                 }
@@ -114,13 +114,13 @@ class Part {
         return buf.join(LINE_SEPARATOR);
     }
 
-    fillSuffixsOfCompoundedModTranslation(mod: Line[], translation: string): string {
+    fillSuffixesOfCompoundedModTranslation(mod: Line[], translation: string): string {
         const slices = translation.split(COMPOUNDED_STAT_LINE_SEPARATOR);
         const buf: string[] = [];
 
         for (const [i, slice] of slices.entries()) {
             const sub = mod[i];
-            if (sub instanceof ModiferLine && sub.suffix) {
+            if (sub instanceof ModifierLine && sub.suffix) {
                 buf.push(`${slice} ${sub.suffix}`);
             } else {
                 buf.push(slice);
@@ -139,8 +139,8 @@ class MetaPart extends Part {
 
         for (let i = 0; i < this.lines.length; i++) {
             const line = this.lines[i];
-            // last two lines are name and typeline
-            // but magic item has only typeline
+            // last two lines are name and typeLine
+            // but magic item has only typeLine
             if (this.isNameLine(i)) {
                 const zhName = line.content;
                 const zhTypeLine = this.lines[this.lines.length - 1].content;
@@ -165,11 +165,11 @@ class MetaPart extends Part {
     }
 
     isNameLine(lineNum: number): boolean {
-        return lineNum === this.lines.length - 2 && this.lines[lineNum] instanceof ModiferLine;
+        return lineNum === this.lines.length - 2 && this.lines[lineNum] instanceof ModifierLine;
     }
 
     isTypeLine(lineNum: number): boolean {
-        return lineNum === this.lines.length - 1 && this.lines[lineNum] instanceof ModiferLine;
+        return lineNum === this.lines.length - 1 && this.lines[lineNum] instanceof ModifierLine;
     }
 }
 
@@ -184,14 +184,14 @@ class Line {
         if (content.includes(KEY_VALUE_SEPARATOR)) {
             const pair = content.split(KEY_VALUE_SEPARATOR);
             if (pair.length !== 2) {
-                return new ModiferLine(content);
+                return new ModifierLine(content);
             } else {
                 return new KeyValueLine(content, pair[0], pair[1]);
             }
         } else if (content.endsWith(":")) {
             return new OnlyKeyLine(content);
         } else {
-            return new ModiferLine(content);
+            return new ModifierLine(content);
         }
     }
 
@@ -212,7 +212,7 @@ class KeyValueLine extends Line {
 
     getTranslation(ctx: Context): string {
         const translator = ctx.translator!;
-        let translation = translator.propertySerivce.translate(this.key, this.value);
+        let translation = translator.propertyService.translate(this.key, this.value);
         if (translation !== undefined) {
             let key = this.key;
             if (translation.name) {
@@ -259,7 +259,7 @@ class OnlyKeyLine extends Line {
 
     getTranslation(ctx: Context): string {
         const translator = ctx.translator!;
-        let translation = translator.propertySerivce.translateName(this.key);
+        let translation = translator.propertyService.translateName(this.key);
         if (translation !== undefined) {
             return `${translation}${KEY_VALUE_SEPARATOR}`;
         }
@@ -272,17 +272,17 @@ class OnlyKeyLine extends Line {
     }
 }
 
-class ModiferLine extends Line {
+class ModifierLine extends Line {
     modifier: string;
     suffix?: string;
 
     constructor(content: string) {
         super(content);
         const pattern = new RegExp("(.+)\\s(\\(\\w+\\))$");
-        const matchs = pattern.exec(content);
-        if (matchs !== null) {
-            this.modifier = matchs[1];
-            this.suffix = matchs[2];
+        const match = pattern.exec(content);
+        if (match !== null) {
+            this.modifier = match[1];
+            this.suffix = match[2];
         } else {
             this.modifier = content;
         }
@@ -298,8 +298,8 @@ class ModiferLine extends Line {
             return translation;
         }
 
-        // Some lines are properties,attributes
-        translation = translator.propertySerivce.translateName(this.modifier);
+        // Some lines are properties or attributes
+        translation = translator.propertyService.translateName(this.modifier);
         if (translation !== undefined) {
             return translation;
         }

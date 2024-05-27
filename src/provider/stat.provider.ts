@@ -55,7 +55,7 @@ export class StatProvider {
         return this.statsIndexedByZhBody.get(zhBody);
     }
 
-    public providecompoundedStatsByFirstLinesZhBody(
+    public provideCompoundedStatsByFirstLinesZhBody(
         body: string
     ): CompoundedStatIndexEntry | undefined {
         return this.compoundedStatsIndexedByFirstLinesZhBody.get(body);

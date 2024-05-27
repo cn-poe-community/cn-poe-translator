@@ -12,7 +12,7 @@ import { GemService } from "./service/gem.service.js";
 import { ItemService } from "./service/item.service.js";
 import { PassiveSkillService } from "./service/passiveskill.service.js";
 import { PropertyService } from "./service/property.service.js";
-import { RequirementSerivce } from "./service/requirement.service.js";
+import { RequirementService } from "./service/requirement.service.js";
 import { StatService } from "./service/stat.service.js";
 import { JsonTranslator } from "./translator/json.translator.js";
 import { TextTranslator } from "./translator/text.translator.js";
@@ -26,15 +26,15 @@ export abstract class TranslatorFactory {
     public abstract getGemService(): GemService;
     public abstract getItemService(): ItemService;
     public abstract getPropertiesService(): PropertyService;
-    public abstract getRequirementService(): RequirementSerivce;
+    public abstract getRequirementService(): RequirementService;
     public abstract getStatService(): StatService;
 }
 
 export class BasicTranslatorFactory extends TranslatorFactory {
     private baseTypeService: BaseTypeService;
     private itemService: ItemService;
-    private requirementService: RequirementSerivce;
-    private propertySerivce: PropertyService;
+    private requirementService: RequirementService;
+    private propertyService: PropertyService;
     private gemService: GemService;
     private passiveSkillService: PassiveSkillService;
     private statService: StatService;
@@ -61,10 +61,10 @@ export class BasicTranslatorFactory extends TranslatorFactory {
             assets.requirements,
             assets.requirementSuffixes
         );
-        this.requirementService = new RequirementSerivce(requirementProvider);
+        this.requirementService = new RequirementService(requirementProvider);
 
         const propertyProvider = new PropertyProvider(assets.properties);
-        this.propertySerivce = new PropertyService(propertyProvider);
+        this.propertyService = new PropertyService(propertyProvider);
         const gemProvider = new GemProvider(assets.gems, assets.hybridSkills);
         this.gemService = new GemService(gemProvider);
 
@@ -85,7 +85,7 @@ export class BasicTranslatorFactory extends TranslatorFactory {
             this.baseTypeService,
             this.itemService,
             this.requirementService,
-            this.propertySerivce,
+            this.propertyService,
             this.gemService,
             this.statService,
             this.passiveSkillService
@@ -95,7 +95,7 @@ export class BasicTranslatorFactory extends TranslatorFactory {
             this.baseTypeService,
             this.itemService,
             this.requirementService,
-            this.propertySerivce,
+            this.propertyService,
             this.gemService,
             this.statService,
             this.attributeService
@@ -124,9 +124,9 @@ export class BasicTranslatorFactory extends TranslatorFactory {
         return this.itemService;
     }
     public getPropertiesService(): PropertyService {
-        return this.propertySerivce;
+        return this.propertyService;
     }
-    public getRequirementService(): RequirementSerivce {
+    public getRequirementService(): RequirementService {
         return this.requirementService;
     }
     public getStatService(): StatService {

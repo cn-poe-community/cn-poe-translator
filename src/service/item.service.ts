@@ -10,7 +10,7 @@ export class ItemService {
     }
 
     /**
-     * Tranlate item name, but only unique name is supported.
+     * Translate item name, but only unique name is supported.
      *
      * @returns DEFAULT_NAME if no unique with the zhName.
      */

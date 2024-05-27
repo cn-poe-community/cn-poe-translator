@@ -22,20 +22,20 @@ export class StatUtil {
             return enTemplate;
         }
 
-        const enTpl = new Template(enTemplate);
-        const zhTpl = new Template(zhTemplate);
+        const enTmpl = new Template(enTemplate);
+        const zhTmpl = new Template(zhTemplate);
 
-        const params = zhTpl.parseParams(zhMod);
+        const params = zhTmpl.parseParams(zhMod);
         if (params === undefined) {
             return undefined;
         }
-        return enTpl.render(params);
+        return enTmpl.render(params);
     }
 }
 
 /**
  *
- * The template that can be pasered to segments and parameter numbers.
+ * The template that can be parsed to segments and parameter numbers.
  *
  * Simple:
  * "Chain Hook has a {0}% chance to grant +1 Rage if it Hits Enemies"
@@ -44,20 +44,20 @@ export class StatUtil {
  *   parameter numbers: [0]
  */
 export class Template {
-    tmpl: string;
+    text: string;
     segments: string[];
     paramNumbers: number[]; //positional parameter numbers
 
-    constructor(tmpl: string) {
-        this.tmpl = tmpl;
+    constructor(text: string) {
+        this.text = text;
         this.segments = [];
         this.paramNumbers = [];
 
         let j = 0;
         let k = 0;
         let onParam = false;
-        for (let i = 0; i < tmpl.length; i++) {
-            const code = tmpl.charCodeAt(i);
+        for (let i = 0; i < text.length; i++) {
+            const code = text.charCodeAt(i);
             if (code === 123) {
                 // "{"
                 k = i;
@@ -65,8 +65,8 @@ export class Template {
             } else if (code === 125) {
                 // "}"
                 if (onParam) {
-                    this.segments.push(tmpl.slice(j, k));
-                    this.paramNumbers.push(Number.parseInt(tmpl.slice(k + 1, i + 1)));
+                    this.segments.push(text.slice(j, k));
+                    this.paramNumbers.push(Number.parseInt(text.slice(k + 1, i + 1)));
                     j = i + 1;
                     onParam = false;
                 }
@@ -79,13 +79,13 @@ export class Template {
                 }
             }
         }
-        this.segments.push(tmpl.slice(j));
+        this.segments.push(text.slice(j));
     }
 
     /**
-     * parseParams parses the modifer and returns positional parameters.
+     * parseParams parses the modifier and returns positional parameters.
      * @param modifier rendered template result with params
-     * @returns map contains positions and parameters ; undefined if the modifer does not match the template.
+     * @returns map contains positions and parameters ; undefined if the modifier does not match the template.
      */
     public parseParams(modifier: string): Map<number, string> | undefined {
         const regStr = `^${this.segments.map((s) => escapeRegExp(s)).join("(\\S+)")}$`;
@@ -106,7 +106,7 @@ export class Template {
     }
 
     /**
-     * Render template by positional paramters.
+     * Render template by positional params.
      * @param params positional parameters
      */
     public render(params: Map<number, string>): string {

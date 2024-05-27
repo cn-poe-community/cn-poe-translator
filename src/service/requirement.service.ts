@@ -1,6 +1,6 @@
 import { RequirementProvider } from "../provider/requirement.provider.js";
 
-export class RequirementSerivce {
+export class RequirementService {
     constructor(private readonly requirementProvider: RequirementProvider) {}
 
     public translate(

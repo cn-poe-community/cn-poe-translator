@@ -3,24 +3,24 @@ import { GemService } from "../service/gem.service.js";
 import { ItemService } from "../service/item.service.js";
 import { PassiveSkillService } from "../service/passiveskill.service.js";
 import { PropertyService } from "../service/property.service.js";
-import { RequirementSerivce } from "../service/requirement.service.js";
+import { RequirementService } from "../service/requirement.service.js";
 import { StatService } from "../service/stat.service.js";
 import { ZH_PROPERTY_NAME_LIMITED_TO, ZH_PROPERTY_NAME_RADIUS } from "../type/property.type.js";
 import { ZH_REQUIREMENT_NAME_CLASS } from "../type/requirement.type.js";
 
-const ZH_THIEFS_TRINKET = "赏金猎人饰品";
+const ZH_THIEF_TRINKET = "赏金猎人饰品";
 export const ZH_FORBIDDEN_FLESH = "禁断之肉";
 export const ZH_FORBIDDEN_FLAME = "禁断之火";
-export const ZH_PASSIVESKILL_ASCENDANT_ASSASSIN = "暗影";
-export const ZH_PASSIVESKILL_ASCENDANT_ASSASSIN_FIXED = "暗影（贵族）";
+export const ZH_PASSIVE_SKILL_ASCENDANT_ASSASSIN = "暗影";
+export const ZH_PASSIVE_SKILL_ASCENDANT_ASSASSIN_FIXED = "暗影（贵族）";
 export const ZH_CLASS_SCION = "贵族";
 
 export class JsonTranslator {
     constructor(
         private readonly baseTypeService: BaseTypeService,
         private readonly itemService: ItemService,
-        private readonly requirementService: RequirementSerivce,
-        private readonly propertySerivce: PropertyService,
+        private readonly requirementService: RequirementService,
+        private readonly propertyService: PropertyService,
         private readonly gemService: GemService,
         private readonly statService: StatService,
         private readonly passiveSkillService: PassiveSkillService
@@ -41,10 +41,10 @@ export class JsonTranslator {
                         if (item.explicitMods) {
                             for (let i = 0; i < item.explicitMods.length; i++) {
                                 const zhStat = item.explicitMods[i] as string;
-                                if (zhStat.endsWith(ZH_PASSIVESKILL_ASCENDANT_ASSASSIN)) {
+                                if (zhStat.endsWith(ZH_PASSIVE_SKILL_ASCENDANT_ASSASSIN)) {
                                     item.explicitMods[i] = zhStat.replace(
-                                        ZH_PASSIVESKILL_ASCENDANT_ASSASSIN,
-                                        ZH_PASSIVESKILL_ASCENDANT_ASSASSIN_FIXED
+                                        ZH_PASSIVE_SKILL_ASCENDANT_ASSASSIN,
+                                        ZH_PASSIVE_SKILL_ASCENDANT_ASSASSIN_FIXED
                                     );
                                 }
                             }
@@ -74,7 +74,7 @@ export class JsonTranslator {
         if (
             item.inventoryId === "MainInventory" ||
             item.inventoryId === "ExpandedMainInventory" ||
-            item.baseType === ZH_THIEFS_TRINKET
+            item.baseType === ZH_THIEF_TRINKET
         ) {
             return false;
         }
@@ -153,7 +153,7 @@ export class JsonTranslator {
         if (item.properties) {
             for (const p of item.properties) {
                 const zhName = p.name;
-                const enName = this.propertySerivce.translateName(zhName);
+                const enName = this.propertyService.translateName(zhName);
                 if (enName) {
                     p.name = enName;
                 } else {
@@ -164,7 +164,7 @@ export class JsonTranslator {
                     if (p.values) {
                         for (const v of p.values) {
                             const zhValue = v[0];
-                            const res = this.propertySerivce.translate(zhName, zhValue);
+                            const res = this.propertyService.translate(zhName, zhValue);
                             if (res) {
                                 v[0] = res.value;
                             } else {

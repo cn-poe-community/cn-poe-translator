@@ -9,8 +9,8 @@ const ZH_FORBIDDEN_FLAME_MOD_REGEXP = /^禁断之肉上有匹配的词缀则配�
 
 const ZH_UNIQUE_ENEMY_IN_YOUR_PRESENCE = "有一个传奇怪物出现在你面前：";
 const EN_UNIQUE_ENEMY_IN_YOUR_PRESENCE = "While a Unique Enemy is in your Presence, ";
-const ZH_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENC = "有一个异界图鉴最终首领出现在你面前：";
-const EN_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENC = "While a Pinnacle Atlas Boss is in your Presence, ";
+const ZH_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENCE = "有一个异界图鉴最终首领出现在你面前：";
+const EN_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENCE = "While a Pinnacle Atlas Boss is in your Presence, ";
 
 export class StatService {
     private readonly passiveSkillService: PassiveSkillService;
@@ -47,7 +47,7 @@ export class StatService {
 
         if (stats !== undefined) {
             for (const stat of stats) {
-                const result = this.dotranslateMod(stat, zhMod);
+                const result = this.doTranslateMod(stat, zhMod);
                 if (result !== undefined) {
                     return result;
                 }
@@ -64,8 +64,8 @@ export class StatService {
     translateAnointedMod(zhMod: string): string | undefined {
         const matches = ZH_ANOINTED_MOD_REGEXP.exec(zhMod);
         if (matches !== null) {
-            const zhNoteable = matches[1];
-            const notable = this.passiveSkillService.translateNotable(zhNoteable);
+            const zhNotable = matches[1];
+            const notable = this.passiveSkillService.translateNotable(zhNotable);
             if (notable !== undefined) {
                 return `Allocates ${notable}`;
             }
@@ -109,7 +109,7 @@ export class StatService {
     isEldritchImplicitMod(zhMod: string): boolean {
         return (
             zhMod.startsWith(ZH_UNIQUE_ENEMY_IN_YOUR_PRESENCE) ||
-            zhMod.startsWith(ZH_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENC)
+            zhMod.startsWith(ZH_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENCE)
         );
     }
 
@@ -121,38 +121,38 @@ export class StatService {
             if (subMod !== undefined) {
                 return EN_UNIQUE_ENEMY_IN_YOUR_PRESENCE + subMod;
             }
-        } else if (zhMod.startsWith(ZH_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENC)) {
+        } else if (zhMod.startsWith(ZH_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENCE)) {
             const subMod = this.translateMod(
-                zhMod.substring(ZH_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENC.length)
+                zhMod.substring(ZH_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENCE.length)
             );
             if (subMod !== undefined) {
-                return EN_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENC + subMod;
+                return EN_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENCE + subMod;
             }
         }
 
         return undefined;
     }
 
-    dotranslateMod(stat: Stat, zhMod: string): string | undefined {
+    doTranslateMod(stat: Stat, zhMod: string): string | undefined {
         if (zhMod === stat.zh) {
             return stat.en;
         }
 
-        const zhTpl = new Template(stat.zh);
-        const posParams = zhTpl.parseParams(zhMod);
+        const zhTmpl = new Template(stat.zh);
+        const posParams = zhTmpl.parseParams(zhMod);
         //does not match
         if (posParams === undefined) {
             return undefined;
         }
 
-        const enTpl = new Template(stat.en);
+        const enTmpl = new Template(stat.en);
 
-        return enTpl.render(posParams);
+        return enTmpl.render(posParams);
     }
 
     public getMaxLineSizeOfCompoundedMod(firstLine: string): number {
         const body = StatUtil.getBodyOfZhModifier(firstLine);
-        const entry = this.statProvider.providecompoundedStatsByFirstLinesZhBody(body);
+        const entry = this.statProvider.provideCompoundedStatsByFirstLinesZhBody(body);
         if (entry !== undefined) {
             return entry.maxLineSize;
         }
@@ -171,7 +171,7 @@ export class StatService {
         lines: string[]
     ): { result: string; lineSize: number } | undefined {
         const body = StatUtil.getBodyOfZhModifier(lines[0]);
-        const entry = this.statProvider.providecompoundedStatsByFirstLinesZhBody(body);
+        const entry = this.statProvider.provideCompoundedStatsByFirstLinesZhBody(body);
         if (entry === undefined) {
             return;
         }
@@ -185,7 +185,7 @@ export class StatService {
             const mod = lines.slice(0, lineSize).join(COMPOUNDED_STAT_LINE_SEPARATOR);
 
             if (StatUtil.getBodyOfZhTemplate(stat.zh) === StatUtil.getBodyOfZhModifier(mod)) {
-                const result = this.dotranslateMod(stat, mod);
+                const result = this.doTranslateMod(stat, mod);
                 if (result !== undefined) {
                     return {
                         result: result,

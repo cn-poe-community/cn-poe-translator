@@ -4,7 +4,7 @@ import { BaseType } from "../type/basetype.type.js";
 const ZH_SUPERIOR_PREFIX = "精良的 ";
 const SUPERIOR_PREFIX = "Superior ";
 const ZH_SYNTHESISED_PREFIX = "忆境 ";
-const SYNTHESISED_PREIFX = "Synthesised ";
+const SYNTHESISED_PREFIX = "Synthesised ";
 
 export class BaseTypeService {
     constructor(private readonly baseTypeProvider: BaseTypeProvider) {}
@@ -12,7 +12,7 @@ export class BaseTypeService {
     /**
      *
      * @param zhName item's zh name.
-     * There may be duplicate zh basetypes, uniques's zh name can help translating.
+     * There may be duplicate zh baseTypes, uniques's zh name can help translating.
      */
     public getBaseTypeByZh(zh: string, zhName?: string): BaseType | undefined {
         const list = this.baseTypeProvider.provideBaseTypesByZh(zh);
@@ -40,7 +40,7 @@ export class BaseTypeService {
     /**
      * Infer the zh base type by zh base type line, and returns the matched BaseType.
      *
-     * @param zhName item's zh name. There may be duplicate zh basetypes, uniques's zh name can help translating.
+     * @param zhName item's zh name. There may be duplicate zh baseTypes, uniques's zh name can help translating.
      */
     public getBaseTypeByZhTypeLine(
         zhTypeLine: string,
@@ -137,7 +137,7 @@ export class BaseTypeService {
                 zhName
             );
             if (t !== undefined) {
-                return SYNTHESISED_PREIFX + t;
+                return SYNTHESISED_PREFIX + t;
             }
             return undefined;
         }
