@@ -46,8 +46,15 @@ export class BasicTranslatorFactory extends TranslatorFactory {
     constructor(assets: Assets) {
         super();
         const baseTypesList = [
-            assets.accessories,
-            assets.armour,
+            assets.amulets,
+            assets.belts,
+            assets.rings,
+            assets.bodyArmours,
+            assets.boots,
+            assets.gloves,
+            assets.helmets,
+            assets.quivers,
+            assets.shields,
             assets.flasks,
             assets.jewels,
             assets.weapons,
