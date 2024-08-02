@@ -8,8 +8,12 @@ const PROPERTY_NAMES = new Map([
 export class GemService {
     constructor(private readonly gemProvider: GemProvider) {}
 
+    formatGemZh(zh: string): string {
+        return zh.replace("(", "（").replace(")", "）");
+    }
+
     public translateBaseType(zhBaseType: string): string | undefined {
-        return this.gemProvider.provideSkill(zhBaseType)?.en;
+        return this.gemProvider.provideSkill(this.formatGemZh(zhBaseType))?.en;
     }
 
     public translateTypeLine(zhTypeLine: string): string | undefined {
