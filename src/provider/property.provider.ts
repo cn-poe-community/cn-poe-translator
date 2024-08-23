@@ -4,25 +4,31 @@ import { StatUtil } from "../util/stat.util.js";
 const VARIABLE_MARK = "{0}";
 
 export class PropertyProvider {
-    private readonly propertyIndexedByZhName = new Map<string, Property>();
-    private readonly variablePropertyIndexedByZhBody = new Map<string, Property>();
+    private readonly propertyZhNameIdx = new Map<string, Property>();
+    private readonly variablePropertyZhBodyIdx = new Map<string, Property[]>();
 
     constructor(propertyList: Property[]) {
         for (const p of propertyList) {
             const zh = p.zh;
-            this.propertyIndexedByZhName.set(zh, p);
+            this.propertyZhNameIdx.set(zh, p);
 
             if (zh.includes(VARIABLE_MARK)) {
-                this.variablePropertyIndexedByZhBody.set(StatUtil.getBodyOfZhTemplate(zh), p);
+                const zhBody = StatUtil.getBodyOfZhTemplate(zh);
+                const value = this.variablePropertyZhBodyIdx.get(zhBody);
+                if (value !== undefined) {
+                    value.push(p);
+                } else {
+                    this.variablePropertyZhBodyIdx.set(StatUtil.getBodyOfZhTemplate(zh), [p]);
+                }
             }
         }
     }
 
     public provideProperty(zhName: string): Property | undefined {
-        return this.propertyIndexedByZhName.get(zhName);
+        return this.propertyZhNameIdx.get(zhName);
     }
 
-    public provideVariablePropertyByZhBody(zhBody: string): Property | undefined {
-        return this.variablePropertyIndexedByZhBody.get(zhBody);
+    public provideVariablePropertiesByZhBody(zhBody: string): Property[] | undefined {
+        return this.variablePropertyZhBodyIdx.get(zhBody);
     }
 }

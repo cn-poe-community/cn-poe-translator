@@ -1,6 +1,6 @@
 {
   "name": "cn-poe-translator",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -24,7 +24,7 @@
     "@types/node": "^20.12.13",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
-    "cn-poe-export-db": "^0.3.0",
+    "cn-poe-export-db": "^0.3.6",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^8.10.0",
     "prettier": "2.8.7",

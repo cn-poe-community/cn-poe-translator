@@ -33,25 +33,26 @@ export class PropertyService {
     }
 
     public translateName(zhName: string): string | undefined {
-        let prop = this.propProvider.provideProperty(zhName);
+        const prop = this.propProvider.provideProperty(zhName);
         if (prop !== undefined) {
             return prop.en;
         }
 
-        prop = this.propProvider.provideVariablePropertyByZhBody(
+        const props = this.propProvider.provideVariablePropertiesByZhBody(
             StatUtil.getBodyOfZhModifier(zhName)
         );
-        if (prop !== undefined) {
-            const zhTmpl = new Template(prop.zh);
-            const posParams = zhTmpl.parseParams(zhName);
-            //does not match
-            if (posParams === undefined) {
-                return undefined;
+        if (props !== undefined) {
+            for (const prop of props) {
+                const zhTmpl = new Template(prop.zh);
+                const posParams = zhTmpl.parseParams(zhName);
+                //does not match
+                if (posParams === undefined) {
+                    continue;
+                }
+
+                const enTmpl = new Template(prop.en);
+                return enTmpl.render(posParams);
             }
-
-            const enTmpl = new Template(prop.en);
-
-            return enTmpl.render(posParams);
         }
 
         return undefined;

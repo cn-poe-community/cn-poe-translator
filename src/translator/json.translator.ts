@@ -55,6 +55,15 @@ export class JsonTranslator {
                 }
             }
         }
+
+        if (item.enchantMods) {
+            for (let i = 0; i < item.enchantMods.length; i++) {
+                const mod: string = item.enchantMods[i];
+                if (/^元素伤害(提高|降低) \d+%$/.test(mod)) {
+                    item.enchantMods[i] = "该武器的" + mod;
+                }
+            }
+        }
     }
 
     translateItems(data: any) {

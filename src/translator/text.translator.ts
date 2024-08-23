@@ -42,6 +42,12 @@ export class TextTranslator {
                 );
             }
         }
+
+        content = content.replaceAll(
+            /^元素伤害(提高|降低) \d+% \(enchant\)$/gm,
+            (line) => "该武器的" + line
+        );
+
         return content;
     }
 }

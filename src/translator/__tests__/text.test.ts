@@ -219,6 +219,96 @@ Attacks with this Weapon deal Double Damage
 什么独来独往，却又成双成对？`
 );
 
+itemTranslationTestCases.push(
+    `物品类别: 双手剑
+稀 有 度: 稀有
+魔像 利牙
+忆境 残暴巨剑
+--------
+双手剑
+品质: +20% (augmented)
+火焰，冰霜，闪电伤害: 410-755 (augmented), 323-601 (augmented), 87-1499 (augmented)
+攻击暴击率: 6.25% (augmented)
+每秒攻击次数: 2.02 (augmented)
+武器范围：1.3 米
+--------
+需求:
+等级: 65
+力量: 82
+敏捷: 119
+--------
+插槽: W-W-W-W-W-W 
+--------
+物品等级: 82
+--------
+没有物理伤害 (enchant)
+元素伤害提高 97% (enchant)
+--------
+该装备附加 8 - 123 基础闪电伤害 (implicit)
+攻击速度加快 8% (implicit)
+每击中一名敌人获得 50 点生命 (implicit)
+物品卖的钱更多 (implicit)
+--------
+该装备附加 208 - 383 基础火焰伤害
+该装备附加 164 - 305 基础冰霜伤害
+该装备附加 36 - 638 基础闪电伤害
+攻击速度加快 27%
+专注时有 40% 的几率伤害翻倍
++24 力量和智慧 (crafted)
+该装备的攻击暴击率提高 25% (crafted)
+--------
+分裂
+--------
+忆境物品
+--------
+出售获得通货:非绑定`
+);
+
+itemTranslationTestCaseAnswers.push(
+    `Item Class: Two Hand Swords
+Rarity: Rare
+Item
+Synthesised Reaver Sword
+--------
+Two Handed Sword
+Quality: +20% (augmented)
+Elemental Damage: 410-755 (augmented), 323-601 (augmented), 87-1499 (augmented)
+Critical Strike Chance: 6.25% (augmented)
+Attacks per Second: 2.02 (augmented)
+Weapon Range: 1.3 metres
+--------
+Requirements: 
+Level: 65
+Str: 82
+Dex: 119
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 82
+--------
+No Physical Damage (enchant)
+Has 97% increased Elemental Damage (enchant)
+--------
+Adds 8 to 123 Lightning Damage (implicit)
+8% increased Attack Speed (implicit)
+Grants 50 Life per Enemy Hit (implicit)
+Item sells for much more to vendors (implicit)
+--------
+Adds 208 to 383 Fire Damage
+Adds 164 to 305 Cold Damage
+Adds 36 to 638 Lightning Damage
+27% increased Attack Speed
+40% chance to deal Double Damage while Focused
++24 to Strength and Intelligence (crafted)
+25% increased Critical Strike Chance (crafted)
+--------
+Split
+--------
+Synthesised Item
+--------
+出售获得通货:非绑定`
+);
+
 test("item translation", () => {
     for (let i = 0; i < itemTranslationTestCases.length; i++) {
         const testCase = itemTranslationTestCases[i];
