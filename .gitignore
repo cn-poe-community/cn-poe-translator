@@ -1,2 +1,4 @@
 dist/
 node_modules/
+src/__test__/items_translated.json
+src/__test__/passiveskills_translated.json
