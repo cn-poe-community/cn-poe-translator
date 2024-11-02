@@ -1,21 +1,28 @@
 # cn-poe-translator
 
-Translate CN POE data to English.
+POE 中英文数据翻译。目前支持：
 
-Json data(include items and passive skills) and text data are supported. Only equipments are supported.
+- POB使用的 POE API 数据的中译英
+- 交易、客户端复制的装备文本的中译英
 
-# Usage
+# 使用
 
+取决于你所使用的包管理器，以及取决于你选择作为开发依赖还是编译依赖，比如使用npm并添加为编译依赖：
 ```
 npm i cn-poe-translator
 ```
 
-Use `JsonTranslator` to translate json data and use `TextTranslator` to translate text data.
+模块`ZhToEn`提供中译英的服务，核心类包括：
 
-A demo show how to translate text item:
+- `BasicTranslator`，提供基础翻译服务
+- `JsonTranslator`，提供 POE API 翻译服务
+- `TextTranslator`，提供 文本 翻译服务
+- `TranslatorFactory`，翻译器工厂
+
+一个翻译文本的示例：
 
 ```ts
-import { BasicTranslatorFactory } from "cn-poe-translator";
+import { ZhToEn } from "cn-poe-translator";
 import Assets from "cn-poe-export-db";
 
 const text = `物品类别: 腰带
@@ -43,12 +50,12 @@ const text = `物品类别: 腰带
 --------
 忆境物品`;
 
-const factory = new BasicTranslatorFactory(Assets);
+const factory = new ZhToEn.TranslatorFactory(Assets);
 const textTranslator = factory.getTextTranslator();
 console.log(textTranslator.translate(text));
 ```
 
-output should be:
+输出：
 
 ```
 Item Class: Belts

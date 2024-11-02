@@ -1,7 +1,7 @@
-import { BasicTranslatorFactory } from "../../index.js";
+import { ZhToEn } from "../../../index.js";
 import Assets from "cn-poe-export-db";
 
-const factory = new BasicTranslatorFactory(Assets);
+const factory = new ZhToEn.TranslatorFactory(Assets);
 const textTranslator = factory.getTextTranslator();
 
 const itemTranslationTestCases: string[] = [];
@@ -36,7 +36,7 @@ itemTranslationTestCases.push(
 --------
 忆境物品
 --------
-出售获得通货:非绑定`
+出售获得通货:非绑定`,
 );
 
 itemTranslationTestCaseAnswers.push(
@@ -68,7 +68,7 @@ Item sells for much more to vendors (implicit)
 --------
 Synthesised Item
 --------
-出售获得通货:非绑定`
+出售获得通货:非绑定`,
 );
 
 itemTranslationTestCases.push(
@@ -93,7 +93,7 @@ itemTranslationTestCases.push(
 --------
 已腐化
 --------
-出售获得通货:非绑定`
+出售获得通货:非绑定`,
 );
 
 itemTranslationTestCaseAnswers.push(
@@ -118,7 +118,7 @@ Allocates Assassin if you have the matching modifier on Forbidden Flesh
 --------
 Corrupted
 --------
-出售获得通货:非绑定`
+出售获得通货:非绑定`,
 );
 
 itemTranslationTestCases.push(
@@ -136,7 +136,7 @@ itemTranslationTestCases.push(
 未连结至天赋树的情况下配置
 --------
 已腐化
-`
+`,
 );
 
 itemTranslationTestCaseAnswers.push(
@@ -154,7 +154,7 @@ Passives in Radius of Zealot's Oath can be Allocated
 without being connected to your tree
 --------
 Corrupted
-`
+`,
 );
 
 itemTranslationTestCases.push(
@@ -185,7 +185,7 @@ itemTranslationTestCases.push(
 击中时 23% 的几率造成流血
 该武器的攻击伤害翻倍
 --------
-什么独来独往，却又成双成对？`
+什么独来独往，却又成双成对？`,
 );
 
 itemTranslationTestCaseAnswers.push(
@@ -216,7 +216,7 @@ Item Level: 85
 23% chance to cause Bleeding on Hit
 Attacks with this Weapon deal Double Damage
 --------
-什么独来独往，却又成双成对？`
+什么独来独往，却又成双成对？`,
 );
 
 itemTranslationTestCases.push(
@@ -261,7 +261,7 @@ itemTranslationTestCases.push(
 --------
 忆境物品
 --------
-出售获得通货:非绑定`
+出售获得通货:非绑定`,
 );
 
 itemTranslationTestCaseAnswers.push(
@@ -306,7 +306,7 @@ Split
 --------
 Synthesised Item
 --------
-出售获得通货:非绑定`
+出售获得通货:非绑定`,
 );
 
 test("item translation", () => {
@@ -314,7 +314,7 @@ test("item translation", () => {
         const testCase = itemTranslationTestCases[i];
         const answer = itemTranslationTestCaseAnswers[i];
 
-        const result = textTranslator.translate(testCase);
+        const result = textTranslator.trans(testCase);
 
         expect(result).toEqual(answer);
     }

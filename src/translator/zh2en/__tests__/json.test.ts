@@ -1,7 +1,7 @@
-import { BasicTranslatorFactory } from "../../index.js";
+import { ZhToEn } from "../../../index.js";
 import Assets from "cn-poe-export-db";
 
-const factory = new BasicTranslatorFactory(Assets);
+const factory = new ZhToEn.TranslatorFactory(Assets);
 const jsonTranslator = factory.getJsonTranslator();
 
 const crucibleModsTestCase: any = {};
@@ -23,7 +23,7 @@ crucibleModsTestCase.items = [
 ];
 
 test("crucible mod translation", () => {
-    jsonTranslator.translateItems(crucibleModsTestCase);
+    jsonTranslator.transItems(crucibleModsTestCase);
     const item = crucibleModsTestCase.items[0];
     expect(item.crucibleMods[2]).toEqual("+1.2% to Critical Strike Chance");
 });
@@ -59,8 +59,12 @@ forbiddenJewelTestCase.items = [
             },
         ],
         explicitMods: ["禁断之火上有匹配的词缀则配置 邪恶君王"],
-        descrText: "放置到一个天赋树的珠宝插槽中以产生效果。右键点击以移出插槽。",
-        flavourText: ["被纠缠之主包裹的肉体们\r", "在永无止尽的融合中哭喊着救命……"],
+        descrText:
+            "放置到一个天赋树的珠宝插槽中以产生效果。右键点击以移出插槽。",
+        flavourText: [
+            "被纠缠之主包裹的肉体们\r",
+            "在永无止尽的融合中哭喊着救命……",
+        ],
         frameType: 3,
         x: 56,
         y: 0,
@@ -69,7 +73,7 @@ forbiddenJewelTestCase.items = [
 ];
 
 test("forbidden jewels translation", () => {
-    jsonTranslator.translateItems(forbiddenJewelTestCase);
+    jsonTranslator.transItems(forbiddenJewelTestCase);
     const item = forbiddenJewelTestCase.items[0];
     expect(item.properties[0].name).toEqual("Limited to");
     expect(item.requirements[0].name).toEqual("Class:");

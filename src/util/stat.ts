@@ -1,47 +1,23 @@
-import { escapeRegExp } from "./text.util.js";
+import { escapeRegExp } from "./text.js";
 
-export class StatUtil {
-    public static getBodyOfZhTemplate(template: string): string {
-        return this.getNonAsciiOrPer(template);
-    }
+export const LINE_SEPARATOR = "\n";
 
-    public static getBodyOfZhModifier(mod: string): string {
-        return this.getNonAsciiOrPer(mod);
-    }
-
-    private static getNonAsciiOrPer(str: string): string {
-        return str.replace(/[\u{0000}-\u{0024}\u{0026}-\u{007F}]/gu, "");
-    }
-
-    public static render(
-        enTemplate: string,
-        zhTemplate: string,
-        zhMod: string
-    ): string | undefined {
-        if (zhMod === zhTemplate) {
-            return enTemplate;
-        }
-
-        const enTmpl = new Template(enTemplate);
-        const zhTmpl = new Template(zhTemplate);
-
-        const params = zhTmpl.parseParams(zhMod);
-        if (params === undefined) {
-            return undefined;
-        }
-        return enTmpl.render(params);
-    }
+/**
+ * 返回文本（stat,mod）的骨架，以用于索引。
+ */
+export function getTextBody(text: string): string {
+    return text.replace(/[{}\d.+-]/gu, "");
 }
 
 /**
  *
- * The template that can be parsed to segments and parameter numbers.
+ * 模板，可以将 stat 解析为段和位置参数占位符。
  *
- * Simple:
+ * 例如:
  * "Chain Hook has a {0}% chance to grant +1 Rage if it Hits Enemies"
  *
- *   segments: ["Chain Hook has a ", "% chance to grant +1 Rage if it Hits Enemies"]
- *   parameter numbers: [0]
+ *   段: ["Chain Hook has a ", "% chance to grant +1 Rage if it Hits Enemies"]
+ *   位置参数占位符: [0]
  */
 export class Template {
     text: string;
@@ -66,7 +42,9 @@ export class Template {
                 // "}"
                 if (onParam) {
                     this.segments.push(text.slice(j, k));
-                    this.paramNumbers.push(Number.parseInt(text.slice(k + 1, i + 1)));
+                    this.paramNumbers.push(
+                        Number.parseInt(text.slice(k + 1, i)),
+                    );
                     j = i + 1;
                     onParam = false;
                 }
@@ -83,13 +61,13 @@ export class Template {
     }
 
     /**
-     * parseParams parses the modifier and returns positional parameters.
-     * @param modifier rendered template result with params
-     * @returns map contains positions and parameters ; undefined if the modifier does not match the template.
+     * parseParams 解析 mod 并返回位置参数与实际参数的映射。
+     * @param mod 词缀
+     * @returns 位置参数到实际参数的映射表，如果词缀不匹配当前模板，返回 undefined。
      */
-    public parseParams(modifier: string): Map<number, string> | undefined {
+    public parseParams(mod: string): Map<number, string> | undefined {
         const regStr = `^${this.segments.map((s) => escapeRegExp(s)).join("(\\S+)")}$`;
-        const execResult = new RegExp(regStr).exec(modifier);
+        const execResult = new RegExp(regStr).exec(mod);
 
         if (!execResult) {
             return undefined;
@@ -106,11 +84,13 @@ export class Template {
     }
 
     /**
-     * Render template by positional params.
-     * @param params positional parameters
+     * 使用实际参数渲染模板。
+     * @param params 位置参数到实际参数的映射表。
      */
     public render(params: Map<number, string>): string {
-        const buf = new Array<string>(this.segments.length + this.paramNumbers.length);
+        const buf = new Array<string>(
+            this.segments.length + this.paramNumbers.length,
+        );
         let j = 0;
         for (let i = 0; i < this.paramNumbers.length; i++) {
             buf[j++] = this.segments[i];

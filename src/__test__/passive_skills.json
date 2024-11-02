@@ -1,0 +1,756 @@
+{
+  "character": 4,
+  "ascendancy": 1,
+  "alternate_ascendancy": 0,
+  "hashes": [
+    1159, 1205, 1325, 1568, 1698, 2092, 2491, 3184, 3319, 4707, 5237, 5632,
+    6108, 6363, 6580, 7263, 8544, 9171, 9469, 10143, 12236, 12412, 12720, 12878,
+    14292, 15021, 15286, 15437, 16079, 16213, 16306, 16544, 17566, 18009, 18103,
+    18302, 18901, 19069, 19711, 20010, 20807, 21324, 21435, 22266, 23066, 23449,
+    23471, 23951, 24083, 24914, 25446, 25933, 26528, 27119, 29797, 29856, 29937,
+    30679, 31291, 31471, 32555, 33582, 34009, 34191, 34400, 34678, 35053, 36704,
+    36761, 37647, 38664, 39530, 39725, 40132, 42104, 42293, 43413, 44207, 45696,
+    46882, 48438, 48614, 48807, 49343, 49538, 49621, 49806, 50679, 50845, 51404,
+    51583, 52213, 54127, 54354, 55420, 56460, 56509, 56807, 57080, 57199, 57449,
+    57839, 58271, 58302, 58854, 58921, 59151, 59220, 60529, 60735, 61050, 61262,
+    61327, 62319, 62817, 63649, 64024, 64769, 65502
+  ],
+  "hashes_ex": [40, 42, 43, 44, 46, 48, 50, 118, 120, 122, 126, 128],
+  "mastery_effects": {
+    "4707": 40307,
+    "31291": 50922,
+    "1205": 64264,
+    "58302": 9755,
+    "25446": 62252,
+    "21324": 4500,
+    "51583": 2987
+  },
+  "skill_overrides": {
+    "27656": {
+      "name": "塔赫亚萨满的文身",
+      "icon": "Art/2DArt/SkillIcons/passives/LifeRecoupNode.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/TawhoaTribePassiveBG.png",
+      "isTattoo": true,
+      "stats": ["击中时有 5% 的几率使目标中毒"],
+      "reminderText": [
+        "( 中毒造成持续混沌伤害, 伤害取决于技能初始的物理和混沌伤害。中毒效果可以叠加 )"
+      ]
+    },
+    "34400": {
+      "name": "图克哈玛战士的文身",
+      "icon": "Art/2DArt/SkillIcons/passives/FortifyNode.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/TukohamaTribePassiveBG.png",
+      "isTattoo": true,
+      "stats": ["带眩晕效果的近战击中有 5% 的几率提供护体状态"],
+      "reminderText": [
+        "（护体可以按照击中伤害提供一定数量的护体值）",
+        "（受到的击中伤害按照每层护体效果总降1%。最多20层护体。护身持续6秒）"
+      ]
+    },
+    "24914": {
+      "name": "图克哈玛战士的文身",
+      "icon": "Art/2DArt/SkillIcons/passives/FortifyNode.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/TukohamaTribePassiveBG.png",
+      "isTattoo": true,
+      "stats": ["带眩晕效果的近战击中有 5% 的几率提供护体状态"],
+      "reminderText": [
+        "（护体可以按照击中伤害提供一定数量的护体值）",
+        "（受到的击中伤害按照每层护体效果总降1%。最多20层护体。护身持续6秒）"
+      ]
+    },
+    "61262": {
+      "name": "图克哈玛战士的文身",
+      "icon": "Art/2DArt/SkillIcons/passives/FortifyNode.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/TukohamaTribePassiveBG.png",
+      "isTattoo": true,
+      "stats": ["带眩晕效果的近战击中有 5% 的几率提供护体状态"],
+      "reminderText": [
+        "（护体可以按照击中伤害提供一定数量的护体值）",
+        "（受到的击中伤害按照每层护体效果总降1%。最多20层护体。护身持续6秒）"
+      ]
+    },
+    "24083": {
+      "name": "图克哈玛战士的文身",
+      "icon": "Art/2DArt/SkillIcons/passives/FortifyNode.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/TukohamaTribePassiveBG.png",
+      "isTattoo": true,
+      "stats": ["带眩晕效果的近战击中有 5% 的几率提供护体状态"],
+      "reminderText": [
+        "（护体可以按照击中伤害提供一定数量的护体值）",
+        "（受到的击中伤害按照每层护体效果总降1%。最多20层护体。护身持续6秒）"
+      ]
+    },
+    "5237": {
+      "name": "雷默科弓手的文身",
+      "icon": "Art/2DArt/SkillIcons/passives/accuracy.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/RamakoTribePassiveBG.png",
+      "isTattoo": true,
+      "stats": ["命中值提高 5%"]
+    },
+    "30679": {
+      "name": "雷默科弓手的文身",
+      "icon": "Art/2DArt/SkillIcons/passives/accuracy.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/RamakoTribePassiveBG.png",
+      "isTattoo": true,
+      "stats": ["命中值提高 5%"]
+    },
+    "22266": {
+      "name": "雷默科弓手的文身",
+      "icon": "Art/2DArt/SkillIcons/passives/accuracy.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/RamakoTribePassiveBG.png",
+      "isTattoo": true,
+      "stats": ["命中值提高 5%"]
+    },
+    "32555": {
+      "name": "雷默科弓手的文身",
+      "icon": "Art/2DArt/SkillIcons/passives/accuracy.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/RamakoTribePassiveBG.png",
+      "isTattoo": true,
+      "stats": ["命中值提高 5%"]
+    },
+    "12412": {
+      "name": "雷默科弓手的文身",
+      "icon": "Art/2DArt/SkillIcons/passives/accuracy.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/RamakoTribePassiveBG.png",
+      "isTattoo": true,
+      "stats": ["命中值提高 5%"]
+    },
+    "20807": {
+      "name": "雷默科弓手的文身",
+      "icon": "Art/2DArt/SkillIcons/passives/accuracy.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/RamakoTribePassiveBG.png",
+      "isTattoo": true,
+      "stats": ["命中值提高 5%"]
+    },
+    "23471": {
+      "name": "雷默科弓手的文身",
+      "icon": "Art/2DArt/SkillIcons/passives/accuracy.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/RamakoTribePassiveBG.png",
+      "isTattoo": true,
+      "stats": ["命中值提高 5%"]
+    },
+    "20010": {
+      "name": "雷默科弓手的文身",
+      "icon": "Art/2DArt/SkillIcons/passives/accuracy.png",
+      "activeEffectImage": "Art/2DArt/UIImages/InGame/AncestralTrial/PassiveTreeTattoos/RamakoTribePassiveBG.png",
+      "isTattoo": true,
+      "stats": ["命中值提高 5%"]
+    }
+  },
+  "items": [
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0VsZGVySmV3ZWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/278c673716/ElderJewel.png",
+      "league": "S26赛季",
+      "id": "ffd318a434bfc0944875dc0c4a9172fe2aa25a7bad8063664de93e6d65b02b84",
+      "name": "守望之眼",
+      "typeLine": "三相珠宝",
+      "baseType": "三相珠宝",
+      "rarity": "Unique",
+      "ilvl": 86,
+      "identified": true,
+      "properties": [
+        {
+          "name": "仅限",
+          "values": [["1", 0]],
+          "displayMode": 0
+        }
+      ],
+      "explicitMods": [
+        "能量护盾上限提高 4%",
+        "生命上限提高 4%",
+        "魔力上限提高 6%",
+        "受到【精准】影响时，攻击速度加快 15%",
+        "在受精准影响时不会被致盲",
+        "受到【愤怒】影响时，+47% 暴击伤害加成"
+      ],
+      "descrText": "放置到一个天赋树的珠宝插槽中以产生效果。右键点击以移出插槽。",
+      "flavourText": [
+        "他们一个又一个地挺身而出，\r",
+        "与他们无从理解更无从对抗的怪物战斗，\r",
+        "然后前赴后继地成为怪物的一份子。"
+      ],
+      "frameType": 3,
+      "x": 4,
+      "y": 0,
+      "inventoryId": "PassiveJewels"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL2Jhc2ljc3RyIiwidyI6MSwiaCI6MSwic2NhbGUiOjEsImZyYWN0dXJlZCI6dHJ1ZX1d/11becdd5a3/basicstr.png",
+      "league": "S26赛季",
+      "id": "fca8e1c00571055d6b87414bbf2cde80a2d9b78896d0acbe6698fdb4bbacf065",
+      "fractured": true,
+      "name": "符纹流银",
+      "typeLine": "赤红珠宝",
+      "baseType": "赤红珠宝",
+      "rarity": "Rare",
+      "ilvl": 83,
+      "identified": true,
+      "explicitMods": [
+        "攻击速度加快 5%",
+        "近战单手武器攻击 +18% 暴击伤害加成",
+        "+14% 近战攻击暴击伤害加成"
+      ],
+      "fracturedMods": ["生命上限提高 7%"],
+      "descrText": "放置到一个天赋树的珠宝插槽中以产生效果。右键点击以移出插槽。",
+      "frameType": 2,
+      "x": 41,
+      "y": 0,
+      "inventoryId": "PassiveJewels"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL05ld0dlbUJhc2UzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/db35e60885/NewGemBase3.png",
+      "league": "S26赛季",
+      "id": "ae5e63f300765272e1a27781194f9e8f535d87fa810efbcbd61991c97889f506",
+      "name": "灾变 之器",
+      "typeLine": "大型星团珠宝",
+      "baseType": "大型星团珠宝",
+      "rarity": "Rare",
+      "ilvl": 83,
+      "identified": true,
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["54", 0]],
+          "displayMode": 0,
+          "type": 62
+        }
+      ],
+      "enchantMods": [
+        "增加 8 个天赋技能",
+        "其中 2 个增加的天赋为【珠宝槽】",
+        "增加的小天赋获得：持盾牌时造成的攻击伤害提高 12%"
+      ],
+      "explicitMods": [
+        "增加的小天赋还获得：+4% 混沌抗性",
+        "其中 1 个增加的天赋为【怒火盛宴】",
+        "其中 1 个增加的天赋为【武艺精湛】",
+        "其中 1 个增加的天赋为【恢宏壁垒】"
+      ],
+      "descrText": "放入天赋树上配置好的大型珠宝槽。增加的天赋跟珠宝范围无关。可以右键点击从插槽中移除。",
+      "frameType": 2,
+      "x": 12,
+      "y": 0,
+      "inventoryId": "PassiveJewels"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0thcnVpQ2l2aWxpemF0aW9uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/04aefd20e6/KaruiCivilization.png",
+      "league": "S26赛季",
+      "id": "38ceee1c0ac1ccf1364cff5f86753b93ff06c7de9d97bbfd2a14dadd7c70c5d4",
+      "name": "致命的骄傲",
+      "typeLine": "永恒珠宝",
+      "baseType": "永恒珠宝",
+      "rarity": "Unique",
+      "ilvl": 84,
+      "identified": true,
+      "properties": [
+        {
+          "name": "仅限",
+          "values": [["1 史实", 0]],
+          "displayMode": 0
+        },
+        {
+          "name": "范围",
+          "values": [["大", 0]],
+          "displayMode": 0,
+          "type": 26
+        }
+      ],
+      "explicitMods": [
+        "获得冈姆麾下 12111 名武士的领导权\n范围内的天赋被卡鲁抑制",
+        "史实"
+      ],
+      "descrText": "放置到一个天赋树的珠宝插槽中以产生效果。右键点击以移出插槽。",
+      "flavourText": ["他们坚信自己是最伟大的武士，可他们却反受野蛮之害。"],
+      "frameType": 3,
+      "x": 16,
+      "y": 0,
+      "inventoryId": "PassiveJewels"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1B1enpsZVBpZWNlSmV3ZWxfR3JlYXRUYW5nbGUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/9035b9ffd4/PuzzlePieceJewel_GreatTangle.png",
+      "league": "S26赛季",
+      "id": "35d36145946c877ce32ad6888480e1bfe8a1efe7416d3420c1e5b1b2fd3ac9b5",
+      "name": "禁断之肉",
+      "typeLine": "钴蓝珠宝",
+      "baseType": "钴蓝珠宝",
+      "rarity": "Unique",
+      "ilvl": 86,
+      "identified": true,
+      "corrupted": true,
+      "properties": [
+        {
+          "name": "仅限",
+          "values": [["1", 0]],
+          "displayMode": 0
+        }
+      ],
+      "requirements": [
+        {
+          "name": "职业：",
+          "values": [["决斗者", 0]],
+          "displayMode": 0,
+          "type": 57
+        }
+      ],
+      "explicitMods": ["禁断之火上有匹配的词缀则配置 天眷英豪"],
+      "descrText": "放置到一个天赋树的珠宝插槽中以产生效果。右键点击以移出插槽。",
+      "flavourText": [
+        "被纠缠之主包裹的肉体们\r",
+        "在永无止尽的融合中哭喊着救命……"
+      ],
+      "frameType": 3,
+      "x": 29,
+      "y": 0,
+      "inventoryId": "PassiveJewels"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL05ld0dlbUJhc2UzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/db35e60885/NewGemBase3.png",
+      "league": "S26赛季",
+      "id": "eddfd7cffc4f2bba724a887b253c29668709f0abe48eb6ad56369c2c818a4859",
+      "name": "暮色 夜星",
+      "typeLine": "大型星团珠宝",
+      "baseType": "大型星团珠宝",
+      "rarity": "Rare",
+      "ilvl": 83,
+      "identified": true,
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["54", 0]],
+          "displayMode": 0,
+          "type": 62
+        }
+      ],
+      "enchantMods": [
+        "增加 8 个天赋技能",
+        "其中 2 个增加的天赋为【珠宝槽】",
+        "增加的小天赋获得：持盾牌时造成的攻击伤害提高 12%"
+      ],
+      "explicitMods": [
+        "增加的小天赋还获得：攻击速度加快 2%",
+        "其中 1 个增加的天赋为【怒火盛宴】",
+        "其中 1 个增加的天赋为【武艺精湛】",
+        "其中 1 个增加的天赋为【恢宏壁垒】"
+      ],
+      "descrText": "放入天赋树上配置好的大型珠宝槽。增加的天赋跟珠宝范围无关。可以右键点击从插槽中移除。",
+      "frameType": 2,
+      "x": 15,
+      "y": 0,
+      "inventoryId": "PassiveJewels"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1B1enpsZVBpZWNlSmV3ZWxfQ2xlYW5zaW5nRmlyZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/ddfe57ac90/PuzzlePieceJewel_CleansingFire.png",
+      "league": "S26赛季",
+      "id": "1910fc085c132613aea27327ea11b2953085190bbca092926c7979f13c880ce7",
+      "name": "禁断之火",
+      "typeLine": "赤红珠宝",
+      "baseType": "赤红珠宝",
+      "rarity": "Unique",
+      "ilvl": 86,
+      "identified": true,
+      "corrupted": true,
+      "properties": [
+        {
+          "name": "仅限",
+          "values": [["1", 0]],
+          "displayMode": 0
+        }
+      ],
+      "requirements": [
+        {
+          "name": "职业：",
+          "values": [["决斗者", 0]],
+          "displayMode": 0,
+          "type": 57
+        }
+      ],
+      "explicitMods": ["禁断之肉上有匹配的词缀则配置 天眷英豪"],
+      "descrText": "放置到一个天赋树的珠宝插槽中以产生效果。右键点击以移出插槽。",
+      "flavourText": ["被洁净之火彻底看透的人\r", "还在继续做梦，祈求平安……"],
+      "frameType": 3,
+      "x": 27,
+      "y": 0,
+      "inventoryId": "PassiveJewels"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL2Jhc2ljZGV4IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/9ed22a2b94/basicdex.png",
+      "league": "S26赛季",
+      "id": "7a8bd4d5bab7c42d8c4e959fd02d22e8c24e8e2e023094f4dc8ef123b3a8d991",
+      "name": "魔暴 刀锋",
+      "typeLine": "翠绿珠宝",
+      "baseType": "翠绿珠宝",
+      "rarity": "Rare",
+      "ilvl": 80,
+      "identified": true,
+      "corrupted": true,
+      "implicitMods": ["【腐化之血】无法施加于你"],
+      "explicitMods": [
+        "剑类攻击的攻击速度加快 6%",
+        "命中值提高 13%",
+        "近战单手武器攻击 +17% 暴击伤害加成",
+        "+12% 闪电抗性"
+      ],
+      "descrText": "放置到一个天赋树的珠宝插槽中以产生效果。右键点击以移出插槽。",
+      "frameType": 2,
+      "x": 39,
+      "y": 0,
+      "inventoryId": "PassiveJewels"
+    }
+  ],
+  "jewel_data": {
+    "4": {
+      "type": "JewelPrismatic"
+    },
+    "41": {
+      "type": "JewelStr"
+    },
+    "12": {
+      "type": "JewelPassiveTreeExpansionLarge",
+      "subgraph": {
+        "groups": {
+          "expansion_12": {
+            "proxy": "25134",
+            "nodes": ["1039", "40", "42", "43", "44", "45", "46", "48", "50"],
+            "x": 4715,
+            "y": 8517.45,
+            "orbits": [3]
+          }
+        },
+        "nodes": {
+          "1039": {
+            "skill": "25429",
+            "name": "持盾攻击伤害专精",
+            "icon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupShield.png",
+            "isMastery": true,
+            "stats": [],
+            "group": "expansion_12",
+            "orbit": 0,
+            "orbitIndex": 0,
+            "out": [],
+            "in": []
+          },
+          "40": {
+            "skill": "44237",
+            "name": "恢宏壁垒",
+            "icon": "Art/2DArt/SkillIcons/passives/BlockAttackDmgNotable.png",
+            "isNotable": true,
+            "stats": [
+              "4% 法术伤害格挡几率",
+              "持盾牌时造成的攻击伤害提高 30%",
+              "+4% 攻击伤害格挡几率"
+            ],
+            "group": "expansion_12",
+            "orbit": 3,
+            "orbitIndex": 1,
+            "out": ["42"],
+            "in": ["50"]
+          },
+          "42": {
+            "skill": "22994",
+            "name": "中型珠宝槽",
+            "icon": "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
+            "isJewelSocket": true,
+            "expansionJewel": {
+              "size": 1,
+              "index": 0,
+              "proxy": "51233",
+              "parent": "46882"
+            },
+            "stats": [],
+            "group": "expansion_12",
+            "orbit": 3,
+            "orbitIndex": 4,
+            "out": ["43"],
+            "in": ["40"]
+          },
+          "43": {
+            "skill": "14303",
+            "name": "持盾攻击伤害",
+            "icon": "Art/2DArt/SkillIcons/passives/NodeHoldingShieldDamage.png",
+            "stats": ["持盾牌时造成的攻击伤害提高 12%", "+4% 混沌抗性"],
+            "group": "expansion_12",
+            "orbit": 3,
+            "orbitIndex": 5,
+            "out": ["44"],
+            "in": ["42"]
+          },
+          "44": {
+            "skill": "37",
+            "name": "武艺精湛",
+            "icon": "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNotable.png",
+            "isNotable": true,
+            "stats": [
+              "攻击伤害提高 20%",
+              "攻击速度加快 6%",
+              "命中值提高 15%",
+              "攻击技能的异常状态伤害提高 20%"
+            ],
+            "reminderText": ["(伤害类异常状态包括流血、点燃和中毒)"],
+            "group": "expansion_12",
+            "orbit": 3,
+            "orbitIndex": 7,
+            "out": ["45"],
+            "in": ["43"]
+          },
+          "45": {
+            "skill": "14303",
+            "name": "持盾攻击伤害",
+            "icon": "Art/2DArt/SkillIcons/passives/NodeHoldingShieldDamage.png",
+            "stats": ["持盾牌时造成的攻击伤害提高 12%", "+4% 混沌抗性"],
+            "group": "expansion_12",
+            "orbit": 3,
+            "orbitIndex": 8,
+            "out": ["46"],
+            "in": ["44"]
+          },
+          "46": {
+            "skill": "46393",
+            "name": "中型珠宝槽",
+            "icon": "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
+            "isJewelSocket": true,
+            "expansionJewel": {
+              "size": 1,
+              "index": 2,
+              "proxy": "35853",
+              "parent": "46882"
+            },
+            "stats": [],
+            "group": "expansion_12",
+            "orbit": 3,
+            "orbitIndex": 9,
+            "out": ["48"],
+            "in": ["45"]
+          },
+          "48": {
+            "skill": "26197",
+            "name": "怒火盛宴",
+            "icon": "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNotable.png",
+            "isNotable": true,
+            "stats": [
+              "攻击伤害的 0.4% 转化为生命偷取",
+              "偷取时伤害提高 30%",
+              "生命偷取时攻击速度加快 15%"
+            ],
+            "reminderText": [
+              "(吸取的生命会随时间逐渐回复。多个吸取效果可以同时发生, 但有一个上限)"
+            ],
+            "group": "expansion_12",
+            "orbit": 3,
+            "orbitIndex": 12,
+            "out": ["50"],
+            "in": ["46"]
+          },
+          "50": {
+            "skill": "14303",
+            "name": "持盾攻击伤害",
+            "icon": "Art/2DArt/SkillIcons/passives/NodeHoldingShieldDamage.png",
+            "stats": ["持盾牌时造成的攻击伤害提高 12%", "+4% 混沌抗性"],
+            "group": "expansion_12",
+            "orbit": 3,
+            "orbitIndex": 15,
+            "out": ["40", "48"],
+            "in": ["46882"]
+          }
+        }
+      }
+    },
+    "16": {
+      "type": "JewelTimeless",
+      "radius": 1800,
+      "radiusVisual": "Karui"
+    },
+    "29": {
+      "type": "JewelInt"
+    },
+    "15": {
+      "type": "JewelPassiveTreeExpansionLarge",
+      "subgraph": {
+        "groups": {
+          "expansion_15": {
+            "proxy": "28650",
+            "nodes": [
+              "1117",
+              "118",
+              "120",
+              "122",
+              "123",
+              "124",
+              "125",
+              "126",
+              "128"
+            ],
+            "x": -4938.1,
+            "y": 8386.24,
+            "orbits": [3]
+          }
+        },
+        "nodes": {
+          "1117": {
+            "skill": "25429",
+            "name": "持盾攻击伤害专精",
+            "icon": "Art/2DArt/SkillIcons/passives/AltMasteryGroupShield.png",
+            "isMastery": true,
+            "stats": [],
+            "group": "expansion_15",
+            "orbit": 0,
+            "orbitIndex": 0,
+            "out": [],
+            "in": []
+          },
+          "118": {
+            "skill": "14303",
+            "name": "持盾攻击伤害",
+            "icon": "Art/2DArt/SkillIcons/passives/NodeHoldingShieldDamage.png",
+            "stats": ["持盾牌时造成的攻击伤害提高 12%", "攻击速度加快 2%"],
+            "group": "expansion_15",
+            "orbit": 3,
+            "orbitIndex": 1,
+            "out": ["120", "128"],
+            "in": ["2491"]
+          },
+          "120": {
+            "skill": "44237",
+            "name": "恢宏壁垒",
+            "icon": "Art/2DArt/SkillIcons/passives/BlockAttackDmgNotable.png",
+            "isNotable": true,
+            "stats": [
+              "4% 法术伤害格挡几率",
+              "持盾牌时造成的攻击伤害提高 30%",
+              "+4% 攻击伤害格挡几率"
+            ],
+            "group": "expansion_15",
+            "orbit": 3,
+            "orbitIndex": 4,
+            "out": ["122"],
+            "in": ["118"]
+          },
+          "122": {
+            "skill": "10532",
+            "name": "中型珠宝槽",
+            "icon": "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
+            "isJewelSocket": true,
+            "expansionJewel": {
+              "size": 1,
+              "index": 0,
+              "proxy": "37898",
+              "parent": "2491"
+            },
+            "stats": [],
+            "group": "expansion_15",
+            "orbit": 3,
+            "orbitIndex": 7,
+            "out": ["123"],
+            "in": ["120"]
+          },
+          "123": {
+            "skill": "14303",
+            "name": "持盾攻击伤害",
+            "icon": "Art/2DArt/SkillIcons/passives/NodeHoldingShieldDamage.png",
+            "stats": ["持盾牌时造成的攻击伤害提高 12%", "攻击速度加快 2%"],
+            "group": "expansion_15",
+            "orbit": 3,
+            "orbitIndex": 8,
+            "out": ["124"],
+            "in": ["122"]
+          },
+          "124": {
+            "skill": "37",
+            "name": "武艺精湛",
+            "icon": "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNotable.png",
+            "isNotable": true,
+            "stats": [
+              "攻击伤害提高 20%",
+              "攻击速度加快 6%",
+              "命中值提高 15%",
+              "攻击技能的异常状态伤害提高 20%"
+            ],
+            "reminderText": ["(伤害类异常状态包括流血、点燃和中毒)"],
+            "group": "expansion_15",
+            "orbit": 3,
+            "orbitIndex": 9,
+            "out": ["125"],
+            "in": ["123"]
+          },
+          "125": {
+            "skill": "14303",
+            "name": "持盾攻击伤害",
+            "icon": "Art/2DArt/SkillIcons/passives/NodeHoldingShieldDamage.png",
+            "stats": ["持盾牌时造成的攻击伤害提高 12%", "攻击速度加快 2%"],
+            "group": "expansion_15",
+            "orbit": 3,
+            "orbitIndex": 11,
+            "out": ["126"],
+            "in": ["124"]
+          },
+          "126": {
+            "skill": "46519",
+            "name": "中型珠宝槽",
+            "icon": "Art/2DArt/SkillIcons/passives/MasteryBlank.png",
+            "isJewelSocket": true,
+            "expansionJewel": {
+              "size": 1,
+              "index": 2,
+              "proxy": "58355",
+              "parent": "2491"
+            },
+            "stats": [],
+            "group": "expansion_15",
+            "orbit": 3,
+            "orbitIndex": 12,
+            "out": ["128"],
+            "in": ["125"]
+          },
+          "128": {
+            "skill": "26197",
+            "name": "怒火盛宴",
+            "icon": "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNotable.png",
+            "isNotable": true,
+            "stats": [
+              "攻击伤害的 0.4% 转化为生命偷取",
+              "偷取时伤害提高 30%",
+              "生命偷取时攻击速度加快 15%"
+            ],
+            "reminderText": [
+              "(吸取的生命会随时间逐渐回复。多个吸取效果可以同时发生, 但有一个上限)"
+            ],
+            "group": "expansion_15",
+            "orbit": 3,
+            "orbitIndex": 15,
+            "out": ["118"],
+            "in": ["126"]
+          }
+        }
+      }
+    },
+    "27": {
+      "type": "JewelStr"
+    },
+    "39": {
+      "type": "JewelDex"
+    }
+  }
+}

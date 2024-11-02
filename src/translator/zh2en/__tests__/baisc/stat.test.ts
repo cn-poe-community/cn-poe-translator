@@ -1,8 +1,8 @@
-import { BasicTranslatorFactory } from "../../index.js";
+import { ZhToEn } from "../../../../index.js";
 import Assets from "cn-poe-export-db";
 
-const factory = new BasicTranslatorFactory(Assets);
-const statService = factory.getStatService();
+const factory = new ZhToEn.TranslatorFactory(Assets);
+const basic = factory.getBasicTranslator();
 
 const zhEldritchImplicitMods = [
     "有一个传奇怪物出现在你面前：法术附加 {0} - {1} 基础物理伤害",
@@ -17,7 +17,7 @@ test("eldritch implicit mods translations", () => {
     for (let i = 0; i < zhEldritchImplicitMods.length; i++) {
         const zh = zhEldritchImplicitMods[i];
         const en = enEldritchImplicitMods[i];
-        const val = statService.translateMod(zh);
+        const val = basic.transMod(zh);
         expect(val).toEqual(en);
     }
 });

@@ -1,8 +1,8 @@
-import { BasicTranslatorFactory } from "../../index.js";
+import { ZhToEn } from "../../../../index.js";
 import Assets from "cn-poe-export-db";
 
-const factory = new BasicTranslatorFactory(Assets);
-const passiveSkillService = factory.getPassiveSkillService();
+const factory = new ZhToEn.TranslatorFactory(Assets);
+const basic = factory.getBasicTranslator();
 
 test("ascendants translation", () => {
     const testcases = ["自然之怒"];
@@ -11,7 +11,7 @@ test("ascendants translation", () => {
     for (let i = 0; i < testcases.length; i++) {
         const testcase = testcases[i];
         const expected = expecteds[i];
-        const translation = passiveSkillService.translateAscendant(testcase);
+        const translation = basic.transAscendant(testcase);
         expect(translation).toEqual(expected);
     }
 });
