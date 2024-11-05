@@ -27,6 +27,7 @@ export class TranslatorFactory {
             assets.quivers,
             assets.shields,
             assets.flasks,
+            assets.tinctures,
             assets.jewels,
             assets.weapons,
             assets.tattoos,
