@@ -1,12 +1,12 @@
 import { ZhToEn } from "../../../index.js";
 import Assets from "cn-poe-export-db";
+import { Item } from "../../../type/json.js";
 
 const factory = new ZhToEn.TranslatorFactory(Assets);
 const jsonTranslator = factory.getJsonTranslator();
 
-const crucibleModsTestCase: any = {};
-crucibleModsTestCase.items = [
-    {
+test("crucible mod translation", () => {
+    const item: any = {
         name: "恐慌 影弦",
         typeLine: "脊弓",
         baseType: "脊弓",
@@ -19,18 +19,13 @@ crucibleModsTestCase.items = [
         ],
         frameType: 2,
         inventoryId: "Weapon",
-    },
-];
-
-test("crucible mod translation", () => {
-    jsonTranslator.transItems(crucibleModsTestCase);
-    const item = crucibleModsTestCase.items[0];
+    };
+    jsonTranslator.transItem(item);
     expect(item.crucibleMods[2]).toEqual("+1.2% to Critical Strike Chance");
 });
 
-const forbiddenJewelTestCase: any = {};
-forbiddenJewelTestCase.items = [
-    {
+test("forbidden jewels translation", () => {
+    const item: Item = {
         verified: false,
         w: 1,
         h: 1,
@@ -69,13 +64,9 @@ forbiddenJewelTestCase.items = [
         x: 56,
         y: 0,
         inventoryId: "PassiveJewels",
-    },
-];
-
-test("forbidden jewels translation", () => {
-    jsonTranslator.transItems(forbiddenJewelTestCase);
-    const item = forbiddenJewelTestCase.items[0];
-    expect(item.properties[0].name).toEqual("Limited to");
-    expect(item.requirements[0].name).toEqual("Class:");
-    expect(item.requirements[0].values[0][0]).toEqual("Witch");
+    } as any as Item;
+    jsonTranslator.transItem(item);
+    expect(item.properties![0].name).toEqual("Limited to");
+    expect(item.requirements![0]!.name).toEqual("Class:");
+    expect(item.requirements![0]!.values[0][0]).toEqual("Witch");
 });

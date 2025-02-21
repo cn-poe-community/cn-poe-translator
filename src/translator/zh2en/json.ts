@@ -83,6 +83,8 @@ export class JsonTranslator {
             }
         }
         items.items = translatedItems;
+
+        this.postHandleItems(items);
     }
 
     isPobItem(item: Item): boolean {
@@ -351,6 +353,16 @@ export class JsonTranslator {
         }
     }
 
+    postHandleItems(items: Items) {
+        // 费内亚赛季，国服的API返回的升华名称存在bug，返回的是旧升华名而非闪回升华名
+        // 这里采用临时的解决方案，将旧升华映射到闪回升华
+        if (items.character.league.includes("费西亚")) {
+            items.character.class = mapToPhreciaCharacterClass(
+                items.character.class,
+            );
+        }
+    }
+
     public transPassiveSkills(skils: PassiveSkills) {
         for (const item of skils.items) {
             this.transItem(item);
@@ -383,4 +395,74 @@ export class JsonTranslator {
             }
         }
     }
+}
+
+const CLASSES = [
+    {
+        name: "Scion",
+        ascendancyList: ["None", "Ascendant"],
+        phreciaAscendancyList: ["None", "Scavenger"],
+    },
+    {
+        name: "Marauder",
+        ascendancyList: ["None", "Juggernaut", "Berserker", "Chieftain"],
+        phreciaAscendancyList: [
+            "None",
+            "Ancestral Commander",
+            "Behemoth",
+            "Antiquarian",
+        ],
+    },
+    {
+        name: "Ranger",
+        ascendancyList: ["None", "Warden", "Deadeye", "Pathfinder"],
+        phreciaAscendancyList: [
+            "None",
+            "Wildspeaker",
+            "Whisperer",
+            "Daughter of Oshabi",
+        ],
+    },
+    {
+        name: "Witch",
+        ascendancyList: ["None", "Occultist", "Elementalist", "Necromancer"],
+        phreciaAscendancyList: ["None", "Harbinger", "Herald", "Bog Shaman"],
+    },
+    {
+        name: "Duelist",
+        ascendancyList: ["None", "Slayer", "Gladiator", "Champion"],
+        phreciaAscendancyList: ["None", "Aristocrat", "Gambler", "Paladin"],
+    },
+    {
+        name: "Templar",
+        ascendancyList: ["None", "Inquisitor", "Hierophant", "Guardian"],
+        phreciaAscendancyList: [
+            "None",
+            "Architect of Chaos",
+            "Puppeteer",
+            "Polytheist",
+        ],
+    },
+    {
+        name: "Shadow",
+        ascendancyList: ["None", "Assassin", "Trickster", "Saboteur"],
+        phreciaAscendancyList: [
+            "None",
+            "Servant of Arakaali",
+            "Blind Prophet",
+            "Surfcaster",
+        ],
+    },
+];
+
+function mapToPhreciaCharacterClass(characterClass: string): string {
+    for (const classData of CLASSES) {
+        const ascendancyList = classData.ascendancyList;
+        for (let j = 0; j < ascendancyList.length; j++) {
+            if (ascendancyList[j] === characterClass) {
+                return classData.phreciaAscendancyList[j];
+            }
+        }
+    }
+    return characterClass;
 }
