@@ -1,3 +1,5 @@
+import { expect, test } from 'vitest';
+
 import { ZhToEn } from "../../../index.js";
 import Assets from "cn-poe-export-db";
 import { Item } from "../../../type/json.js";
