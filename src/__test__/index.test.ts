@@ -1,8 +1,8 @@
 import { ZhToEn } from "../index.js";
 import Assets from "cn-poe-export-db";
 
-import items from "./items.json";
-import passiveSkills from "./passive_skills.json";
+import items from "./items.json" with {type: "json"};
+import passiveSkills from "./passive_skills.json" with {type: "json"};
 
 import { writeFileSync } from "node:fs";
 import { Items, PassiveSkills } from "../type/json.js";
