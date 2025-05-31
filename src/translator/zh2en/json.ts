@@ -1,4 +1,4 @@
-import { Item, Items, PassiveSkills, SkillOverride } from "../../type/json.js";
+import { ItemTypes, PassiveSkillTypes } from "pathofexile-api-types";
 import { BasicTranslator } from "./basic.js";
 
 const ZH_THIEF_TRINKET = "赏金猎人饰品";
@@ -18,7 +18,7 @@ export class JsonTranslator {
      *
      * 国服在本地化时，引入了许多错误，这些错误只能通过 hack 的方式进行解决。
      */
-    preHandleItem(item: Item) {
+    preHandleItem(item: ItemTypes.Item) {
         if (
             item.name &&
             (item.name === ZH_FORBIDDEN_FLAME ||
@@ -73,9 +73,9 @@ export class JsonTranslator {
      *
      * 本函数采用本地翻译，即修改原始对象。
      */
-    public transItems(items: Items) {
+    public transItems(items: ItemTypes.GetItemsResult) {
         const itemList = items.items;
-        const translatedItems: Item[] = [];
+        const translatedItems: ItemTypes.Item[] = [];
         for (const item of itemList) {
             if (this.isPobItem(item)) {
                 this.transItem(item);
@@ -87,7 +87,7 @@ export class JsonTranslator {
         this.postHandleItems(items);
     }
 
-    isPobItem(item: Item): boolean {
+    isPobItem(item: ItemTypes.Item): boolean {
         return !(
             item.inventoryId === "MainInventory" ||
             item.inventoryId === "ExpandedMainInventory" ||
@@ -100,7 +100,7 @@ export class JsonTranslator {
      *
      * 本函数采用本地翻译，即修改原始对象。
      */
-    transItem(item: Item) {
+    transItem(item: ItemTypes.Item) {
         this.preHandleItem(item);
 
         const name = item.name;
@@ -201,10 +201,10 @@ export class JsonTranslator {
 
         if (item.socketedItems) {
             for (const si of item.socketedItems) {
-                if (si.abyssJewel) {
+                if ((si as ItemTypes.AbyssJewel).abyssJewel) {
                     this.transItem(si);
                 } else {
-                    this.translateGem(si);
+                    this.translateGem(si as ItemTypes.Gem);
                 }
             }
         }
@@ -307,7 +307,7 @@ export class JsonTranslator {
         }
     }
 
-    translateGem(gem: Item) {
+    translateGem(gem: ItemTypes.Gem) {
         const baseType = gem.baseType;
         const typeLine = gem.typeLine;
         if (baseType) {
@@ -353,7 +353,7 @@ export class JsonTranslator {
         }
     }
 
-    postHandleItems(items: Items) {
+    postHandleItems(items: ItemTypes.GetItemsResult) {
         // 费内亚赛季，国服的API返回的升华名称存在bug，返回的是旧升华名而非闪回升华名
         // 这里采用临时的解决方案，将旧升华映射到闪回升华
         if (items.character.league.includes("费西亚")) {
@@ -363,12 +363,15 @@ export class JsonTranslator {
         }
     }
 
-    public transPassiveSkills(skils: PassiveSkills) {
+    public transPassiveSkills(skils: PassiveSkillTypes.GetPassiveSkillsResult) {
         for (const item of skils.items) {
             this.transItem(item);
         }
 
-        for (const [_, value] of Object.entries<SkillOverride>(
+        for (const [
+            _,
+            value,
+        ] of Object.entries<PassiveSkillTypes.SkillOverride>(
             skils.skill_overrides,
         )) {
             if (value.name) {

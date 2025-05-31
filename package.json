@@ -26,6 +26,7 @@
     "cn-poe-export-db": "^0.5.1",
     "eslint": "^9.27.0",
     "eslint-config-prettier": "^9.1.0",
+    "pathofexile-api-types": "^0.0.1",
     "prettier": "3.3.0",
     "rimraf": "^5.0.10",
     "rollup": "^3.29.5",

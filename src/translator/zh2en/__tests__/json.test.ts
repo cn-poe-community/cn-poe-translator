@@ -1,8 +1,8 @@
-import { expect, test } from 'vitest';
+import { expect, test } from "vitest";
 
 import { ZhToEn } from "../../../index.js";
 import Assets from "cn-poe-export-db";
-import { Item } from "../../../type/json.js";
+import { ItemTypes } from "pathofexile-api-types";
 
 const factory = new ZhToEn.TranslatorFactory(Assets);
 const jsonTranslator = factory.getJsonTranslator();
@@ -27,7 +27,7 @@ test("crucible mod translation", () => {
 });
 
 test("forbidden jewels translation", () => {
-    const item: Item = {
+    const item: ItemTypes.Item = {
         verified: false,
         w: 1,
         h: 1,
@@ -66,7 +66,7 @@ test("forbidden jewels translation", () => {
         x: 56,
         y: 0,
         inventoryId: "PassiveJewels",
-    } as any as Item;
+    } as unknown as ItemTypes.Item;
     jsonTranslator.transItem(item);
     expect(item.properties![0].name).toEqual("Limited to");
     expect(item.requirements![0]!.name).toEqual("Class:");
