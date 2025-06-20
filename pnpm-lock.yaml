@@ -24,8 +24,8 @@ importers:
         specifier: ^20.17.56
         version: 20.17.56
       cn-poe-export-db:
-        specifier: ^0.5.1
-        version: 0.5.1
+        specifier: ^0.6.0
+        version: 0.6.0
       eslint:
         specifier: ^9.27.0
         version: 9.27.0
@@ -600,8 +600,8 @@ packages:
     resolution: {integrity: sha512-OAlb+T7V4Op9OwdkjmguYRqncdlx5JiofwOAUkmTF+jNdHwzTaTs4sRAGpzLF3oOz5xAyDGrPgeIDFQmDOTiJw==}
     engines: {node: '>= 16'}
 
-  cn-poe-export-db@0.5.1:
-    resolution: {integrity: sha512-m9K1kEBne7dqIiBSKsh1V+qQiNI3LGltVfWQANa0ZqbW8QRPdATYmdPf7++ZbXaJGGx7NMCCo3V02HyZJl6U9g==}
+  cn-poe-export-db@0.6.0:
+    resolution: {integrity: sha512-OalluAua6excafo5EqwLXZ6aZYR9Kc6AvOvRrQXdApOq/AhMb5WZJBuLfHtp37UceBOlL1YhciZAZwfIWJwQDA==}
 
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -1710,7 +1710,7 @@ snapshots:
 
   check-error@2.1.1: {}
 
-  cn-poe-export-db@0.5.1: {}
+  cn-poe-export-db@0.6.0: {}
 
   color-convert@2.0.1:
     dependencies:
