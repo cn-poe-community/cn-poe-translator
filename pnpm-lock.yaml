@@ -33,8 +33,8 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0(eslint@9.27.0)
       pathofexile-api-types:
-        specifier: ^0.0.1
-        version: 0.0.1
+        specifier: ^0.0.2
+        version: 0.0.2
       prettier:
         specifier: 3.3.0
         version: 3.3.0
@@ -942,8 +942,8 @@ packages:
   pathe@2.0.3:
     resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
 
-  pathofexile-api-types@0.0.1:
-    resolution: {integrity: sha512-EylObRzCM1TNwm2HDYEczDqJxnAolsZFhJLwIb5w6Jygs+Bd3iIPDOuy6GbJ1AprGeNsO2mFZ8cfEQFJzUbk/w==}
+  pathofexile-api-types@0.0.2:
+    resolution: {integrity: sha512-n2m96qOKY1tVznv1R5PCl5WdDHpDk59Sb772lJkYS8xjly2b/vnjFE3efBkudsXBGaBEHWP1hqDS5acbHceAyA==}
 
   pathval@2.0.0:
     resolution: {integrity: sha512-vE7JKRyES09KiunauX7nd2Q9/L7lhok4smP9RZTDeD4MVs72Dp2qNFVz39Nz5a0FVEW0BJR6C0DYrq6unoziZA==}
@@ -2055,7 +2055,7 @@ snapshots:
 
   pathe@2.0.3: {}
 
-  pathofexile-api-types@0.0.1: {}
+  pathofexile-api-types@0.0.2: {}
 
   pathval@2.0.0: {}
 
