@@ -31,6 +31,7 @@ export class TranslatorFactory {
             assets.jewels,
             assets.weapons,
             assets.tattoos,
+            assets.grafts,
         ];
         const baseTypeProvider = new BaseTypeProvider(baseTypesList);
         const requirementProvider = new RequirementProvider(

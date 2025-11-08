@@ -33,6 +33,8 @@ const ZH_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENCE =
 const EN_PINNACLE_ATLAS_BOSS_IN_YOUR_PRESENCE =
     "While a Pinnacle Atlas Boss is in your Presence, ";
 
+const ZH_FOUL_BORN_PREFIX = "秽生";
+
 /**
  * BasicTranslator 提供了最基础、最底层的中文翻译为英文的功能，为更上层的 JSONTranslator 和 TextTranslator 提供支持。
  */
@@ -96,6 +98,10 @@ export class BasicTranslator {
         name: string,
         baseType: string,
     ): { name: string; baseType: string } | undefined {
+        if (name.startsWith(ZH_FOUL_BORN_PREFIX)) {
+            name = name.substring(ZH_FOUL_BORN_PREFIX.length);
+        }
+
         const baseTypes = this.baseTypeProvider.provideByZh(baseType);
         if (baseTypes === undefined) {
             return undefined;
@@ -150,6 +156,10 @@ export class BasicTranslator {
         typeLine: string,
         name?: string,
     ): BaseType | undefined {
+        if (name && name.startsWith(ZH_FOUL_BORN_PREFIX)) {
+            name = name.substring(ZH_FOUL_BORN_PREFIX.length);
+        }
+
         if (typeLine.startsWith(ZH_SUPERIOR_PREFIX)) {
             typeLine = typeLine.substring(ZH_SUPERIOR_PREFIX.length);
         }

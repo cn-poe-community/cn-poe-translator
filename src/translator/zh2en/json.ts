@@ -305,6 +305,18 @@ export class JsonTranslator {
                 }
             }
         }
+
+        if (item.mutatedMods) {
+            for (let i = 0; i < item.mutatedMods.length; i++) {
+                const mod = item.mutatedMods[i];
+                const result = this.basic.transMod(mod);
+                if (result) {
+                    item.mutatedMods[i] = result;
+                } else {
+                    console.log(`warning: should be translated: stat: ${mod}`);
+                }
+            }
+        }
     }
 
     translateGem(gem: ItemTypes.Gem) {

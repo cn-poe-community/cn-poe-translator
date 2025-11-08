@@ -24,8 +24,8 @@ importers:
         specifier: ^20.17.56
         version: 20.17.56
       cn-poe-export-db:
-        specifier: ^0.6.0
-        version: 0.6.0
+        specifier: ^0.8.2
+        version: 0.8.2
       eslint:
         specifier: ^9.27.0
         version: 9.27.0
@@ -33,8 +33,8 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0(eslint@9.27.0)
       pathofexile-api-types:
-        specifier: ^0.0.2
-        version: 0.0.2
+        specifier: ^0.0.3
+        version: 0.0.3
       prettier:
         specifier: 3.3.0
         version: 3.3.0
@@ -600,8 +600,8 @@ packages:
     resolution: {integrity: sha512-OAlb+T7V4Op9OwdkjmguYRqncdlx5JiofwOAUkmTF+jNdHwzTaTs4sRAGpzLF3oOz5xAyDGrPgeIDFQmDOTiJw==}
     engines: {node: '>= 16'}
 
-  cn-poe-export-db@0.6.0:
-    resolution: {integrity: sha512-OalluAua6excafo5EqwLXZ6aZYR9Kc6AvOvRrQXdApOq/AhMb5WZJBuLfHtp37UceBOlL1YhciZAZwfIWJwQDA==}
+  cn-poe-export-db@0.8.2:
+    resolution: {integrity: sha512-JMiJ7BQoscA9AWOJXSvq1DbgEBlZoNVaP+4lMoK0u+T9pbK5aD3u0vZS0Ja7mF9pubV3L1VDBpH/khtKib2aeA==}
 
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -942,8 +942,8 @@ packages:
   pathe@2.0.3:
     resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
 
-  pathofexile-api-types@0.0.2:
-    resolution: {integrity: sha512-n2m96qOKY1tVznv1R5PCl5WdDHpDk59Sb772lJkYS8xjly2b/vnjFE3efBkudsXBGaBEHWP1hqDS5acbHceAyA==}
+  pathofexile-api-types@0.0.3:
+    resolution: {integrity: sha512-1aR45wKU2yqDOMVYMfLHUYOBBD6ny+VKXSBIJQ/7+P3blvE7NUP8/+2lyXTzRNx7ZoObOURszugTlkwrgSEt2A==}
 
   pathval@2.0.0:
     resolution: {integrity: sha512-vE7JKRyES09KiunauX7nd2Q9/L7lhok4smP9RZTDeD4MVs72Dp2qNFVz39Nz5a0FVEW0BJR6C0DYrq6unoziZA==}
@@ -1710,7 +1710,7 @@ snapshots:
 
   check-error@2.1.1: {}
 
-  cn-poe-export-db@0.6.0: {}
+  cn-poe-export-db@0.8.2: {}
 
   color-convert@2.0.1:
     dependencies:
@@ -2055,7 +2055,7 @@ snapshots:
 
   pathe@2.0.3: {}
 
-  pathofexile-api-types@0.0.2: {}
+  pathofexile-api-types@0.0.3: {}
 
   pathval@2.0.0: {}
 

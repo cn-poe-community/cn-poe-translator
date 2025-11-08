@@ -3,63 +3,15 @@
     {
       "verified": false,
       "w": 1,
-      "h": 1,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9SaWd3YWxkc1RhbGlzbWFuIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/4936fcad86/RigwaldsTalisman.png",
-      "league": "S26赛季",
-      "id": "816b35c7986626630d14b4f9448e04f80b087f06a2571e5bb51e68ed63d575c9",
-      "name": "巨狼之眼",
-      "typeLine": "狼王魔符",
-      "baseType": "狼王魔符",
+      "h": 2,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3MvU2hhcGVyc0ZsYXNrIiwidyI6MSwiaCI6Miwic2NhbGUiOjEsImxldmVsIjoxLCJmaSI6dHJ1ZX1d/62bf1c1b8c/ShapersFlask.png",
+      "league": "S28赛季",
+      "id": "3b7102e466c90a86ebbd4fcb7abbb2fb0fc7d12d4478671bb856e3eefcb5a426",
+      "name": "逝日",
+      "typeLine": "红玉药剂",
+      "baseType": "红玉药剂",
       "rarity": "Unique",
       "ilvl": 86,
-      "identified": true,
-      "corrupted": true,
-      "properties": [
-        {
-          "name": "品质（生命和魔力词缀）",
-          "values": [["+19%", 1]],
-          "displayMode": 0,
-          "type": 6
-        }
-      ],
-      "requirements": [
-        {
-          "name": "等级",
-          "values": [["52", 0]],
-          "displayMode": 0,
-          "type": 62
-        }
-      ],
-      "talismanTier": 4,
-      "enchantMods": ["配置 亡灵谐曲"],
-      "implicitMods": [
-        "生命上限提高 28%",
-        "受到击中闪电伤害的 100% 转为火焰伤害"
-      ],
-      "explicitMods": ["基底词缀幅度变为双倍"],
-      "flavourText": [
-        "我只是一个为了更强大存在而活着的躯壳\r",
-        "它透过我行动着，透过我诉说着\r",
-        "并且透过我的手决定谁该活下来谁该死去\r",
-        "接着透过我彻底的改变整个世界"
-      ],
-      "frameType": 3,
-      "x": 0,
-      "y": 0,
-      "inventoryId": "Amulet"
-    },
-    {
-      "verified": false,
-      "w": 1,
-      "h": 2,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3MvcnVieSIsInciOjEsImgiOjIsInNjYWxlIjoxLCJsZXZlbCI6MSwiZnMiOnRydWV9XQ/e6ecc91189/ruby.png",
-      "league": "S26赛季",
-      "id": "fc74836dada9c8e5d87ffa98ae50917e37707f0da5590d59f6af9e80f7b3c670",
-      "name": "",
-      "typeLine": "启蒙师的鸮之红玉药剂",
-      "baseType": "红玉药剂",
-      "rarity": "Magic",
-      "ilvl": 84,
       "identified": true,
       "properties": [
         {
@@ -70,13 +22,13 @@
         },
         {
           "name": "持续 {0} 秒",
-          "values": [["6", 1]],
+          "values": [["5.60", 1]],
           "displayMode": 3
         },
         {
           "name": "每次使用会从 {1} 充能次数中消耗 {0} 次",
           "values": [
-            ["20", 0],
+            ["45", 1],
             ["50", 0]
           ],
           "displayMode": 3
@@ -90,45 +42,279 @@
       "requirements": [
         {
           "name": "等级",
-          "values": [["67", 0]],
+          "values": [["68", 0]],
           "displayMode": 0,
           "type": 62
         }
       ],
       "utilityMods": ["+5% 火焰抗性上限", "+40% 火焰抗性"],
-      "enchantMods": ["效果提高 70%", "生效期间不可充能"],
+      "enchantMods": ["充能全满时自动使用"],
       "explicitMods": [
-        "生效时间缩短 38%",
-        "效果提高 25%",
-        "生效期间，你受到的诅咒效果降低 65%"
+        "每次使用消耗的充能次数提高 126%",
+        "持续时间总降 42%",
+        "生效期间，效果区域扩大 19%",
+        "生效期间，技能发射 2 个额外投射物"
       ],
       "descrText": "点击右键以喝下药剂。只有装备于腰带上时才会充能。击败怪物时会回复充能次数。",
-      "frameType": 1,
-      "x": 1,
+      "flavourText": [
+        "任何事物都有尽头，\r",
+        "像蜡烛一样逐渐耗尽，\r",
+        "或像闪电般闪耀而短暂，\r",
+        "一切都取决于你·"
+      ],
+      "frameType": 3,
+      "x": 3,
+      "y": 0,
+      "inventoryId": "Flask"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 2,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQnJlYWNoTGVhZ3VlL0JyZWFjaEFybUdyYWZ0Q29sZCIsInciOjEsImgiOjIsInNjYWxlIjoxfV0/ae2f88f942/BreachArmGraftCold.png",
+      "league": "S28赛季",
+      "id": "462a0698a837816da4dc0e7ab86eda773ebbcd79bac06e33a7bc51021fa9cfea",
+      "sockets": [],
+      "name": "凋萎紧攥",
+      "typeLine": "狂啸的托沃之嫁接",
+      "baseType": "狂啸的托沃之嫁接",
+      "rarity": "Rare",
+      "ilvl": 85,
+      "identified": true,
+      "properties": [
+        {
+          "name": "品质",
+          "values": [["+6%", 1]],
+          "displayMode": 0,
+          "type": 6
+        },
+        {
+          "name": "嫁接之血：{0}/{1}",
+          "values": [
+            ["249", 0],
+            ["9807", 1]
+          ],
+          "displayMode": 3
+        }
+      ],
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["80", 0]],
+          "displayMode": 0,
+          "type": 62
+        }
+      ],
+      "implicitMods": ["投射物伤害提高 8%", "使用等级 30 的 白霜漫舞"],
+      "explicitMods": [
+        "投射物速度加快 24%",
+        "找到成长孕育之礼的几率提高 77%",
+        "此移植物使用的技能额外发射 3 个投射物",
+        "此移植物使用的技能投射物速度加快 11%"
+      ],
+      "descrText": "嫁接物品只能通过植入通货来修改。\r\n\r\n",
+      "frameType": 2,
+      "x": 0,
+      "y": 0,
+      "inventoryId": "BrequelGrafts2",
+      "socketedItems": [
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9CdXJuaW5nQXJyb3ciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/a254cbdcb2/BurningArrow.png",
+          "league": "S28赛季",
+          "name": "",
+          "typeLine": "爆裂冰锥",
+          "baseType": "白霜漫舞",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "等级",
+              "values": [["30", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "冷却时间",
+              "values": [["24.00 秒", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "施放时间",
+              "values": [["0.50 秒", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "暴击几率",
+              "values": [["18.00%", 0]],
+              "displayMode": 0
+            }
+          ],
+          "secDescrText": "当被命令时，此嫁接物会召来一道毁灭性的龙卷风，对其中的敌人持续造成冰霜伤害。当你在龙卷风激活期间用攻击造成暴击时，它会向四周发射一圈冰锥投射物。",
+          "explicitMods": [
+            "造成 37493 - 56239 冰霜伤害",
+            "每 0.25 秒造成一次伤害",
+            "基础持续时间为 12.00 秒",
+            "基础额外效果持续时间 3.00 秒",
+            "基础范围为 2 米",
+            "基础次级范围为 1.5 米",
+            "最多 1 道龙卷旋风"
+          ],
+          "descrText": "此技能将由你的移植物使用，无法被直接使用。",
+          "frameType": 13,
+          "hybrid": {
+            "baseTypeName": "白霜漫舞",
+            "properties": [
+              {
+                "name": "冷却时间",
+                "values": [["0.25 秒", 0]],
+                "displayMode": 0
+              },
+              {
+                "name": "施放时间",
+                "values": [["0.50 秒", 0]],
+                "displayMode": 0
+              },
+              {
+                "name": "暴击几率",
+                "values": [["18.00%", 0]],
+                "displayMode": 0
+              }
+            ],
+            "explicitMods": [
+              "造成 49991 - 74986 冰霜伤害",
+              "投射物贯穿所有目标",
+              "发射 7 个投射物",
+              "连锁弹射 +4 次",
+              "环状发射投射物",
+              "投射物击中地形产生连锁效果",
+              "连锁范围扩大 100%"
+            ],
+            "secDescrText": "发射一圈投射物，造成冰霜伤害。"
+          }
+        }
+      ]
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQW1ldGh5c3RSaW5nVW5pcXVlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/1ade97e0ac/AmethystRingUnique.png",
+      "league": "S28赛季",
+      "id": "ce596e84fdc5899061973a2f0d1214b3534bbb4eec7511287be64f8bdfd45979",
+      "name": "亡者呼唤",
+      "typeLine": "紫晶戒指",
+      "baseType": "紫晶戒指",
+      "rarity": "Unique",
+      "ilvl": 53,
+      "identified": true,
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["30", 0]],
+          "displayMode": 0,
+          "type": 62
+        }
+      ],
+      "implicitMods": ["+23% 混沌抗性"],
+      "explicitMods": [
+        "生命在击败敌人时恢复 4%",
+        "击败敌人时能获得肾上腺素，持续3秒"
+      ],
+      "flavourText": ["目睹生命的消逝，才能深刻体会存活的价值。"],
+      "frameType": 3,
+      "x": 0,
+      "y": 0,
+      "inventoryId": "Ring"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 2,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3MvQXR6aXJpc1Byb21pc2UiLCJ3IjoxLCJoIjoyLCJzY2FsZSI6MSwibGV2ZWwiOjEsImZpIjp0cnVlfV0/de92f31ada/AtzirisPromise.png",
+      "league": "S28赛季",
+      "id": "240dd99c5a87f8a6bcd1600a6dbc930b6a6f046f35b76e789cd6a73b23160535",
+      "name": "阿兹里的诺言",
+      "typeLine": "紫晶药剂",
+      "baseType": "紫晶药剂",
+      "rarity": "Unique",
+      "ilvl": 72,
+      "identified": true,
+      "properties": [
+        {
+          "name": "品质",
+          "values": [["+20%", 1]],
+          "displayMode": 0,
+          "type": 6
+        },
+        {
+          "name": "持续 {0} 秒",
+          "values": [["7.80", 1]],
+          "displayMode": 3
+        },
+        {
+          "name": "每次使用会从 {1} 充能次数中消耗 {0} 次",
+          "values": [
+            ["35", 0],
+            ["65", 0]
+          ],
+          "displayMode": 3
+        },
+        {
+          "name": "目前有 {0} 充能次数",
+          "values": [["65", 0]],
+          "displayMode": 3
+        }
+      ],
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["68", 0]],
+          "displayMode": 0,
+          "type": 62
+        }
+      ],
+      "utilityMods": ["+35% 混沌抗性"],
+      "enchantMods": ["充能全满时自动使用"],
+      "explicitMods": [
+        "生效期间获得额外混沌伤害，等于元素伤害的 8%",
+        "生效期间，2% 的混沌伤害转化为生命偷取",
+        "生效期间，获得额外混沌伤害，等于物理伤害的 7%"
+      ],
+      "descrText": "点击右键以喝下药剂。只有装备于腰带上时才会充能。击败怪物时会回复充能次数。",
+      "flavourText": [
+        "\"死亡不求你的理解，它只需要你的奉献。\" \r",
+        "- 瓦尔女王阿兹里"
+      ],
+      "frameType": 3,
+      "x": 2,
       "y": 0,
       "inventoryId": "Flask"
     },
     {
       "verified": false,
       "w": 2,
-      "h": 2,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9IYWxmVG9uZWRCb290cyIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/3bfd47b73a/HalfTonedBoots.png",
-      "league": "S26赛季",
-      "id": "89b03928fb5b193c32c26a68ebc27ea4d15c4c0fce17c691954c59ff58e224cf",
-      "influences": {
-        "elder": true
-      },
-      "elder": true,
+      "h": 3,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9PblNob2NrZWQiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/ce499f7b0b/OnShocked.png",
+      "league": "S28赛季",
+      "id": "307afc394db884e356780b79df6ff7209dd6b6a5a5eb333e782b792912719628",
       "sockets": [
+        {
+          "group": 0,
+          "attr": "S",
+          "sColour": "R"
+        },
+        {
+          "group": 0,
+          "attr": "S",
+          "sColour": "R"
+        },
         {
           "group": 0,
           "attr": "I",
           "sColour": "B"
-        },
-        {
-          "group": 0,
-          "attr": "G",
-          "sColour": "W"
         },
         {
           "group": 0,
@@ -137,15 +323,20 @@
         },
         {
           "group": 0,
-          "attr": "G",
-          "sColour": "W"
+          "attr": "D",
+          "sColour": "G"
+        },
+        {
+          "group": 0,
+          "attr": "I",
+          "sColour": "B"
         }
       ],
-      "name": "精魂 风唤",
-      "typeLine": "逃亡之靴",
-      "baseType": "逃亡之靴",
-      "rarity": "Rare",
-      "ilvl": 86,
+      "name": "速度之力",
+      "typeLine": "狂虐者束衣",
+      "baseType": "狂虐者束衣",
+      "rarity": "Unique",
+      "ilvl": 70,
       "identified": true,
       "properties": [
         {
@@ -156,13 +347,13 @@
         },
         {
           "name": "闪避值",
-          "values": [["148", 1]],
+          "values": [["542", 1]],
           "displayMode": 0,
           "type": 17
         },
         {
           "name": "能量护盾",
-          "values": [["42", 1]],
+          "values": [["118", 1]],
           "displayMode": 0,
           "type": 18
         }
@@ -172,7 +363,785 @@
           "name": "等级",
           "values": [["70", 0]],
           "displayMode": 0,
+          "type": 62,
+          "suffix": "(宝石)"
+        },
+        {
+          "name": "力量",
+          "values": [["111", 0]],
+          "displayMode": 1,
+          "type": 63,
+          "suffix": "(宝石)"
+        },
+        {
+          "name": "敏捷",
+          "values": [["111", 0]],
+          "displayMode": 1,
+          "type": 64,
+          "suffix": "(宝石)"
+        },
+        {
+          "name": "智慧",
+          "values": [["155", 0]],
+          "displayMode": 1,
+          "type": 65,
+          "suffix": "(宝石)"
+        }
+      ],
+      "explicitMods": [
+        "+65 最大生命",
+        "若你近期内感电任意敌人，则伤害提高 36%",
+        "感电效果提高 15%",
+        "感电的敌人被你击败时会爆炸，\n造成等同敌人生命 5% 的闪电伤害，该伤害无法造成感电",
+        "不受感电影响"
+      ],
+      "flavourText": ["不要犹豫，一瞬间的迟疑可能带给你的就是死亡·"],
+      "frameType": 3,
+      "x": 0,
+      "y": 0,
+      "inventoryId": "BodyArmour",
+      "socketedItems": [
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L1JlZHVjZWRNYW5hQ29zdCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/f9f7503054/ReducedManaCost.png",
+          "support": true,
+          "league": "S28赛季",
+          "id": "341e9e730e8c0800a80c30924cb303cbeb7be5373b790f5e4a3b079fdaad34e1",
+          "name": "",
+          "typeLine": "启迪（辅）",
+          "baseType": "启迪（辅）",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "暴击, 辅助",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "消耗及保留加成",
+              "values": [["120%", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "品质",
+              "values": [["+20%", 1]],
+              "displayMode": 0,
+              "type": 6
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "力量",
+              "values": [["70", 0]],
+              "displayMode": 1,
+              "type": 63
+            },
+            {
+              "name": "智慧",
+              "values": [["48", 0]],
+              "displayMode": 1,
+              "type": 65
+            }
+          ],
+          "secDescrText": "辅助任意技能。召唤生物、图腾、陷阱、地雷无法获得启迪球。",
+          "explicitMods": [
+            "被辅助技能的魔力消耗总降 39%",
+            "在为被辅助技能的预支花费和效果\n消耗魔力的情况下获得一个启迪球",
+            "在为被辅助技能的预支花费和效果消耗了总共 800 点魔力的情况下失去所有启迪球",
+            "每有 1 个启迪球，被辅助技能造成的元素伤害总增 5%",
+            "每有 1 个启迪球，被辅助技能的暴击率提高 8%"
+          ],
+          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 0,
+          "colour": "S"
+        },
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L1ZvbGF0aWxpdHkiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/89efd990e3/Volatility.png",
+          "support": true,
+          "league": "S28赛季",
+          "id": "2be98918d8f224c5ce7de51c724c359350d68b5f0038a76188bb55f56371cc0d",
+          "name": "",
+          "typeLine": "无常（辅）",
+          "baseType": "无常（辅）",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "攻击, 辅助",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "消耗及保留加成",
+              "values": [["130%", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "品质",
+              "values": [["+20%", 1]],
+              "displayMode": 0,
+              "type": 6
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "力量",
+              "values": [["111", 0]],
+              "displayMode": 1,
+              "type": 63
+            }
+          ],
+          "secDescrText": "辅助攻击技能。",
+          "explicitMods": [
+            "被辅助技能造成的攻击伤害上限总增 58%",
+            "被辅助技能造成的攻击伤害下限总降 69%",
+            "被辅助技能的伤害提高 10%"
+          ],
+          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 1,
+          "colour": "S"
+        },
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9DbHVzdGVyQnVyc3QiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/8c14610c8e/ClusterBurst.png",
+          "support": false,
+          "league": "S28赛季",
+          "id": "3d154e2bebea9879096356e110da11fe251a3b1c3233685044aa0906bc3f0081",
+          "name": "",
+          "typeLine": "力量爆破",
+          "baseType": "力量爆破",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "攻击, 投射物, 效果区域",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "消耗",
+              "values": [["9 点魔力", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "攻击速度",
+              "values": [["115% 基础", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "攻击伤害",
+              "values": [["155% 基础", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "伤害效用",
+              "values": [["155%", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "品质",
+              "values": [["+20%", 1]],
+              "displayMode": 0,
+              "type": 6
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "智慧",
+              "values": [["155", 0]],
+              "displayMode": 1,
+              "type": 65
+            }
+          ],
+          "secDescrText": "从法杖中射出一个投射物，接触到物体或敌人时在周围一定范围内产生一系列爆破，每次爆破都会对敌人造成伤害。",
+          "explicitMods": [
+            "【力量爆破】可以额外多爆破 5 次",
+            "对法术伤害的增幅与减益有 200% 也作用于该技能的攻击伤害",
+            "范围伤害总降 35%",
+            "基础爆炸范围为 1.4 米",
+            "基础次级范围为 2 米"
+          ],
+          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 2,
+          "colour": "I"
+        },
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0ZvcmsiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/9de72b6ab9/Fork.png",
+          "support": true,
+          "league": "S28赛季",
+          "id": "1b713ac9d1bf47abfe2ada88737246c171773937389859355f4ad3140e28cdab",
+          "name": "",
+          "typeLine": "分裂(辅)",
+          "baseType": "分裂(辅)",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "辅助, 投射物",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "消耗及保留加成",
+              "values": [["130%", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "品质",
+              "values": [["+20%", 1]],
+              "displayMode": 0,
+              "type": 6
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "敏捷",
+              "values": [["111", 0]],
+              "displayMode": 1,
+              "type": 64
+            }
+          ],
+          "secDescrText": "辅助投射物技能，使该技能的投射物在首次击中敌人时不再穿透并分叉成 2 个。",
+          "explicitMods": [
+            "被辅助技能的投射物会在击中后分叉",
+            "被辅助的投射物技能总增 9% 投射物伤害",
+            "被辅助技能的投射物伤害提高 10%"
+          ],
+          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 3,
+          "colour": "D"
+        },
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L1JldHVyblByb2plY3RpbGVzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/76e59b7e35/ReturnProjectiles.png",
+          "support": true,
+          "league": "S28赛季",
+          "id": "80ea866692f44191f7d31531d741e2dcf2c1af451ab031ac203cbd2ff450b111",
+          "name": "",
+          "typeLine": "投射物归返（辅）",
+          "baseType": "投射物归返（辅）",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "辅助, 投射物",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "消耗及保留加成",
+              "values": [["150%", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "品质",
+              "values": [["+20%", 1]],
+              "displayMode": 0,
+              "type": 6
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "敏捷",
+              "values": [["111", 0]],
+              "displayMode": 1,
+              "type": 64
+            }
+          ],
+          "secDescrText": "辅助投射物技能。",
+          "explicitMods": [
+            "被辅助技能的投射物返回你身边",
+            "被辅助技能的投射物返回时造成的击中和异常状态伤害总降 66%",
+            "被辅助技能的投射物返回时穿透所有目标",
+            "被辅助技能的投射物速度加快 10%"
+          ],
+          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 4,
+          "colour": "D"
+        },
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L1RyaW5pdHlTdXBwb3J0R2VtIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f547899752/TrinitySupportGem.png",
+          "support": true,
+          "league": "S28赛季",
+          "id": "cf961e0230f0b961ccdc8df39f98838ed2e645f895c35d6768d9f812df70e105",
+          "name": "",
+          "typeLine": "三位一体（辅）",
+          "baseType": "三位一体（辅）",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "辅助",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "消耗及保留加成",
+              "values": [["140%", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "品质",
+              "values": [["+20%", 1]],
+              "displayMode": 0,
+              "type": 6
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "敏捷",
+              "values": [["48", 0]],
+              "displayMode": 1,
+              "type": 64
+            },
+            {
+              "name": "智慧",
+              "values": [["70", 0]],
+              "displayMode": 1,
+              "type": 65
+            }
+          ],
+          "secDescrText": "辅助击中敌人的技能，使其在你具有所有三种元素共振时获得加成，击中时除了造成最高伤害的那一个之外，给予其它元素的共振效果。每种元素的共振效果最多 50 层。不能辅助触发技能、瞬发技能、法球技能、烙印技能、有保留效果的技能，或图腾、陷阱和地雷使用的技能。无法影响召唤生物的技能。",
+          "explicitMods": [
+            "被辅助技能击中时，造成最高伤害的元素类型会提供 25 点其它元素的共振效果，持续 2 秒\n每有一种没有获得共振效果的元素使你每秒失去 5 点共振",
+            "每 5 点最低的共振效果使被辅助技能造成的总元素伤害总增 3%",
+            "每种共振至少 25 点时，使被辅助技能穿透 16% 元素抗性",
+            "被辅助技能造成的元素伤害提高 10%"
+          ],
+          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 5,
+          "colour": "I"
+        }
+      ],
+      "incubatedItem": {
+        "name": "通货物品",
+        "level": 68,
+        "progress": 0,
+        "total": 4230
+      }
+    },
+    {
+      "verified": false,
+      "w": 2,
+      "h": 1,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvSGVhZGh1bnRlciIsInciOjIsImgiOjEsInNjYWxlIjoxfV0/e9542ec6ee/Headhunter.png",
+      "league": "S28赛季",
+      "id": "4e42ba09f4bc14685d75fc862bb232a2547c05ed6a7e5b4c7ffc0d7d92631b35",
+      "name": "猎首",
+      "typeLine": "皮革腰带",
+      "baseType": "皮革腰带",
+      "rarity": "Unique",
+      "ilvl": 76,
+      "identified": true,
+      "properties": [
+        {
+          "name": "品质（属性词缀）",
+          "values": [["+20%", 1]],
+          "displayMode": 0,
+          "type": 6
+        }
+      ],
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["40", 0]],
+          "displayMode": 0,
           "type": 62
+        }
+      ],
+      "implicitMods": ["+35 最大生命"],
+      "explicitMods": [
+        "+63 力量",
+        "+56 敏捷",
+        "+59 最大生命",
+        "击中伤害对稀有怪物提高 30%",
+        "当你击败稀有怪物时，会获得该怪物属性修正 60 秒"
+      ],
+      "flavourText": [
+        "\"骨骼是灵魂的居所，\r",
+        "血肉是精神和世界交流的窗口，推动一切的力量就在心窝。\r",
+        "即使有了这些，失去了头脑就没有自我。\"\r",
+        "- 冈姆军师拉维安加"
+      ],
+      "frameType": 3,
+      "x": 0,
+      "y": 0,
+      "inventoryId": "Belt"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 2,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3MvZ29sZCIsInciOjEsImgiOjIsInNjYWxlIjoxLCJsZXZlbCI6MSwiZmkiOnRydWV9XQ/63fbfd35d3/gold.png",
+      "league": "S28赛季",
+      "id": "453c6a167d03041d8409041c0be9e87c3a72bd7eda830a189fd204db06c9de77",
+      "name": "",
+      "typeLine": "专家的鸮鹦鹉之硫磺药剂",
+      "baseType": "硫磺药剂",
+      "rarity": "Magic",
+      "ilvl": 84,
+      "identified": true,
+      "properties": [
+        {
+          "name": "品质",
+          "values": [["+20%", 1]],
+          "displayMode": 0,
+          "type": 6
+        },
+        {
+          "name": "持续 {0} 秒",
+          "values": [["9.60", 1]],
+          "displayMode": 3
+        },
+        {
+          "name": "每次使用会从 {1} 充能次数中消耗 {0} 次",
+          "values": [
+            ["40", 0],
+            ["60", 0]
+          ],
+          "displayMode": 3
+        },
+        {
+          "name": "目前有 {0} 充能次数",
+          "values": [["60", 0]],
+          "displayMode": 3
+        }
+      ],
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["52", 0]],
+          "displayMode": 0,
+          "type": 62
+        }
+      ],
+      "utilityMods": ["伤害提高 40%"],
+      "enchantMods": ["若你没有任何药剂效果时击中稀有或传奇敌人，便自动使用"],
+      "implicitMods": ["使用时产生奉献地面"],
+      "explicitMods": [
+        "暴击时有 28% 的几率获得 1 充能",
+        "生效期间，你受到的诅咒效果降低 57%"
+      ],
+      "descrText": "点击右键以喝下药剂。只有装备于腰带上时才会充能。击败怪物时会回复充能次数。",
+      "frameType": 1,
+      "x": 0,
+      "y": 0,
+      "inventoryId": "Flask"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 2,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQnJlYWNoTGVhZ3VlL0JyZWFjaEFybUdyYWZ0UmVkTGlnaHRuaW5nIiwidyI6MSwiaCI6Miwic2NhbGUiOjF9XQ/4b82eb5dfb/BreachArmGraftRedLightning.png",
+      "league": "S28赛季",
+      "id": "54abe7b55bfba9e985c8531828a5bde724d812f6cee2d3abc44d57f52c57f1cf",
+      "sockets": [],
+      "name": "腐朽紧攥",
+      "typeLine": "震击的艾许之嫁接",
+      "baseType": "震击的艾许之嫁接",
+      "rarity": "Rare",
+      "ilvl": 85,
+      "identified": true,
+      "properties": [
+        {
+          "name": "品质",
+          "values": [["+5%", 1]],
+          "displayMode": 0,
+          "type": 6
+        },
+        {
+          "name": "嫁接之血：{0}/{1}",
+          "values": [
+            ["0", 0],
+            ["9714", 1]
+          ],
+          "displayMode": 3
+        }
+      ],
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["80", 0]],
+          "displayMode": 0,
+          "type": 62
+        }
+      ],
+      "implicitMods": ["全域暴击率提高 9%", "使用等级 30 的 血肉过载"],
+      "explicitMods": [
+        "召唤生物的伤害提高 37%",
+        "找到远古孕育之礼的几率提高 78%",
+        "此移植物赋予的颠簸效果使受到的伤害提高 +1%",
+        "此移植物赋予的颠簸效果使攻击伤害上限总增 +1%",
+        "此移植物赋予的颠簸效果暴击伤害加成 +2%"
+      ],
+      "descrText": "嫁接物品只能通过植入通货来修改。\r\n\r\n",
+      "frameType": 2,
+      "x": 0,
+      "y": 0,
+      "inventoryId": "BrequelGrafts",
+      "socketedItems": [
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9Bcm1hZ2VkZG9uQnJhbmQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/2949aac373/ArmageddonBrand.png",
+          "league": "S28赛季",
+          "name": "",
+          "typeLine": "血肉过载",
+          "baseType": "血肉过载",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "等级",
+              "values": [["30", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "冷却时间",
+              "values": [["0.30 秒", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "施放时间",
+              "values": [["0.20 秒", 0]],
+              "displayMode": 0
+            }
+          ],
+          "secDescrText": "对敌人造成暴击时，此嫁接物会为你施加一层震荡。震荡会以承受更多伤害为代价，提供更多攻击伤害上限，最多可叠加10层。",
+          "explicitMods": [
+            "基础持续时间为 14.00 秒",
+            "颠簸效果使受到的伤害提高 1%",
+            "颠簸效果使攻击伤害上限总增 2%"
+          ],
+          "descrText": "此技能将由你的移植物使用，无法被直接使用。",
+          "frameType": 13
+        }
+      ]
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 2,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3MvVmlhbG9mVW5saWZlIiwidyI6MSwiaCI6Miwic2NhbGUiOjEsImxldmVsIjoxLCJmaSI6dHJ1ZX1d/64bbacc4d4/VialofUnlife.png",
+      "league": "S28赛季",
+      "id": "c51fe29b47e2262d91445f02c9bfdbebceb0cb780daf50a760947798b133db7f",
+      "name": "灰烬之瓮",
+      "typeLine": "真银药剂",
+      "baseType": "真银药剂",
+      "rarity": "Unique",
+      "ilvl": 85,
+      "identified": true,
+      "properties": [
+        {
+          "name": "品质",
+          "values": [["+20%", 1]],
+          "displayMode": 0,
+          "type": 6
+        },
+        {
+          "name": "持续 {0} 秒",
+          "values": [["7.20", 1]],
+          "displayMode": 3
+        },
+        {
+          "name": "每次使用会从 {1} 充能次数中消耗 {0} 次",
+          "values": [
+            ["40", 0],
+            ["73", 1]
+          ],
+          "displayMode": 3
+        },
+        {
+          "name": "目前有 {0} 充能次数",
+          "values": [["73", 0]],
+          "displayMode": 3
+        }
+      ],
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["48", 0]],
+          "displayMode": 0,
+          "type": 62
+        }
+      ],
+      "utilityMods": ["猛攻"],
+      "enchantMods": ["充能全满时自动使用"],
+      "explicitMods": [
+        "最大充能 +13",
+        "你消耗一具点燃的灵柩可恢复 5 次充能",
+        "生效期间，你造成的点燃会扩散给 1.5 米内的其他敌人",
+        "生效期间，被你点燃的敌人受到的伤害提高 8%",
+        "生效期间，每击败一个敌人回复 3% 能量护盾"
+      ],
+      "descrText": "点击右键以喝下药剂。只有装备于腰带上时才会充能。击败怪物时会回复充能次数。",
+      "flavourText": ["为获新生，有时必须适当烧毁旧躯壳。"],
+      "frameType": 3,
+      "x": 4,
+      "y": 0,
+      "inventoryId": "Flask"
+    },
+    {
+      "verified": false,
+      "w": 2,
+      "h": 2,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0VzaHNNaXJyb3IiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MSwibXV0YXRlZCI6dHJ1ZX1d/a73116a924/EshsMirror.png",
+      "league": "S28赛季",
+      "id": "b3b268aa5ca80f78fb7b0aea1581963e1470fea220749d50d0631e003ffef872",
+      "mutated": true,
+      "sockets": [
+        {
+          "group": 0,
+          "attr": "S",
+          "sColour": "R"
+        },
+        {
+          "group": 1,
+          "attr": "S",
+          "sColour": "R"
+        },
+        {
+          "group": 1,
+          "attr": "D",
+          "sColour": "G"
+        }
+      ],
+      "name": "秽生艾许之镜",
+      "typeLine": "瓦尔魔盾",
+      "baseType": "瓦尔魔盾",
+      "rarity": "Unique",
+      "ilvl": 69,
+      "identified": true,
+      "properties": [
+        {
+          "name": "品质",
+          "values": [["+20%", 1]],
+          "displayMode": 0,
+          "type": 6
+        },
+        {
+          "name": "格挡几率",
+          "values": [["24%", 0]],
+          "displayMode": 0,
+          "type": 15
+        },
+        {
+          "name": "能量护盾",
+          "values": [["218", 1]],
+          "displayMode": 0,
+          "type": 18
+        }
+      ],
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["70", 0]],
+          "displayMode": 0,
+          "type": 62,
+          "suffix": "(宝石)"
+        },
+        {
+          "name": "力量",
+          "values": [["111", 0]],
+          "displayMode": 1,
+          "type": 63,
+          "suffix": "(宝石)"
         },
         {
           "name": "敏捷",
@@ -183,59 +1152,62 @@
         },
         {
           "name": "智慧",
-          "values": [["76", 0]],
+          "values": [["159", 0]],
           "displayMode": 1,
           "type": 65
         }
       ],
-      "implicitMods": ["+17% 混沌抗性"],
+      "implicitMods": ["法术伤害提高 10%"],
       "explicitMods": [
-        "+126 最大生命",
-        "所有召唤灵体技能石等级 +2",
-        "+48% 冰霜抗性",
-        "+35% 混沌抗性",
-        "移动速度加快 30%",
-        "击败敌人时有 15% 的几率获得 4 秒【猛攻】状态"
+        "+30 智慧",
+        "该装备的能量护盾提高 219%",
+        "你造成的感电会扩散给 1.5 米内的其他敌人",
+        "近期内你每击败 1 个感电敌人，则附加 1-10 基础闪电伤害"
       ],
-      "craftedMods": ["100% 几率避免被冰冻"],
-      "frameType": 2,
+      "mutatedMods": ["伤害无法被反射"],
+      "flavourText": [
+        "面对自己的倒影\r",
+        "她颤抖、摇曳，\r",
+        "直至眼中的她不再是自己。"
+      ],
+      "frameType": 3,
       "x": 0,
       "y": 0,
-      "inventoryId": "Boots",
+      "inventoryId": "Offhand",
       "socketedItems": [
         {
           "verified": false,
           "w": 1,
           "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9Db252b2NhdGlvbiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/d0dd1c36b9/Convocation.png",
+          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9IZXJhbGRvZkFzaCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/62d34497c8/HeraldofAsh.png",
           "support": false,
-          "league": "S26赛季",
-          "id": "9b2376c65c31b1cfc8f488f09e260c04e2b764f96dee6a4d3ae6487952fdbc5d",
+          "league": "S28赛季",
+          "id": "027e355b98270bb98d93e861e869f25721a445f879a77f3df8b7069cd0526cb9",
           "name": "",
-          "typeLine": "号召",
-          "baseType": "号召",
+          "typeLine": "灰烬之捷",
+          "baseType": "灰烬之捷",
           "ilvl": 0,
           "identified": true,
           "properties": [
             {
-              "name": "法术, 持续时间, 召唤生物",
+              "name": "法术, 效果区域, 火焰, 捷, 持续时间",
               "values": [],
               "displayMode": 0
             },
             {
               "name": "等级",
-              "values": [["1(最高等级)", 0]],
+              "values": [["20(最高等级)", 0]],
               "displayMode": 0,
               "type": 5
             },
             {
-              "name": "消耗",
-              "values": [["6 点魔力", 0]],
+              "name": "保留",
+              "values": [["25% 魔力", 0]],
               "displayMode": 0
             },
             {
               "name": "冷却时间",
-              "values": [["3.00 秒", 0]],
+              "values": [["1.00 秒", 0]],
               "displayMode": 0
             },
             {
@@ -253,28 +1225,1170 @@
           "requirements": [
             {
               "name": "等级",
-              "values": [["31", 0]],
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "力量",
+              "values": [["98", 0]],
+              "displayMode": 1,
+              "type": 63
+            },
+            {
+              "name": "智慧",
+              "values": [["68", 0]],
+              "displayMode": 1,
+              "type": 65
+            }
+          ],
+          "secDescrText": "于手中凝聚火焰之力, 为物理伤害额外增加火焰伤害. 若是你击败了一个敌人, 溢出的伤害将会以点燃的形式扩散至附近的敌人.该技能引起的燃烧只会受到持续伤害词缀的影响(燃烧属于持续伤害)",
+          "explicitMods": [
+            "基础持续时间为 4.00 秒",
+            "基础燃烧伤害为溢出伤害的 30%",
+            "燃烧伤害总增 38%",
+            "增益效果获得等同你物理伤害 20% 的额外火焰伤害"
+          ],
+          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 0,
+          "colour": "S"
+        },
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0xpZmVUYXAiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/9cef38ae47/LifeTap.png",
+          "support": true,
+          "league": "S28赛季",
+          "id": "dc5714f5a342d1d2cbfcc012184c0d1942700ee3d6d701d98b7c418cc924fced",
+          "name": "",
+          "typeLine": "赤炼（辅）",
+          "baseType": "赤炼（辅）",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "辅助, 持续时间",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "消耗及保留加成",
+              "values": [["300%", 0]],
+              "displayMode": 0
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "力量",
+              "values": [["111", 0]],
+              "displayMode": 1,
+              "type": 63
+            }
+          ],
+          "secDescrText": "辅助任意非祝福技能。召唤生物不能获得赤炼效果。",
+          "explicitMods": [
+            "被辅助技能消耗生命而非魔力",
+            "在为被辅助技能的预支花费和效果消耗了总共 273 点生命\n的情况下获得赤炼状态",
+            "被辅助技能的伤害在你有赤炼状态时总增 19%",
+            "赤炼效果持续 4 秒"
+          ],
+          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 1,
+          "colour": "S"
+        },
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9RdWlja0Rhc2hHZW0iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/4b70be74a0/QuickDashGem.png",
+          "support": false,
+          "league": "S28赛季",
+          "id": "9bb378c7fcbc126a64034821a0ab5ab2597b9088722206d207671f597271a354",
+          "name": "",
+          "typeLine": "冲刺",
+          "baseType": "冲刺",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "法术, 位移, 旅行, 闪现",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "消耗",
+              "values": [["16 点魔力", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "冷却时间",
+              "values": [["2.50 秒", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "施放时间",
+              "values": [["0.15 秒", 0]],
+              "displayMode": 0
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "敏捷",
+              "values": [["155", 0]],
+              "displayMode": 1,
+              "type": 64
+            }
+          ],
+          "secDescrText": "朝目标方向发起一连串快速传送。如果使用“原地攻击”，会朝反方向传送。和其它闪现技能共用冷却时间。",
+          "explicitMods": [
+            "冷却回复速度加快 19%",
+            "移动距离延长 57%",
+            "该法术的施法速度不能被调整"
+          ],
+          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 2,
+          "colour": "D"
+        }
+      ],
+      "incubatedItem": {
+        "name": "珍贵通货碎片或先驱者物品",
+        "level": 68,
+        "progress": 0,
+        "total": 10530
+      }
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 2,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3MvZGlhbW9uZCIsInciOjEsImgiOjIsInNjYWxlIjoxLCJsZXZlbCI6MSwiZmkiOnRydWV9XQ/a764b9bc68/diamond.png",
+      "league": "S28赛季",
+      "id": "e7706521b2f2bfebfcf5a724955fc8949d15bbfe0ff636d15bc2f4b91eb39fd4",
+      "name": "",
+      "typeLine": "外科医生的手术之宝钻药剂",
+      "baseType": "宝钻药剂",
+      "rarity": "Magic",
+      "ilvl": 83,
+      "identified": true,
+      "properties": [
+        {
+          "name": "品质",
+          "values": [["+20%", 1]],
+          "displayMode": 0,
+          "type": 6
+        },
+        {
+          "name": "持续 {0} 秒",
+          "values": [["7.20", 1]],
+          "displayMode": 3
+        },
+        {
+          "name": "每次使用会从 {1} 充能次数中消耗 {0} 次",
+          "values": [
+            ["20", 0],
+            ["40", 0]
+          ],
+          "displayMode": 3
+        },
+        {
+          "name": "目前有 {0} 充能次数",
+          "values": [["40", 0]],
+          "displayMode": 3
+        }
+      ],
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["65", 0]],
+          "displayMode": 0,
+          "type": 62
+        }
+      ],
+      "utilityMods": ["全域暴击率提高 100%"],
+      "enchantMods": ["充能全满时自动使用"],
+      "explicitMods": [
+        "暴击时有 31% 的几率获得 1 充能",
+        "生效期间，暴击率提高 55%"
+      ],
+      "descrText": "右键点击饮用。只有在腰带里才恢复使用次数。击败敌人时充满。",
+      "frameType": 1,
+      "x": 1,
+      "y": 0,
+      "inventoryId": "Flask"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9NYXJ5bGVuZXNGYWxsYWN5IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/1665e40d51/MarylenesFallacy.png",
+      "league": "S28赛季",
+      "id": "23b2652a22644f8a953b9daf2342430f7043db2b2f3ed71695df1d7dc3f99e70",
+      "name": "玛莉琳的护体之符",
+      "typeLine": "海玉护身符",
+      "baseType": "海玉护身符",
+      "rarity": "Unique",
+      "ilvl": 65,
+      "identified": true,
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["40", 0]],
+          "displayMode": 0,
+          "type": 62
+        }
+      ],
+      "enchantMods": ["配置 破空弹"],
+      "implicitMods": ["+24 智慧"],
+      "explicitMods": [
+        "+98 命中值",
+        "+239% 全域暴击伤害加成",
+        "+81 点闪避值",
+        "照亮范围扩大 14%",
+        "暴击率总降 40%",
+        "暴击拥有终结能力"
+      ],
+      "flavourText": [
+        "\"玛莉琳总是在决斗前\r",
+        "总是轻抚胸前的荣耀辉记，呼唤奇迹显现。\" \r",
+        "- 人民诗人维多里奥"
+      ],
+      "frameType": 3,
+      "x": 0,
+      "y": 0,
+      "inventoryId": "Amulet"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 3,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9QaXNjYXRvcnNWaWdpbCIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/332f80f7ac/PiscatorsVigil.png",
+      "league": "S28赛季",
+      "id": "6d0b7118684192d209316b02cdc1de2ccdf10f79482976edc897cc7964899824",
+      "sockets": [
+        {
+          "group": 0,
+          "attr": "S",
+          "sColour": "R"
+        },
+        {
+          "group": 0,
+          "attr": "D",
+          "sColour": "G"
+        },
+        {
+          "group": 0,
+          "attr": "D",
+          "sColour": "G"
+        }
+      ],
+      "name": "皮斯卡托的慧眼",
+      "typeLine": "念动法杖",
+      "baseType": "念动法杖",
+      "rarity": "Unique",
+      "ilvl": 72,
+      "identified": true,
+      "properties": [
+        {
+          "name": "法杖",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "品质",
+          "values": [["+20%", 1]],
+          "displayMode": 0,
+          "type": 6
+        },
+        {
+          "name": "攻击暴击率",
+          "values": [["10.37%", 1]],
+          "displayMode": 0,
+          "type": 12
+        },
+        {
+          "name": "每秒攻击次数",
+          "values": [["1.87", 1]],
+          "displayMode": 0,
+          "type": 13
+        }
+      ],
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["70", 0]],
+          "displayMode": 0,
+          "type": 62,
+          "suffix": "(宝石)"
+        },
+        {
+          "name": "力量",
+          "values": [["98", 0]],
+          "displayMode": 1,
+          "type": 63,
+          "suffix": "(宝石)"
+        },
+        {
+          "name": "敏捷",
+          "values": [["155", 0]],
+          "displayMode": 1,
+          "type": 64,
+          "suffix": "(宝石)"
+        },
+        {
+          "name": "智慧",
+          "values": [["188", 0]],
+          "displayMode": 1,
+          "type": 65
+        }
+      ],
+      "implicitMods": ["不能附加法术相关属性修正"],
+      "explicitMods": [
+        "没有物理伤害",
+        "攻击速度加快 17%",
+        "该装备的攻击暴击率提高 22%",
+        "+394 命中值",
+        "此武器攻击造成的元素伤害提高 115%",
+        "武器造成的伤害穿透 5% 元素抗性"
+      ],
+      "flavourText": [
+        "\"芦苇丛中青石在，\r",
+        "刺骨寒风蒙雾生；\r",
+        "坐守河岸静眺望，\r",
+        "低语祈求天佑人。\"\r",
+        "- 吟游诗人，钓鱼者与冒险家 \r",
+        "乔乔巴 曼赛尔"
+      ],
+      "frameType": 3,
+      "x": 0,
+      "y": 0,
+      "inventoryId": "Weapon",
+      "socketedItems": [
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9GaXJlRWxlbWVudGFsU3VtbW9uIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/5d4c6fc5b4/FireElementalSummon.png",
+          "support": false,
+          "league": "S28赛季",
+          "id": "10a5674998c3b6ded282f686a1bc6a1c74dd6c4d39ff8be869ab0996b765b021",
+          "name": "",
+          "typeLine": "召唤烈焰魔像",
+          "baseType": "召唤烈焰魔像",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "火焰, 召唤生物, 法术, 魔像",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "消耗",
+              "values": [["54 点魔力", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "冷却时间",
+              "values": [["6.00 秒", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "施放时间",
+              "values": [["1.00 秒", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "品质",
+              "values": [["+20%", 1]],
+              "displayMode": 0,
+              "type": 6
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "力量",
+              "values": [["98", 0]],
+              "displayMode": 1,
+              "type": 63
+            },
+            {
+              "name": "智慧",
+              "values": [["68", 0]],
+              "displayMode": 1,
+              "type": 65
+            }
+          ],
+          "secDescrText": "召唤一个烈焰魔像，启动时会提高你的伤害和效果区域。烈焰魔像会施放火焰放射，火焰波浪，还会射出会爆炸的弧状移动投射物。",
+          "explicitMods": [
+            "最多召唤 1 个魔像",
+            "魔像会使玩家的伤害提高 29%",
+            "魔像会使玩家的效果范围扩大 20%",
+            "增益效果提高 20%"
+          ],
+          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 0,
+          "colour": "S"
+        },
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9CbG9vZFJhZ2UiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/199f6b772e/BloodRage.png",
+          "support": false,
+          "league": "S28赛季",
+          "id": "0c3af4adc8577ad2cbce6b707ba9a10182640eeeff2e641f7f5bdafc335a1d37",
+          "name": "",
+          "typeLine": "狂野怒火",
+          "baseType": "狂野怒火",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "法术, 持续时间, 物理",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "消耗",
+              "values": [["29 点生命", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "冷却时间",
+              "values": [["1.00 秒", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "施放时间",
+              "values": [["瞬发", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "品质",
+              "values": [["+20%", 1]],
+              "displayMode": 0,
+              "type": 6
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "敏捷",
+              "values": [["155", 0]],
+              "displayMode": 1,
+              "type": 64
+            }
+          ],
+          "secDescrText": "增加一个持续造成物理伤害的增益效果，同时提高生命偷取效果。消灭敌人会刷新该增益效果的持续时间，并提供一个狂怒球。",
+          "explicitMods": [
+            "基础持续时间为 10.80 秒",
+            "攻击速度加快 20%",
+            "攻击造成物理伤害的 1.2% 转化为生命",
+            "每秒受到最大生命 4% 的物理伤害",
+            "每秒受到最大能量护盾 4% 的物理伤害",
+            "击败敌人后有 25% 的几率获得 1 个狂怒球"
+          ],
+          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 1,
+          "colour": "D"
+        },
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L2VuaGFuY2UiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/9f8df30377/enhance.png",
+          "support": true,
+          "league": "S28赛季",
+          "id": "df4986c0139b433a6c37374cae54243ef0826ce7c1755d06fc904245ddb38a9d",
+          "name": "",
+          "typeLine": "增幅(辅)",
+          "baseType": "增幅(辅)",
+          "ilvl": 0,
+          "identified": true,
+          "corrupted": true,
+          "properties": [
+            {
+              "name": "卓越, 辅助",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["3(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "消耗及保留加成",
+              "values": [["120%", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "品质",
+              "values": [["+20%", 1]],
+              "displayMode": 0,
+              "type": 6
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["45", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "敏捷",
+              "values": [["73", 0]],
+              "displayMode": 1,
+              "type": 64
+            }
+          ],
+          "secDescrText": "辅助任意技能，当该宝石达到 2 级或以上时，提升被辅助技能的品质。无法辅助非技能宝石带来的技能。",
+          "explicitMods": [
+            "技能石经验值获取提高 100%",
+            "被辅助技能宝石品质提高 +16%"
+          ],
+          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 2,
+          "colour": "D"
+        }
+      ]
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvVGhlVGFtaW5nIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/17c5d3d74b/TheTaming.png",
+      "league": "S28赛季",
+      "id": "5ae56f8658c055a7f2d5f740652bcb8986fc07e0e691563e888777b7e32a43e7",
+      "name": "元素之章",
+      "typeLine": "三相戒指",
+      "baseType": "三相戒指",
+      "rarity": "Unique",
+      "ilvl": 48,
+      "identified": true,
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["30", 0]],
+          "displayMode": 0,
+          "type": 62
+        }
+      ],
+      "implicitMods": ["+8% 所有元素抗性"],
+      "explicitMods": [
+        "+20% 所有元素抗性",
+        "10% 的几率使敌人受到冰冻，感电与点燃",
+        "敌人每受到一种元素异常状态影响，\n击中和异常状态造成的元素伤害提高 36%"
+      ],
+      "flavourText": [
+        "\"贝雷克拥有无比机智，\r",
+        "从他和抗驯者之间的缠斗便可得知。\r",
+        "他让那三种元素互相角力，\r",
+        "直到它们露出败迹，\r",
+        "接着一鼓作气\r",
+        "让自己和恶梦远离。\"\r",
+        "- 贝雷克及抗驯者"
+      ],
+      "frameType": 3,
+      "x": 0,
+      "y": 0,
+      "inventoryId": "Ring2"
+    },
+    {
+      "verified": false,
+      "w": 2,
+      "h": 2,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvU2hhZG93c0FuZER1c3QiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/80cb67dfe9/ShadowsAndDust.png",
+      "league": "S28赛季",
+      "id": "675f681e7cd2d88485d12d9892b343ba90c8a4f4f06c555124838d0808549776",
+      "sockets": [
+        {
+          "group": 0,
+          "attr": "D",
+          "sColour": "G"
+        },
+        {
+          "group": 0,
+          "attr": "D",
+          "sColour": "G"
+        },
+        {
+          "group": 0,
+          "attr": "I",
+          "sColour": "B"
+        },
+        {
+          "group": 0,
+          "attr": "I",
+          "sColour": "B"
+        }
+      ],
+      "name": "沙尘之影",
+      "typeLine": "环带护手",
+      "baseType": "环带护手",
+      "rarity": "Unique",
+      "ilvl": 52,
+      "identified": true,
+      "properties": [
+        {
+          "name": "品质",
+          "values": [["+17%", 1]],
+          "displayMode": 0,
+          "type": 6
+        },
+        {
+          "name": "闪避值",
+          "values": [["156", 1]],
+          "displayMode": 0,
+          "type": 17
+        },
+        {
+          "name": "能量护盾",
+          "values": [["34", 1]],
+          "displayMode": 0,
+          "type": 18
+        }
+      ],
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["72", 0]],
+          "displayMode": 0,
+          "type": 62,
+          "suffix": "(宝石)"
+        },
+        {
+          "name": "敏捷",
+          "values": [["98", 0]],
+          "displayMode": 1,
+          "type": 64,
+          "suffix": "(宝石)"
+        },
+        {
+          "name": "智慧",
+          "values": [["159", 0]],
+          "displayMode": 1,
+          "type": 65,
+          "suffix": "(宝石)"
+        }
+      ],
+      "explicitMods": [
+        "全域暴击率提高 22%",
+        "+29% 全域暴击伤害加成",
+        "该装备的闪避与能量护盾提高 122%",
+        "攻击伤害的 0.2% 转化为魔力偷取",
+        "暴走状态时创造一团烟雾",
+        "暴走状态时获得【不洁之力】3 秒",
+        "暴走"
+      ],
+      "flavourText": ["随风散播的燎原之火与死亡阴影，\r", "带来的唯有恐惧。"],
+      "frameType": 3,
+      "x": 0,
+      "y": 0,
+      "inventoryId": "Gloves",
+      "socketedItems": [
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9IZXJhbGRvZkljZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/01e419f67c/HeraldofIce.png",
+          "support": false,
+          "league": "S28赛季",
+          "id": "22bf93dac02ba863c5c8c2f427a63ee55f263a8f494b83fb3e876e3367762183",
+          "name": "",
+          "typeLine": "寒冰之捷",
+          "baseType": "寒冰之捷",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "法术, 效果区域, 冰霜, 捷",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "保留",
+              "values": [["25% 魔力", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "冷却时间",
+              "values": [["1.00 秒", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "施放时间",
+              "values": [["瞬发", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "伤害效用",
+              "values": [["80%", 0]],
+              "displayMode": 0
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "敏捷",
+              "values": [["98", 0]],
+              "displayMode": 1,
+              "type": 64
+            },
+            {
+              "name": "智慧",
+              "values": [["68", 0]],
+              "displayMode": 1,
+              "type": 65
+            }
+          ],
+          "secDescrText": "获得一个增益效果，给法术和攻击增添冰霜伤害。如敌人被你粉碎，则该技能将其引爆，对周围的敌人造成范围冰霜伤害。该伤害不套用调整法术伤害的词缀。",
+          "explicitMods": [
+            "造成 308 - 462 冰霜伤害",
+            "伤害无法被反射",
+            "基础范围为 1.2 米",
+            "给增益效果附加 38 到 56 点冰霜攻击伤害",
+            "给增益效果附加 38 到 56 点冰霜法术伤害"
+          ],
+          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 0,
+          "colour": "D"
+        },
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9DaHJvbm9tYW5jZXIiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/ce3fb3cfe3/Chronomancer.png",
+          "support": false,
+          "league": "S28赛季",
+          "id": "b8b0817fc9b8e45c33d0c15b527e0181ab30b5b2dc147364bdb727a47014a9d3",
+          "name": "",
+          "typeLine": "时空裂隙",
+          "baseType": "时空裂隙",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "法术",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "保留",
+              "values": [["10% 魔力", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "冷却时间",
+              "values": [["5.00 秒", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "施放时间",
+              "values": [["0.25 秒", 0]],
+              "displayMode": 0
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "敏捷",
+              "values": [["98", 0]],
+              "displayMode": 1,
+              "type": 64
+            },
+            {
+              "name": "智慧",
+              "values": [["68", 0]],
+              "displayMode": 1,
+              "type": 65
+            }
+          ],
+          "secDescrText": "通过保留魔力来施加一个增益效果，给你的当前状态施加一个快照。再次施放该法术则让你回到快照时的所有状态，包括快照时的位置、生命、能量护盾等等。",
+          "explicitMods": [
+            "冷却回复速度加快 38%",
+            "该法术的施法速度不能被调整",
+            "增益效果使你不受时空锁链影响"
+          ],
+          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 1,
+          "colour": "D"
+        },
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9IZXJhbGRvZlRodW5kZXIiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/fcc8e7de1e/HeraldofThunder.png",
+          "support": false,
+          "league": "S28赛季",
+          "id": "768d5b6c52aa05ac9145f3102646dcb6f0bf5903da708bdc791732b225ab4fc2",
+          "name": "",
+          "typeLine": "闪电之捷",
+          "baseType": "闪电之捷",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "法术, 效果区域, 持续时间, 闪电, 捷",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "保留",
+              "values": [["25% 魔力", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "冷却时间",
+              "values": [["1.00 秒", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "施放时间",
+              "values": [["瞬发", 0]],
+              "displayMode": 0
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
               "displayMode": 0,
               "type": 62
             },
             {
               "name": "智慧",
-              "values": [["73", 0]],
+              "values": [["155", 0]],
               "displayMode": 1,
               "type": 65
             }
           ],
-          "secDescrText": "将所有由你控制的召唤生物召回你的所在之处，并短暂的使它们获得生命回复效果。",
+          "secDescrText": "获得一个增益效果，给法术和攻击增添闪电伤害。如被击败的是感电的敌人，则该技能会创造一个风暴，在一段时间内用闪电打击你周围的敌人。该技能施加的伤害不套用调整法术伤害的词缀。",
           "explicitMods": [
-            "基础持续时间为 2.00 秒",
-            "技能效果持续时间延长 20%",
-            "每秒回复 2% 生命",
-            "冷却回复速度加快 20%"
+            "造成 23 - 1108 闪电伤害",
+            "无法造成感电",
+            "基础持续时间为 6.00 秒",
+            "风暴每 0.25 秒击中一个敌人",
+            "你击败被感电的敌人时产生一个风暴",
+            "增益效果附加 19 至 76 点攻击闪电伤害",
+            "增益效果附加 19 至 76 点闪电法术伤害"
           ],
           "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
           "frameType": 4,
-          "socket": 0,
+          "socket": 2,
           "colour": "I"
+        },
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9DaXJjbGVvZlBvd2VyU2tpbGxHZW0iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/7b2960c51a/CircleofPowerSkillGem.png",
+          "support": false,
+          "league": "S28赛季",
+          "id": "c24441ff71aef382abfdf163dfdd8b031b8ef90535853486b5affcbb8286fd51",
+          "name": "",
+          "typeLine": "威能法印",
+          "baseType": "威能法印",
+          "ilvl": 0,
+          "identified": true,
+          "corrupted": true,
+          "properties": [
+            {
+              "name": "法术, 效果区域, 持续时间, 闪电, 奥术",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["21(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "消耗",
+              "values": [["56 点魔力", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "冷却时间",
+              "values": [["10.00 秒", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "施放时间",
+              "values": [["0.50 秒", 0]],
+              "displayMode": 0
+            },
+            {
+              "name": "品质",
+              "values": [["+20%", 1]],
+              "displayMode": 0,
+              "type": 6
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["72", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "智慧",
+              "values": [["159", 0]],
+              "displayMode": 1,
+              "type": 65
+            }
+          ],
+          "secDescrText": "在地上放置法印，当你和友军站在其中时候给你们提供增益效果，并持续一段时间。你在其中消耗魔力会给法印积累层数，强化增益效果。同时只能有一个威能法印。",
+          "explicitMods": [
+            "基础持续时间为 12.00 秒",
+            "在区域内消耗总共 461 点魔力获得一层",
+            "最大阶数时，区域内的敌人造成的伤害总降 24%",
+            "最大 4 层",
+            "增益效果每层附加 8 到 153 点闪电伤害",
+            "层数之间至少间隔 1 秒"
+          ],
+          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 3,
+          "colour": "I"
+        }
+      ]
+    },
+    {
+      "verified": false,
+      "w": 2,
+      "h": 2,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0V4dHJlbWVGb2N1cyIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/d900d9764f/ExtremeFocus.png",
+      "league": "S28赛季",
+      "id": "b9c58757eca404aefb18c12765b17f7f470132e92aba8b01f52a291a64758eed",
+      "sockets": [
+        {
+          "group": 0,
+          "attr": "S",
+          "sColour": "R"
+        },
+        {
+          "group": 0,
+          "attr": "D",
+          "sColour": "G"
+        },
+        {
+          "group": 0,
+          "attr": "D",
+          "sColour": "G"
+        },
+        {
+          "group": 0,
+          "attr": "D",
+          "sColour": "G"
+        }
+      ],
+      "name": "雏鸟",
+      "typeLine": "漆彩之盔",
+      "baseType": "漆彩之盔",
+      "rarity": "Unique",
+      "ilvl": 83,
+      "identified": true,
+      "properties": [
+        {
+          "name": "品质",
+          "values": [["+20%", 1]],
+          "displayMode": 0,
+          "type": 6
+        },
+        {
+          "name": "护甲",
+          "values": [["463", 1]],
+          "displayMode": 0,
+          "type": 16
+        },
+        {
+          "name": "闪避值",
+          "values": [["463", 1]],
+          "displayMode": 0,
+          "type": 17
+        }
+      ],
+      "requirements": [
+        {
+          "name": "等级",
+          "values": [["70", 0]],
+          "displayMode": 0,
+          "type": 62,
+          "suffix": "(宝石)"
+        },
+        {
+          "name": "力量",
+          "values": [["111", 0]],
+          "displayMode": 1,
+          "type": 63,
+          "suffix": "(宝石)"
+        },
+        {
+          "name": "敏捷",
+          "values": [["155", 0]],
+          "displayMode": 1,
+          "type": 64,
+          "suffix": "(宝石)"
+        }
+      ],
+      "explicitMods": [
+        "该装备的护甲与闪避提高 154%",
+        "投射物速度加快 36%",
+        "投射物伤害提高 37%",
+        "投射物无视近距离的敌人",
+        "远射"
+      ],
+      "flavourText": ["要想一箭改变世界，\r", "那就要千锤百炼。"],
+      "frameType": 3,
+      "x": 0,
+      "y": 0,
+      "inventoryId": "Helm",
+      "socketedItems": [
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0xpZmVUYXAiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/9cef38ae47/LifeTap.png",
+          "support": true,
+          "league": "S28赛季",
+          "id": "7242822cfe7e8c7e2253fcfec4f3e4115c021b0f9b64683e549ea6391d993d9f",
+          "name": "",
+          "typeLine": "赤炼（辅）",
+          "baseType": "赤炼（辅）",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "辅助, 持续时间",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "消耗及保留加成",
+              "values": [["300%", 0]],
+              "displayMode": 0
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "力量",
+              "values": [["111", 0]],
+              "displayMode": 1,
+              "type": 63
+            }
+          ],
+          "secDescrText": "辅助任意非祝福技能。召唤生物不能获得赤炼效果。",
+          "explicitMods": [
+            "被辅助技能消耗生命而非魔力",
+            "在为被辅助技能的预支花费和效果消耗了总共 273 点生命\n的情况下获得赤炼状态",
+            "被辅助技能的伤害在你有赤炼状态时总增 19%",
+            "赤炼效果持续 4 秒"
+          ],
+          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 0,
+          "colour": "S"
         },
         {
           "verified": false,
@@ -282,14 +2396,13 @@
           "h": 1,
           "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9Qcm9qZWN0aWxlV2Vha25lc3MiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/92040afb2a/ProjectileWeakness.png",
           "support": false,
-          "league": "S26赛季",
-          "id": "bbb9e3e92fcfc4103a43e39cbaf8ac0235e3336c2ef5eef1476ca94361529d21",
+          "league": "S28赛季",
+          "id": "61aa78a4d034e25683b8109a259d01a778e430d60c664f90fd084584e729a6e3",
           "name": "",
           "typeLine": "狙击印记",
           "baseType": "狙击印记",
           "ilvl": 0,
           "identified": true,
-          "corrupted": true,
           "properties": [
             {
               "name": "法术, 诅咒, 印记",
@@ -349,8 +2462,8 @@
           "h": 1,
           "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L2VuaGFuY2UiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/9f8df30377/enhance.png",
           "support": true,
-          "league": "S26赛季",
-          "id": "659e0a9417b8593c4254f50ad59820308dc4e2eaf42d6e86b3dee0f4d4f76021",
+          "league": "S28赛季",
+          "id": "41f1d6a585cf30a6a2c3f18d77f9b32129741e9c463b576b6b4c89069dc5e9cd",
           "name": "",
           "typeLine": "增幅(辅)",
           "baseType": "增幅(辅)",
@@ -365,7 +2478,7 @@
             },
             {
               "name": "等级",
-              "values": [["4(最高等级)", 0]],
+              "values": [["3(最高等级)", 0]],
               "displayMode": 0,
               "type": 5
             },
@@ -373,24 +2486,33 @@
               "name": "消耗及保留加成",
               "values": [["120%", 0]],
               "displayMode": 0
+            },
+            {
+              "name": "品质",
+              "values": [["+20%", 1]],
+              "displayMode": 0,
+              "type": 6
             }
           ],
           "requirements": [
             {
               "name": "等级",
-              "values": [["60", 0]],
+              "values": [["45", 0]],
               "displayMode": 0,
               "type": 62
             },
             {
               "name": "敏捷",
-              "values": [["96", 0]],
+              "values": [["73", 0]],
               "displayMode": 1,
               "type": 64
             }
           ],
           "secDescrText": "辅助任意技能，当该宝石达到 2 级或以上时，提升被辅助技能的品质。无法辅助非技能宝石带来的技能。",
-          "explicitMods": ["被辅助技能宝石品质提高 +24%"],
+          "explicitMods": [
+            "技能石经验值获取提高 100%",
+            "被辅助技能宝石品质提高 +16%"
+          ],
           "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
           "frameType": 4,
           "socket": 2,
@@ -400,18 +2522,18 @@
           "verified": false,
           "w": 1,
           "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9QaGFzZVJ1biIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/b4c9b05661/PhaseRun.png",
-          "support": false,
-          "league": "S26赛季",
-          "id": "1cbb42b0d19f74e98b352053468595e6fdbc3392916a9699cbdc092e28f9e6f2",
+          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L01hcmtPbkhpdHRpbmciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/082becefa3/MarkOnHitting.png",
+          "support": true,
+          "league": "S28赛季",
+          "id": "8deca99a5a8b25d90eaaedc2b4ebc6d13e0124e8e5eccea0f04f444ca3b5c311",
           "name": "",
-          "typeLine": "暗影迷踪",
-          "baseType": "暗影迷踪",
+          "typeLine": "击中时施加印记（辅）",
+          "baseType": "击中时施加印记（辅）",
           "ilvl": 0,
           "identified": true,
           "properties": [
             {
-              "name": "法术, 持续时间, 位移, 物理, 旅行",
+              "name": "辅助, 印记, 触发",
               "values": [],
               "displayMode": 0
             },
@@ -422,8 +2544,8 @@
               "type": 5
             },
             {
-              "name": "消耗",
-              "values": [["13 点魔力", 0]],
+              "name": "消耗及保留加成",
+              "values": [["200%", 0]],
               "displayMode": 0
             },
             {
@@ -432,11 +2554,6 @@
               "displayMode": 0
             },
             {
-              "name": "施放时间",
-              "values": [["瞬发", 0]],
-              "displayMode": 0
-            },
-            {
               "name": "品质",
               "values": [["+20%", 1]],
               "displayMode": 0,
@@ -452,533 +2569,19 @@
             },
             {
               "name": "敏捷",
-              "values": [["155", 0]],
+              "values": [["111", 0]],
               "displayMode": 1,
               "type": 64
             }
           ],
-          "secDescrText": "使你的身影难以被发现, 且增加你的移动速度. 移动时不再被敌人阻挡. 使用任何技能将移除此增益效果, 并给予你自身另一个增加攻击伤害的短暂增益效果(这个增益不会对你的图腾生效). 可以使用狂怒球延长持续时间. ",
+          "secDescrText": "辅助印记诅咒技能。",
           "explicitMods": [
-            "基础持续时间为 1.80 秒",
-            "基础额外效果持续时间 0.20 秒",
-            "近战物理伤害总增 30%",
-            "每消耗 1 个狂怒球，可使技能持续时间提高 100%",
-            "增益效果使移动速度加快 49%",
-            "增益效果提供迷踪状态",
-            "增益效果使潜行效果提高 100%"
-          ],
-          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
-          "frameType": 4,
-          "socket": 3,
-          "colour": "D"
-        }
-      ]
-    },
-    {
-      "verified": false,
-      "w": 2,
-      "h": 3,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9TaG9ja0Nsb2FrIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/44e73cc73c/ShockCloak.png",
-      "league": "S26赛季",
-      "id": "5141d469bd7d281251d1dc2bd5a0c58ce3a0bf888758df7ac84ee78692154e72",
-      "sockets": [
-        {
-          "group": 0,
-          "attr": "D",
-          "sColour": "G"
-        },
-        {
-          "group": 0,
-          "attr": "I",
-          "sColour": "B"
-        },
-        {
-          "group": 0,
-          "attr": "I",
-          "sColour": "B"
-        },
-        {
-          "group": 0,
-          "attr": "I",
-          "sColour": "B"
-        },
-        {
-          "group": 0,
-          "attr": "I",
-          "sColour": "B"
-        },
-        {
-          "group": 0,
-          "attr": "D",
-          "sColour": "G"
-        }
-      ],
-      "name": "多里亚尼的试作甲",
-      "typeLine": "圣者链甲",
-      "baseType": "圣者链甲",
-      "rarity": "Unique",
-      "ilvl": 86,
-      "identified": true,
-      "corrupted": true,
-      "properties": [
-        {
-          "name": "品质",
-          "values": [["+20%", 1]],
-          "displayMode": 0,
-          "type": 6
-        },
-        {
-          "name": "护甲",
-          "values": [["1499", 1]],
-          "displayMode": 0,
-          "type": 16
-        },
-        {
-          "name": "能量护盾",
-          "values": [["257", 1]],
-          "displayMode": 0,
-          "type": 18
-        }
-      ],
-      "requirements": [
-        {
-          "name": "等级",
-          "values": [["82", 0]],
-          "displayMode": 0,
-          "type": 62,
-          "suffix": "(宝石)"
-        },
-        {
-          "name": "力量",
-          "values": [["109", 0]],
-          "displayMode": 1,
-          "type": 63
-        },
-        {
-          "name": "敏捷",
-          "values": [["114", 0]],
-          "displayMode": 1,
-          "type": 64,
-          "suffix": "(宝石)"
-        },
-        {
-          "name": "智慧",
-          "values": [["159", 0]],
-          "displayMode": 1,
-          "type": 65,
-          "suffix": "(宝石)"
-        }
-      ],
-      "implicitMods": [
-        "此物品上装备的【召唤生物技能石】等级 +2",
-        "+1% 全部抗性上限"
-      ],
-      "explicitMods": [
-        "该装备的护甲与能量护盾提高 182%",
-        "+90 最大生命",
-        "不造成非闪电伤害",
-        "被击中受到闪电伤害时也套用护甲值",
-        "闪电抗性不对受到的闪电伤害生效",
-        "周围敌人的闪电抗性等同于你"
-      ],
-      "flavourText": [
-        "宏伟计划终于迈出了第一步，\r",
-        "我们困惑已久，终于取得了进展。\r",
-        "——神主多米纳斯"
-      ],
-      "frameType": 3,
-      "x": 0,
-      "y": 0,
-      "inventoryId": "BodyArmour",
-      "socketedItems": [
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L1JldHVyblByb2plY3RpbGVzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/76e59b7e35/ReturnProjectiles.png",
-          "support": true,
-          "league": "S26赛季",
-          "id": "8a3570b0abbd185450eefbb9a481b0834a3cd3ce4f67b9fd283b27448b7f7ee8",
-          "name": "",
-          "typeLine": "投射物归返（辅）",
-          "baseType": "投射物归返（辅）",
-          "ilvl": 0,
-          "identified": true,
-          "corrupted": true,
-          "properties": [
-            {
-              "name": "辅助, 投射物",
-              "values": [],
-              "displayMode": 0
-            },
-            {
-              "name": "等级",
-              "values": [["21(最高等级)", 0]],
-              "displayMode": 0,
-              "type": 5
-            },
-            {
-              "name": "消耗及保留加成",
-              "values": [["150%", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "品质",
-              "values": [["+20%", 1]],
-              "displayMode": 0,
-              "type": 6
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["72", 0]],
-              "displayMode": 0,
-              "type": 62
-            },
-            {
-              "name": "敏捷",
-              "values": [["114", 0]],
-              "displayMode": 1,
-              "type": 64
-            }
-          ],
-          "secDescrText": "辅助投射物技能。",
-          "explicitMods": [
-            "被辅助技能的投射物返回你身边",
-            "被辅助技能的投射物返回时造成的击中和异常状态伤害总降 60%",
-            "被辅助技能的投射物返回时穿透所有目标",
-            "被辅助技能的投射物速度加快 10%"
-          ],
-          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
-          "frameType": 4,
-          "socket": 0,
-          "colour": "D"
-        },
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9SYWlzZVNwZWN0cmUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/581a69bc61/RaiseSpectre.png",
-          "support": false,
-          "league": "S26赛季",
-          "id": "cc020d59e5ea281c76b2b9910a41007824712e65719bbe5a059fa910a3cdfa94",
-          "name": "",
-          "typeLine": "召唤灵体",
-          "baseType": "召唤灵体",
-          "ilvl": 0,
-          "identified": true,
-          "corrupted": true,
-          "properties": [
-            {
-              "name": "法术, 召唤生物",
-              "values": [],
-              "displayMode": 0
-            },
-            {
-              "name": "等级",
-              "values": [["21(最高等级)", 0]],
-              "displayMode": 0,
-              "type": 5
-            },
-            {
-              "name": "消耗",
-              "values": [["29 点魔力", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "施放时间",
-              "values": [["0.85 秒", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "品质",
-              "values": [["+23%", 1]],
-              "displayMode": 0,
-              "type": 6
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["72", 0]],
-              "displayMode": 0,
-              "type": 62
-            },
-            {
-              "name": "智慧",
-              "values": [["159", 0]],
-              "displayMode": 1,
-              "type": 65
-            }
-          ],
-          "secDescrText": "唱名唤魂，从目标灵柩唤醒其灵体并使它为你而战.",
-          "explicitMods": [
-            "最多召唤 2 个灵体",
-            "召唤生物获得 +53% 元素抗性",
-            "召唤生物的总移动速度额外增加 55%",
-            "召唤生物移动速度达到极限",
-            "唤醒的灵体为等级 72",
-            "召唤生物的命中值提高 806"
-          ],
-          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
-          "frameType": 4,
-          "socket": 1,
-          "colour": "I"
-        },
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L1N1cHBvcnRQbHVzL01pbmlvbkRhbWFnZVBsdXMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/5a905affec/MinionDamagePlus.png",
-          "support": true,
-          "league": "S26赛季",
-          "id": "60dfef3749a984f8f36df502f1404314382f7a09595f65fa8e9ade2b1b685bc5",
-          "name": "",
-          "typeLine": "召唤生物伤害（强辅）",
-          "baseType": "召唤生物伤害（强辅）",
-          "ilvl": 0,
-          "identified": true,
-          "corrupted": true,
-          "properties": [
-            {
-              "name": "辅助, 召唤生物",
-              "values": [],
-              "displayMode": 0
-            },
-            {
-              "name": "等级",
-              "values": [["6(最高等级)", 0]],
-              "displayMode": 0,
-              "type": 5
-            },
-            {
-              "name": "消耗及保留加成",
-              "values": [["140%", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "品质",
-              "values": [["+20%", 1]],
-              "displayMode": 0,
-              "type": 6
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["82", 0]],
-              "displayMode": 0,
-              "type": 62
-            },
-            {
-              "name": "智慧",
-              "values": [["129", 0]],
-              "displayMode": 1,
-              "type": 65
-            }
-          ],
-          "secDescrText": "辅助召唤生物技能。",
-          "explicitMods": [
-            "被辅助技能创造的召唤生物伤害提高 10%",
-            "来自被辅助技能的召唤生物的伤害总增 45%",
-            "来自被辅助技能的召唤生物的最大生命总降 25%",
-            "被辅助的召唤生物宝石等级 +1"
-          ],
-          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
-          "frameType": 4,
-          "socket": 2,
-          "colour": "I"
-        },
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L1N1cHBvcnRQbHVzL0NvbnRyb2xsZWREZXN0cnVjdGlvblBsdXMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/e545c985d0/ControlledDestructionPlus.png",
-          "support": true,
-          "league": "S26赛季",
-          "id": "833b6065064d01b1188e9635f822c33ed7f2e177a95d8907b738d406f17d549c",
-          "name": "",
-          "typeLine": "精准破坏（强辅）",
-          "baseType": "精准破坏（强辅）",
-          "ilvl": 0,
-          "identified": true,
-          "corrupted": true,
-          "properties": [
-            {
-              "name": "法术, 暴击, 辅助",
-              "values": [],
-              "displayMode": 0
-            },
-            {
-              "name": "等级",
-              "values": [["6(最高等级)", 0]],
-              "displayMode": 0,
-              "type": 5
-            },
-            {
-              "name": "消耗及保留加成",
-              "values": [["140%", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "品质",
-              "values": [["+23%", 1]],
-              "displayMode": 0,
-              "type": 6
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["82", 0]],
-              "displayMode": 0,
-              "type": 62
-            },
-            {
-              "name": "智慧",
-              "values": [["129", 0]],
-              "displayMode": 1,
-              "type": 65
-            }
-          ],
-          "secDescrText": "辅助能造成伤害的攻击或法术技能。",
-          "explicitMods": [
-            "被辅助技能的暴击率总降 80%",
-            "被辅助技能的法术伤害总增 45%",
-            "被辅助技能有 10% 的几率在击中时恐惧敌人 4 秒",
-            "被辅助技能的法术伤害提高 11%"
+            "被辅助印记技能的效果降低 16%",
+            "被辅助技能在你用攻击击中稀有或传奇敌人时触发"
           ],
           "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
           "frameType": 4,
           "socket": 3,
-          "colour": "I"
-        },
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L1N1cHBvcnRQbHVzL0VjaG9QbHVzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/9cccabda03/EchoPlus.png",
-          "support": true,
-          "league": "S26赛季",
-          "id": "b310e29ab24ba59625cf6a2ce003378ce21e5a13778bdc50d94c4622534bfdde",
-          "name": "",
-          "typeLine": "施法回响（强辅）",
-          "baseType": "施法回响（强辅）",
-          "ilvl": 0,
-          "identified": true,
-          "properties": [
-            {
-              "name": "法术, 辅助",
-              "values": [],
-              "displayMode": 0
-            },
-            {
-              "name": "等级",
-              "values": [["5(最高等级)", 0]],
-              "displayMode": 0,
-              "type": 5
-            },
-            {
-              "name": "消耗及保留加成",
-              "values": [["150%", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "品质",
-              "values": [["+20%", 1]],
-              "displayMode": 0,
-              "type": 6
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["80", 0]],
-              "displayMode": 0,
-              "type": 62
-            },
-            {
-              "name": "智慧",
-              "values": [["126", 0]],
-              "displayMode": 1,
-              "type": 65
-            }
-          ],
-          "secDescrText": "辅助法术技能，使其施放时自动重复一次。无法辅助瓦尔技能、图腾技能、持续吟唱技能、触发技能、瞬发技能、反击技能、闪现技能或有保留效果的技能。",
-          "explicitMods": [
-            "被辅助技能的伤害总降 10%",
-            "被辅助的法术技能可重复一次",
-            "被辅助技能的总施法速度总增 59%",
-            "被辅助技能的法术伤害提高 10%",
-            "被辅助技能最后一次重复有 20% 的几率造成双倍伤害"
-          ],
-          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
-          "frameType": 4,
-          "socket": 4,
-          "colour": "I"
-        },
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L1BpZXJjZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/9cceecca83/Pierce.png",
-          "support": true,
-          "league": "S26赛季",
-          "id": "13c57a1e5a53967b1e244d15dc4a76a3cba8945bc358e449e62498bcdd05e665",
-          "name": "",
-          "typeLine": "穿透(辅)",
-          "baseType": "穿透(辅)",
-          "ilvl": 0,
-          "identified": true,
-          "corrupted": true,
-          "properties": [
-            {
-              "name": "辅助, 投射物",
-              "values": [],
-              "displayMode": 0
-            },
-            {
-              "name": "等级",
-              "values": [["21(最高等级)", 0]],
-              "displayMode": 0,
-              "type": 5
-            },
-            {
-              "name": "消耗及保留加成",
-              "values": [["120%", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "品质",
-              "values": [["+20%", 1]],
-              "displayMode": 0,
-              "type": 6
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["72", 0]],
-              "displayMode": 0,
-              "type": 62
-            },
-            {
-              "name": "敏捷",
-              "values": [["114", 0]],
-              "displayMode": 1,
-              "type": 64
-            }
-          ],
-          "secDescrText": "辅助投射物技能。",
-          "explicitMods": [
-            "来自被辅助技能的投射物贯穿 4 个额外目标",
-            "被辅助技能的投射物伤害提高 10%",
-            "被辅助技能总增 20% 投射物伤害"
-          ],
-          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
-          "frameType": 4,
-          "socket": 5,
           "colour": "D"
         }
       ]
@@ -987,13 +2590,19 @@
       "verified": false,
       "w": 2,
       "h": 2,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvR2xvdmVzU3RySW50MyIsInciOjIsImgiOjIsInNjYWxlIjoxLCJzZWFyaW5nIjp0cnVlLCJ0YW5nbGVkIjp0cnVlLCJmcmFjdHVyZWQiOnRydWV9XQ/37b15df110/GlovesStrInt3.png",
-      "league": "S26赛季",
-      "id": "6bf370127de5edb4cbc3cb9a7f05819be0ef529d2e4edb8af802818ec62c3257",
-      "searing": true,
-      "tangled": true,
-      "fractured": true,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9Dcm9zc2luZ1RoZVZvaWQiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/f3747eb0f4/CrossingTheVoid.png",
+      "league": "S28赛季",
+      "id": "60fa54535515c1a5b3754e1369f96b0cf65829e9f5708d3010f394747871501c",
+      "influences": {
+        "shaper": true
+      },
+      "shaper": true,
       "sockets": [
+        {
+          "group": 0,
+          "attr": "I",
+          "sColour": "B"
+        },
         {
           "group": 0,
           "attr": "S",
@@ -1008,18 +2617,13 @@
           "group": 0,
           "attr": "I",
           "sColour": "B"
-        },
-        {
-          "group": 0,
-          "attr": "I",
-          "sColour": "B"
         }
       ],
-      "name": "刺荆 温存",
-      "typeLine": "圣战手套",
-      "baseType": "圣战手套",
-      "rarity": "Rare",
-      "ilvl": 85,
+      "name": "虚空行者【仿品】",
+      "typeLine": "暗影者长靴",
+      "baseType": "暗影者长靴",
+      "rarity": "Unique",
+      "ilvl": 71,
       "identified": true,
       "properties": [
         {
@@ -1029,14 +2633,14 @@
           "type": 6
         },
         {
-          "name": "护甲",
-          "values": [["160", 1]],
+          "name": "闪避值",
+          "values": [["625", 1]],
           "displayMode": 0,
-          "type": 16
+          "type": 17
         },
         {
           "name": "能量护盾",
-          "values": [["42", 1]],
+          "values": [["62", 1]],
           "displayMode": 0,
           "type": 18
         }
@@ -1044,499 +2648,68 @@
       "requirements": [
         {
           "name": "等级",
-          "values": [["72", 0]],
+          "values": [["70", 0]],
           "displayMode": 0,
           "type": 62,
           "suffix": "(宝石)"
         },
         {
           "name": "力量",
-          "values": [["100", 0]],
-          "displayMode": 1,
-          "type": 63,
-          "suffix": "(宝石)"
-        },
-        {
-          "name": "智慧",
-          "values": [["159", 0]],
-          "displayMode": 1,
-          "type": 65,
-          "suffix": "(宝石)"
-        }
-      ],
-      "implicitMods": ["你的印记技能的效果提高 11%", "召唤生物的伤害提高 22%"],
-      "explicitMods": [
-        "+8 最大能量护盾",
-        "+129 最大生命",
-        "+12 最大魔力",
-        "+48% 冰霜抗性",
-        "+35% 混沌抗性"
-      ],
-      "craftedMods": ["召唤生物的伤害提高 20%"],
-      "fracturedMods": ["+48% 火焰抗性"],
-      "frameType": 2,
-      "x": 0,
-      "y": 0,
-      "inventoryId": "Gloves",
-      "socketedItems": [
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9GaXJlUmVzaXN0QXVyYSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/c2ab10c400/FireResistAura.png",
-          "support": false,
-          "league": "S26赛季",
-          "id": "885a2ef0c3a0df5e52ddd649933d30291f8fcaf61f4536daa6c6b49e7a7401c0",
-          "name": "",
-          "typeLine": "火焰净化",
-          "baseType": "火焰净化",
-          "ilvl": 0,
-          "identified": true,
-          "corrupted": true,
-          "properties": [
-            {
-              "name": "光环, 法术, 效果区域, 火焰",
-              "values": [],
-              "displayMode": 0
-            },
-            {
-              "name": "等级",
-              "values": [["21(最高等级)", 0]],
-              "displayMode": 0,
-              "type": 5
-            },
-            {
-              "name": "保留",
-              "values": [["35% 魔力", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "冷却时间",
-              "values": [["1.20 秒", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "施放时间",
-              "values": [["瞬发", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "品质",
-              "values": [["+20%", 1]],
-              "displayMode": 0,
-              "type": 6
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["72", 0]],
-              "displayMode": 0,
-              "type": 62
-            },
-            {
-              "name": "力量",
-              "values": [["100", 0]],
-              "displayMode": 1,
-              "type": 63
-            },
-            {
-              "name": "智慧",
-              "values": [["70", 0]],
-              "displayMode": 1,
-              "type": 65
-            }
-          ],
-          "secDescrText": "施放一个光环，使你与受光环影响的友军获得额外的火焰抗性.",
-          "explicitMods": [
-            "范围 +2 米",
-            "你与周围友军的火焰抗性提高 52%",
-            "你与周围友军的火焰抗性上限提高 4%"
-          ],
-          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
-          "frameType": 4,
-          "socket": 0,
-          "colour": "S"
-        },
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9SYWlzZVNwZWN0cmUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/581a69bc61/RaiseSpectre.png",
-          "support": false,
-          "league": "S26赛季",
-          "id": "f2b8b020b298c9e0bd137bb9004877f13013a523492ec8299fcbf5a415f6b684",
-          "name": "",
-          "typeLine": "召唤灵体",
-          "baseType": "召唤灵体",
-          "ilvl": 0,
-          "identified": true,
-          "corrupted": true,
-          "properties": [
-            {
-              "name": "法术, 召唤生物",
-              "values": [],
-              "displayMode": 0
-            },
-            {
-              "name": "等级",
-              "values": [["21(最高等级)", 0]],
-              "displayMode": 0,
-              "type": 5
-            },
-            {
-              "name": "消耗",
-              "values": [["29 点魔力", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "施放时间",
-              "values": [["0.85 秒", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "品质",
-              "values": [["+23%", 1]],
-              "displayMode": 0,
-              "type": 6
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["72", 0]],
-              "displayMode": 0,
-              "type": 62
-            },
-            {
-              "name": "智慧",
-              "values": [["159", 0]],
-              "displayMode": 1,
-              "type": 65
-            }
-          ],
-          "secDescrText": "唱名唤魂，从目标灵柩唤醒其灵体并使它为你而战.",
-          "explicitMods": [
-            "最多召唤 2 个灵体",
-            "召唤生物获得 +53% 元素抗性",
-            "召唤生物的总移动速度额外增加 55%",
-            "召唤生物移动速度达到极限",
-            "唤醒的灵体为等级 72",
-            "召唤生物的命中值提高 806"
-          ],
-          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
-          "frameType": 4,
-          "socket": 1,
-          "colour": "I"
-        },
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0RlZmVuc2l2ZU1pbmlvbiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/604a531a0b/DefensiveMinion.png",
-          "support": true,
-          "league": "S26赛季",
-          "id": "98aef0621dfa49652ac191b752f72274235b8689059949bd534570e022390cb5",
-          "name": "",
-          "typeLine": "肉盾（辅）",
-          "baseType": "肉盾（辅）",
-          "ilvl": 0,
-          "identified": true,
-          "corrupted": true,
-          "properties": [
-            {
-              "name": "辅助, 召唤生物",
-              "values": [],
-              "displayMode": 0
-            },
-            {
-              "name": "等级",
-              "values": [["21(最高等级)", 0]],
-              "displayMode": 0,
-              "type": 5
-            },
-            {
-              "name": "消耗及保留加成",
-              "values": [["120%", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "品质",
-              "values": [["+20%", 1]],
-              "displayMode": 0,
-              "type": 6
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["72", 0]],
-              "displayMode": 0,
-              "type": 62
-            },
-            {
-              "name": "智慧",
-              "values": [["114", 0]],
-              "displayMode": 1,
-              "type": 65
-            }
-          ],
-          "secDescrText": "辅助召唤生物技能。",
-          "explicitMods": [
-            "被辅助技能创造的召唤生物击中时有 20% 的几率嘲讽",
-            "被辅助技能的召唤生物移动速度加快 30%",
-            "被辅助技能的召唤生物对你附近的敌人造成的击中和异常状态伤害总增 30%",
-            "被辅助技能创造的召唤生物受到的伤害总降 30%",
-            "被辅助技能创造的召唤生物转为【防御】"
-          ],
-          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
-          "frameType": 4,
-          "socket": 2,
-          "colour": "I"
-        },
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9GbGFtZURhc2giLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/09b5080831/FlameDash.png",
-          "support": false,
-          "league": "S26赛季",
-          "id": "4beda3863a8089f9c570d967e1e2fda0635b72e990ca492ff8e9b95ac97fc19b",
-          "name": "",
-          "typeLine": "烈焰冲刺",
-          "baseType": "烈焰冲刺",
-          "ilvl": 0,
-          "identified": true,
-          "properties": [
-            {
-              "name": "法术, 位移, 持续时间, 火焰, 旅行, 闪现",
-              "values": [],
-              "displayMode": 0
-            },
-            {
-              "name": "等级",
-              "values": [["20(最高等级)", 0]],
-              "displayMode": 0,
-              "type": 5
-            },
-            {
-              "name": "消耗",
-              "values": [["23 点魔力", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "冷却时间",
-              "values": [["3.50 秒(3 次)", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "施放时间",
-              "values": [["0.80 秒", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "暴击几率",
-              "values": [["6.00%", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "伤害效用",
-              "values": [["140%", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "品质",
-              "values": [["+20%", 1]],
-              "displayMode": 0,
-              "type": 6
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["70", 0]],
-              "displayMode": 0,
-              "type": 62
-            },
-            {
-              "name": "智慧",
-              "values": [["155", 0]],
-              "displayMode": 1,
-              "type": 65
-            }
-          ],
-          "secDescrText": "传送到指定地点，对敌人造成伤害并在路线上留下燃烧地面。和其它闪现技能共用冷却时间。",
-          "explicitMods": [
-            "每秒造成 1738.6 基础火焰伤害",
-            "基础持续时间为 4.00 秒",
-            "造成 659 - 988 火焰伤害",
-            "法术伤害的词缀效果同样套用于持续伤害",
-            "冷却回复速度加快 29%"
-          ],
-          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
-          "frameType": 4,
-          "socket": 3,
-          "colour": "I"
-        }
-      ]
-    },
-    {
-      "verified": false,
-      "w": 1,
-      "h": 1,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQm9uZVJpbmciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MSwiZHVwbGljYXRlZCI6dHJ1ZSwiZnJhY3R1cmVkIjp0cnVlfV0/54443627f6/BoneRing.png",
-      "league": "S26赛季",
-      "id": "6018f11442c25b3e686b04641e274ccd26d80b25f51155596e4f8c6e887763dc",
-      "fractured": true,
-      "name": "日象 灵指",
-      "typeLine": "骨环",
-      "baseType": "骨环",
-      "rarity": "Rare",
-      "ilvl": 85,
-      "identified": true,
-      "duplicated": true,
-      "properties": [
-        {
-          "name": "品质（抗性词缀）",
-          "values": [["+20%", 1]],
-          "displayMode": 0,
-          "type": 6
-        }
-      ],
-      "requirements": [
-        {
-          "name": "等级",
-          "values": [["67", 0]],
-          "displayMode": 0,
-          "type": 62
-        }
-      ],
-      "implicitMods": ["召唤生物获得 +18% 元素抗性"],
-      "explicitMods": ["+206 最大生命", "-103% 闪电抗性"],
-      "fracturedMods": ["召唤生物的伤害提高 76%"],
-      "frameType": 2,
-      "x": 0,
-      "y": 0,
-      "inventoryId": "Ring"
-    },
-    {
-      "verified": false,
-      "w": 2,
-      "h": 4,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0xheWVyZWRCYXJyaWVyU2hpZWxkIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/54079c2263/LayeredBarrierShield.png",
-      "league": "S26赛季",
-      "id": "60917fba560b5416dfc8bc51fcebcddf7dffccae03b79655ed1a1fdd58ecd53f",
-      "sockets": [
-        {
-          "group": 0,
-          "attr": "D",
-          "sColour": "G"
-        },
-        {
-          "group": 0,
-          "attr": "I",
-          "sColour": "B"
-        },
-        {
-          "group": 0,
-          "attr": "S",
-          "sColour": "R"
-        }
-      ],
-      "name": "斯瓦林",
-      "typeLine": "征战塔盾",
-      "baseType": "征战塔盾",
-      "rarity": "Unique",
-      "ilvl": 85,
-      "identified": true,
-      "corrupted": true,
-      "properties": [
-        {
-          "name": "品质",
-          "values": [["+20%", 1]],
-          "displayMode": 0,
-          "type": 6
-        },
-        {
-          "name": "格挡几率",
-          "values": [["23%", 0]],
-          "displayMode": 0,
-          "type": 15
-        },
-        {
-          "name": "护甲",
-          "values": [["499", 1]],
-          "displayMode": 0,
-          "type": 16
-        },
-        {
-          "name": "结界",
-          "values": [["151", 1]],
-          "displayMode": 0,
-          "type": 54
-        }
-      ],
-      "requirements": [
-        {
-          "name": "等级",
-          "values": [["72", 0]],
-          "displayMode": 0,
-          "type": 62,
-          "suffix": "(宝石)"
-        },
-        {
-          "name": "力量",
-          "values": [["159", 0]],
+          "values": [["98", 0]],
           "displayMode": 1,
           "type": 63,
           "suffix": "(宝石)"
         },
         {
           "name": "敏捷",
+          "values": [["82", 0]],
+          "displayMode": 1,
+          "type": 64
+        },
+        {
+          "name": "智慧",
           "values": [["155", 0]],
           "displayMode": 1,
-          "type": 64,
+          "type": 65,
           "suffix": "(宝石)"
         }
       ],
-      "implicitMods": [
-        "此物品上装备的【战吼技能石】等级 +2",
-        "获得 23 级的主动技能【坚定】，且可被此道具上的技能石辅助"
-      ],
       "explicitMods": [
-        "14% 法术伤害格挡几率",
-        "结界 +126",
-        "-10% 攻击伤害格挡几率上限",
-        "法术伤害格挡几率额外 -10%",
-        "格挡几率特别幸运",
-        "格挡时触发一个镶嵌的元素法术，冷却时间 0.25 秒"
+        "+50 敏捷",
+        "该装备的闪避与能量护盾提高 148%",
+        "移动速度加快 30%",
+        "迷踪状态下，受到的伤害提高 10%",
+        "若你近期内有击败敌人，则进入【迷踪】状态",
+        "你在迷踪状态下，投射物连锁次数 +1",
+        "绚丽众星行走特效"
       ],
       "flavourText": [
-        "巨盾坠入米登加德，当夜便入祭司之手，\r",
-        "但深究其中奥妙的却是那些匠人。"
+        "“实验对象在他房间里折断了兔子的脖子，然后破墙而去。\r",
+        "不过他速度不够快。建议进行挖掘作业，回收实验底子。”"
       ],
+      "replica": true,
       "frameType": 3,
       "x": 0,
       "y": 0,
-      "inventoryId": "Offhand",
+      "inventoryId": "Boots",
       "socketedItems": [
         {
           "verified": false,
           "w": 1,
           "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9WYWFsR2Vtcy9WYWFsSGFzdGUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/f19f4c8a3f/VaalHaste.png",
+          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9SYWlzZVNwZWN0cmUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/581a69bc61/RaiseSpectre.png",
           "support": false,
-          "league": "S26赛季",
-          "id": "c1768a31e68fa36fbc7cf36aff65f6f87ae4a9d34276150e893479572bad1199",
+          "league": "S28赛季",
+          "id": "bdfc72e775e00d93035e4114fe566ee88d9795bc7b6fc51970a91a8b2856b967",
           "name": "",
-          "typeLine": "瓦尔：迅捷",
-          "baseType": "瓦尔：迅捷",
+          "typeLine": "召唤灵体",
+          "baseType": "召唤灵体",
           "ilvl": 0,
           "identified": true,
           "corrupted": true,
           "properties": [
             {
-              "name": "光环, 法术, 效果区域, 持续时间, 瓦尔",
+              "name": "法术, 召唤生物",
               "values": [],
               "displayMode": 0
             },
@@ -1547,23 +2720,18 @@
               "type": 5
             },
             {
-              "name": "保留",
-              "values": [["50% 魔力", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "冷却时间",
-              "values": [["1.20 秒", 0]],
+              "name": "消耗",
+              "values": [["28 点魔力", 0]],
               "displayMode": 0
             },
             {
               "name": "施放时间",
-              "values": [["瞬发", 0]],
+              "values": [["0.85 秒", 0]],
               "displayMode": 0
             },
             {
               "name": "品质",
-              "values": [["+20%", 1]],
+              "values": [["+10%", 1]],
               "displayMode": 0,
               "type": 6
             }
@@ -1576,845 +2744,19 @@
               "type": 62
             },
             {
-              "name": "敏捷",
-              "values": [["155", 0]],
-              "displayMode": 1,
-              "type": 64
-            }
-          ],
-          "secDescrText": "施放一个光环, 使你与受光环影响友军获得额外的移动速度, 攻击速度以及施法速度.",
-          "explicitMods": [
-            "范围 +1.9 米",
-            "效果区域扩大 40%",
-            "你与周围友军的移动速度加快 16%",
-            "你与周围友军的施法速度加快 24%",
-            "你与周围友军的攻击速度加快 24%"
-          ],
-          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
-          "frameType": 4,
-          "socket": 0,
-          "colour": "D",
-          "hybrid": {
-            "isVaalGem": true,
-            "baseTypeName": "迅捷",
-            "properties": [
-              {
-                "name": "冷却时间",
-                "values": [["0.50 秒", 0]],
-                "displayMode": 0
-              },
-              {
-                "name": "每次施放所需灵魂",
-                "values": [["50", 0]],
-                "displayMode": 0
-              },
-              {
-                "name": "可储存 {0} 次",
-                "values": [["1", 0]],
-                "displayMode": 3
-              },
-              {
-                "name": "阻灵术",
-                "values": [["6 秒", 0]],
-                "displayMode": 0
-              },
-              {
-                "name": "施放时间",
-                "values": [["瞬发", 0]],
-                "displayMode": 0
-              }
-            ],
-            "explicitMods": [
-              "基础持续时间为 4.00 秒",
-              "增益持续时间的加成也作用于此技能的【阻灵术】效果",
-              "范围 +1.9 米",
-              "效果区域扩大 40%",
-              "你与周围友军的移动速度加快 20%",
-              "你与周围友军的施法速度加快 31%",
-              "你与周围友军的攻击速度加快 31%"
-            ],
-            "secDescrText": "施放一个短暂的光环, 使你与受光环影响友军获得额外移动速度, 攻击速度以及施法速度."
-          }
-        },
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9QdXJpZnlpbmdGbGFtZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/e933be7d7c/PurifyingFlame.png",
-          "support": false,
-          "league": "S26赛季",
-          "id": "809c01c88cea285fddf806b5337a5d72bb8efbfc3ea7c3d545f0018097a23428",
-          "name": "",
-          "typeLine": "净化烈焰",
-          "baseType": "净化烈焰",
-          "ilvl": 0,
-          "identified": true,
-          "properties": [
-            {
-              "name": "火焰, 法术, 效果区域, 持续时间, 物理",
-              "values": [],
-              "displayMode": 0
-            },
-            {
-              "name": "等级",
-              "values": [["2", 0]],
-              "displayMode": 0,
-              "type": 5
-            },
-            {
-              "name": "消耗",
-              "values": [["6 点魔力", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "施放时间",
-              "values": [["0.70 秒", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "暴击几率",
-              "values": [["5.50%", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "伤害效用",
-              "values": [["220%", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "品质",
-              "values": [["+20%", 1]],
-              "displayMode": 0,
-              "type": 6
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["2", 0]],
-              "displayMode": 0,
-              "type": 62
-            }
-          ],
-          "additionalProperties": [
-            {
-              "name": "经验值",
-              "values": [["308 / 308", 0]],
-              "displayMode": 2,
-              "progress": 1,
-              "type": 20
-            }
-          ],
-          "nextLevelRequirements": [
-            {
-              "name": "等级",
-              "values": [["4", 0]],
-              "displayMode": 0
-            }
-          ],
-          "secDescrText": "一股神圣的波涌对一条线上的敌人造成伤害，随后创造奉献地面，并对目标位置周围的区域造成伤害。然后向外发射一股更大的冲击波，对置身于奉献地面中，但没有被击中的敌人造成伤害。",
-          "explicitMods": [
-            "造成 9 - 13 物理伤害",
-            "基础持续时间为 4.00 秒",
-            "将物理伤害的 50% 转化为火焰伤害",
-            "范围 +0.2 米",
-            "奉献地面的范围 +0.3 米",
-            "震波造成的伤害总降 25%"
-          ],
-          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
-          "frameType": 4,
-          "socket": 1,
-          "colour": "I"
-        },
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9Nb2x0ZW5TaGVsbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/d7b86e4b76/MoltenShell.png",
-          "support": false,
-          "league": "S26赛季",
-          "id": "57c84cff229bb77e8f40b627a8736231680d27fd14d5f4c98c9bf13a77af6fad",
-          "name": "",
-          "typeLine": "熔岩护盾",
-          "baseType": "熔岩护盾",
-          "ilvl": 0,
-          "identified": true,
-          "corrupted": true,
-          "properties": [
-            {
-              "name": "法术, 效果区域, 持续时间, 火焰, 物理, 护卫",
-              "values": [],
-              "displayMode": 0
-            },
-            {
-              "name": "等级",
-              "values": [["21(最高等级)", 0]],
-              "displayMode": 0,
-              "type": 5
-            },
-            {
-              "name": "消耗",
-              "values": [["13 点魔力", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "冷却时间",
-              "values": [["4.00 秒", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "施放时间",
-              "values": [["瞬发", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "品质",
-              "values": [["+20%", 1]],
-              "displayMode": 0,
-              "type": 6
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["72", 0]],
-              "displayMode": 0,
-              "type": 62
-            },
-            {
-              "name": "力量",
-              "values": [["159", 0]],
-              "displayMode": 1,
-              "type": 63
-            }
-          ],
-          "secDescrText": "施加一个增益效果，增加护甲值，并在耗尽前替你承担部分伤害。当该增益效果时间结束或耗尽时，该技能将基于该增益效果承受的总伤害，把伤害反射给周围的敌人。与其它防卫技能共用冷却时间。",
-          "explicitMods": [
-            "基础持续时间为 3.00 秒",
-            "技能效果持续时间延长 20%",
-            "效果持续时间内无法回复该技能的冷却时间",
-            "击中伤害的 75% 在你的生命或能量护盾承受前，由增益效果承受\n增益效果能承受的伤害等于你护甲的 10%，最多5000 点伤害",
-            "该增益效果时间结束或耗尽时，将受到伤害的 3270% 以火焰伤害的形式反射回去",
-            "增益效果 +909 护甲"
-          ],
-          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
-          "frameType": 4,
-          "socket": 2,
-          "colour": "S"
-        }
-      ]
-    },
-    {
-      "verified": false,
-      "w": 2,
-      "h": 1,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvSW5qZWN0b3JCZWx0IiwidyI6MiwiaCI6MSwic2NhbGUiOjEsInJlbGljIjoxMH1d/af054170cd/InjectorBelt.png",
-      "league": "S26赛季",
-      "id": "4e0e6bf6deda5a5619e61af15dea97fd6115c130f2be085d067115d4c3aa07e8",
-      "isRelic": true,
-      "foilVariation": 10,
-      "name": "法师之血",
-      "typeLine": "重革腰带",
-      "baseType": "重革腰带",
-      "rarity": "Unique",
-      "ilvl": 84,
-      "identified": true,
-      "properties": [
-        {
-          "name": "品质（属性词缀）",
-          "values": [["+20%", 1]],
-          "displayMode": 0,
-          "type": 6
-        }
-      ],
-      "requirements": [
-        {
-          "name": "等级",
-          "values": [["44", 0]],
-          "displayMode": 0,
-          "type": 62
-        }
-      ],
-      "implicitMods": ["+42 力量"],
-      "explicitMods": [
-        "+56 敏捷",
-        "+15% 火焰抗性",
-        "+20% 冰霜抗性",
-        "不能使用魔法非恢复类药剂",
-        "最左边的 4 个魔法非恢复类药剂给你持续提供药剂效果",
-        "不能移除魔法非恢复类药剂效果"
-      ],
-      "flavourText": ["你的血管里奔流着力量之河。"],
-      "frameType": 10,
-      "x": 0,
-      "y": 0,
-      "inventoryId": "Belt"
-    },
-    {
-      "verified": false,
-      "w": 1,
-      "h": 2,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3MvVWJlck1hdmVuRmxhc2siLCJ3IjoxLCJoIjoyLCJzY2FsZSI6MSwibGV2ZWwiOjEsImZpIjp0cnVlfV0/1883213ee8/UberMavenFlask.png",
-      "league": "S26赛季",
-      "id": "19d6ffc0aab602caca106bb2aec00375c52874753c17af0af0ed6a081da13366",
-      "name": "茁育助长",
-      "typeLine": "紫晶药剂",
-      "baseType": "紫晶药剂",
-      "rarity": "Unique",
-      "ilvl": 87,
-      "identified": true,
-      "properties": [
-        {
-          "name": "品质",
-          "values": [["+20%", 1]],
-          "displayMode": 0,
-          "type": 6
-        },
-        {
-          "name": "持续 {0} 秒",
-          "values": [["10.30", 1]],
-          "displayMode": 3
-        },
-        {
-          "name": "每次使用会从 {1} 充能次数中消耗 {0} 次",
-          "values": [
-            ["29", 1],
-            ["65", 0]
-          ],
-          "displayMode": 3
-        },
-        {
-          "name": "目前有 {0} 充能次数",
-          "values": [["65", 0]],
-          "displayMode": 3
-        }
-      ],
-      "requirements": [
-        {
-          "name": "等级",
-          "values": [["60", 0]],
-          "displayMode": 0,
-          "type": 62
-        }
-      ],
-      "utilityMods": ["+35% 混沌抗性"],
-      "enchantMods": ["充能全满时自动使用"],
-      "explicitMods": [
-        "每次使用消耗的充能次数降低 17%",
-        "生效时间延长 32%",
-        "效果持续期间受到击中伤害，则生命损失的 25% 会改为在 4 秒内逐渐丧失"
-      ],
-      "descrText": "点击右键以喝下药剂。只有装备于腰带上时才会充能。击败怪物时会回复充能次数。",
-      "flavourText": [
-        "它们诞生于原始造物的寰宇汪洋之中。\r",
-        "以母亲的乳汁大宴豪饮，\r",
-        "哪怕只一毫一滴，它们也要争斗到底。"
-      ],
-      "frameType": 3,
-      "x": 0,
-      "y": 0,
-      "inventoryId": "Flask"
-    },
-    {
-      "verified": false,
-      "w": 2,
-      "h": 2,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1dyYWl0aGxvcmQiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/090d3d6bb3/Wraithlord.png",
-      "league": "S26赛季",
-      "id": "640ee9ac4c4c8774c6bba701033df81111226b8ddc767a7100b65dd1cb9015a6",
-      "sockets": [
-        {
-          "group": 0,
-          "attr": "A",
-          "sColour": "A"
-        },
-        {
-          "group": 1,
-          "attr": "A",
-          "sColour": "A"
-        },
-        {
-          "group": 2,
-          "attr": "A",
-          "sColour": "A"
-        },
-        {
-          "group": 3,
-          "attr": "A",
-          "sColour": "A"
-        }
-      ],
-      "name": "幽冥灵王",
-      "typeLine": "灵骨之冠",
-      "baseType": "灵骨之冠",
-      "rarity": "Unique",
-      "ilvl": 86,
-      "identified": true,
-      "properties": [
-        {
-          "name": "品质",
-          "values": [["+20%", 1]],
-          "displayMode": 0,
-          "type": 6
-        },
-        {
-          "name": "能量护盾",
-          "values": [["117", 1]],
-          "displayMode": 0,
-          "type": 18
-        }
-      ],
-      "requirements": [
-        {
-          "name": "等级",
-          "values": [["65", 0]],
-          "displayMode": 0,
-          "type": 62,
-          "suffix": "(珠宝)"
-        },
-        {
-          "name": "智慧",
-          "values": [["73", 0]],
-          "displayMode": 1,
-          "type": 65
-        }
-      ],
-      "explicitMods": [
-        "拥有 4 个深渊插槽",
-        "该装备的能量护盾提高 144%",
-        "所有召唤生物主动技能石等级 +2",
-        "每镶嵌一个苍白之凝珠宝，灵体数量上限 +1",
-        "你无法拥有非幽魂召唤生物"
-      ],
-      "flavourText": [
-        "无数人曾宣告自己是死亡的主人，\r",
-        "而他们每个人却又最终屈服于死亡。"
-      ],
-      "frameType": 3,
-      "x": 0,
-      "y": 0,
-      "inventoryId": "Helm",
-      "socketedItems": [
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0doYXN0bHlFeWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MSwiZnJhY3R1cmVkIjp0cnVlfV0/df9c2e0860/GhastlyEye.png",
-          "league": "S26赛季",
-          "id": "104650a1a798d9007c037c1a3af7ffe7d75ff0ab9d7e81e2a32cf18b0a9418e9",
-          "abyssJewel": true,
-          "fractured": true,
-          "name": "恶臭之源 彩虹",
-          "typeLine": "苍白之凝珠宝",
-          "baseType": "苍白之凝珠宝",
-          "rarity": "Rare",
-          "ilvl": 86,
-          "identified": true,
-          "properties": [
-            {
-              "name": "深渊",
-              "values": [],
-              "displayMode": 0
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["65", 0]],
-              "displayMode": 0,
-              "type": 62
-            }
-          ],
-          "explicitMods": [
-            "+38 最大生命",
-            "召唤生物的攻击速度加快 5%",
-            "召唤生物的施法速度加快 5%",
-            "召唤生物造成 2 到 54 点额外闪电伤害"
-          ],
-          "fracturedMods": ["50% 几率避免被感电"],
-          "descrText": "放入一个物品的深渊插槽或天赋树上的珠宝插槽中以生效。右键点击以移出插槽。",
-          "frameType": 2,
-          "socket": 0,
-          "colour": null
-        },
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0doYXN0bHlFeWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MSwiZnJhY3R1cmVkIjp0cnVlfV0/df9c2e0860/GhastlyEye.png",
-          "league": "S26赛季",
-          "id": "26e27cc64459394aabbc458bb75cf7733bed0cbc371d8b73fda3a9ab8462e598",
-          "abyssJewel": true,
-          "fractured": true,
-          "name": "恶臭之源 视野",
-          "typeLine": "苍白之凝珠宝",
-          "baseType": "苍白之凝珠宝",
-          "rarity": "Rare",
-          "ilvl": 82,
-          "identified": true,
-          "properties": [
-            {
-              "name": "深渊",
-              "values": [],
-              "displayMode": 0
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["60", 0]],
-              "displayMode": 0,
-              "type": 62
-            }
-          ],
-          "explicitMods": [
-            "+32 最大能量护盾",
-            "+35 最大生命",
-            "召唤生物的攻击速度加快 6%",
-            "召唤生物的施法速度加快 4%"
-          ],
-          "fracturedMods": ["50% 几率避免被感电"],
-          "descrText": "放入一个物品的深渊插槽或天赋树上的珠宝插槽中以生效。右键点击以移出插槽。",
-          "frameType": 2,
-          "socket": 1,
-          "colour": null
-        },
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0doYXN0bHlFeWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MSwiZnJhY3R1cmVkIjp0cnVlfV0/df9c2e0860/GhastlyEye.png",
-          "league": "S26赛季",
-          "id": "e8ad013ae372a130b6c4e5c1b17db0f88a6f41308bd301cfe21522831f726beb",
-          "abyssJewel": true,
-          "fractured": true,
-          "name": "冷酷 彩虹",
-          "typeLine": "苍白之凝珠宝",
-          "baseType": "苍白之凝珠宝",
-          "rarity": "Rare",
-          "ilvl": 85,
-          "identified": true,
-          "properties": [
-            {
-              "name": "深渊",
-              "values": [],
-              "displayMode": 0
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["59", 0]],
-              "displayMode": 0,
-              "type": 62
-            }
-          ],
-          "explicitMods": [
-            "+31 最大生命",
-            "召唤生物的攻击速度加快 4%",
-            "召唤生物的施法速度加快 4%",
-            "召唤生物附加 6 - 9 基础火焰伤害"
-          ],
-          "fracturedMods": ["召唤生物获得 0.5% 生命偷取"],
-          "descrText": "放入一个物品的深渊插槽或天赋树上的珠宝插槽中以生效。右键点击以移出插槽。",
-          "frameType": 2,
-          "socket": 2,
-          "colour": null
-        },
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0doYXN0bHlFeWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MSwiZnJhY3R1cmVkIjp0cnVlfV0/df9c2e0860/GhastlyEye.png",
-          "league": "S26赛季",
-          "id": "92fd79b1915e5b69f860ee6e231e9f6e51548d9dabfad47b51b7ab6668594766",
-          "abyssJewel": true,
-          "fractured": true,
-          "name": "恶臭之源 彩虹",
-          "typeLine": "苍白之凝珠宝",
-          "baseType": "苍白之凝珠宝",
-          "rarity": "Rare",
-          "ilvl": 70,
-          "identified": true,
-          "properties": [
-            {
-              "name": "深渊",
-              "values": [],
-              "displayMode": 0
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["48", 0]],
-              "displayMode": 0,
-              "type": 62
-            }
-          ],
-          "explicitMods": [
-            "+27 最大生命",
-            "召唤生物的攻击速度加快 4%",
-            "召唤生物的施法速度加快 6%",
-            "召唤生物每秒回复 46 生命"
-          ],
-          "fracturedMods": [
-            "若你近期内使用了召唤生物技能，则召唤生物的伤害提高 20%"
-          ],
-          "descrText": "放入一个物品的深渊插槽或天赋树上的珠宝插槽中以生效。右键点击以移出插槽。",
-          "frameType": 2,
-          "socket": 3,
-          "colour": null
-        }
-      ]
-    },
-    {
-      "verified": false,
-      "w": 1,
-      "h": 2,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3MvQW1ldGh5c3QiLCJ3IjoxLCJoIjoyLCJzY2FsZSI6MSwibGV2ZWwiOjEsImZzIjp0cnVlfV0/f6d1ce7ee1/Amethyst.png",
-      "league": "S26赛季",
-      "id": "7b296586bc018452499a7fa1923e97d0733ad74ccafbe78aae4c6ee0b980111e",
-      "name": "",
-      "typeLine": "业余者的固执之紫晶药剂",
-      "baseType": "紫晶药剂",
-      "rarity": "Magic",
-      "ilvl": 85,
-      "identified": true,
-      "properties": [
-        {
-          "name": "品质",
-          "values": [["+20%", 1]],
-          "displayMode": 0,
-          "type": 6
-        },
-        {
-          "name": "持续 {0} 秒",
-          "values": [["5.50", 1]],
-          "displayMode": 3
-        },
-        {
-          "name": "每次使用会从 {1} 充能次数中消耗 {0} 次",
-          "values": [
-            ["35", 0],
-            ["65", 0]
-          ],
-          "displayMode": 3
-        },
-        {
-          "name": "目前有 {0} 充能次数",
-          "values": [["65", 0]],
-          "displayMode": 3
-        }
-      ],
-      "requirements": [
-        {
-          "name": "等级",
-          "values": [["64", 0]],
-          "displayMode": 0,
-          "type": 62
-        }
-      ],
-      "utilityMods": ["+35% 混沌抗性"],
-      "enchantMods": ["效果提高 70%", "生效期间不可充能"],
-      "explicitMods": [
-        "生效时间缩短 30%",
-        "效果提高 25%",
-        "生效期间，有 55% 几率避免被晕眩"
-      ],
-      "descrText": "点击右键以喝下药剂。只有装备于腰带上时才会充能。击败怪物时会回复充能次数。",
-      "frameType": 1,
-      "x": 2,
-      "y": 0,
-      "inventoryId": "Flask"
-    },
-    {
-      "verified": false,
-      "w": 1,
-      "h": 3,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9Db252b2tpbmdXYW5kIiwidyI6MSwiaCI6Mywic2NhbGUiOjEsImZyYWN0dXJlZCI6dHJ1ZX1d/28b54e6f65/ConvokingWand.png",
-      "league": "S26赛季",
-      "id": "9918564f6c9f910a7bed06196f3a60f5ac343dbc8a1f86b4981dc08bbb25b2ea",
-      "fractured": true,
-      "sockets": [
-        {
-          "group": 0,
-          "attr": "G",
-          "sColour": "W"
-        },
-        {
-          "group": 0,
-          "attr": "G",
-          "sColour": "W"
-        },
-        {
-          "group": 0,
-          "attr": "G",
-          "sColour": "W"
-        }
-      ],
-      "name": "毁灭 战具",
-      "typeLine": "召集法杖",
-      "baseType": "召集法杖",
-      "rarity": "Rare",
-      "ilvl": 83,
-      "identified": true,
-      "properties": [
-        {
-          "name": "法杖",
-          "values": [],
-          "displayMode": 0
-        },
-        {
-          "name": "品质",
-          "values": [["+20%", 1]],
-          "displayMode": 0,
-          "type": 6
-        },
-        {
-          "name": "物理伤害",
-          "values": [["34-62", 1]],
-          "displayMode": 0,
-          "type": 9
-        },
-        {
-          "name": "攻击暴击率",
-          "values": [["8.30%", 0]],
-          "displayMode": 0,
-          "type": 12
-        },
-        {
-          "name": "每秒攻击次数",
-          "values": [["1.50", 0]],
-          "displayMode": 0,
-          "type": 13
-        }
-      ],
-      "requirements": [
-        {
-          "name": "等级",
-          "values": [["72", 0]],
-          "displayMode": 0,
-          "type": 62
-        },
-        {
-          "name": "敏捷",
-          "values": [["31", 0]],
-          "displayMode": 1,
-          "type": 64,
-          "suffix": "(宝石)"
-        },
-        {
-          "name": "智慧",
-          "values": [["242", 0]],
-          "displayMode": 1,
-          "type": 65
-        }
-      ],
-      "enchantMods": ["召唤生物的伤害提高 38%"],
-      "implicitMods": ["召唤生物的伤害提高 30%"],
-      "explicitMods": [
-        "所有法术主动技能石等级 +1",
-        "所有召唤生物主动技能石等级 +1",
-        "召唤生物的伤害提高 84%",
-        "召唤生物的攻击速度加快 20%",
-        "召唤生物的施法速度加快 20%"
-      ],
-      "craftedMods": [
-        "你使用技能时触发一个插入的法术，它有 8 秒冷却时间\n通过这种方式触发的法术消耗总增 150%"
-      ],
-      "fracturedMods": ["召唤生物转为【侵略】"],
-      "frameType": 2,
-      "x": 0,
-      "y": 0,
-      "inventoryId": "Weapon",
-      "socketedItems": [
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9Tb3VsZmVhc3RHZW0iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MSwiZ2QiOjEzfV0/9209c2ea6e/SoulfeastGem.png",
-          "support": false,
-          "league": "S26赛季",
-          "id": "3e64bd743ec3f74b5131015720dbd456e22f09e93cf0f599935637f22b160f78",
-          "name": "",
-          "typeLine": "祭魂之禁断典仪",
-          "baseType": "祭魂之禁断典仪",
-          "ilvl": 0,
-          "identified": true,
-          "properties": [
-            {
-              "name": "法术, 效果区域, 混沌, 投射物",
-              "values": [],
-              "displayMode": 0
-            },
-            {
-              "name": "等级",
-              "values": [["2", 0]],
-              "displayMode": 0,
-              "type": 5
-            },
-            {
-              "name": "消耗",
-              "values": [["19 点生命", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "施放时间",
-              "values": [["0.75 秒", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "暴击几率",
-              "values": [["6.00%", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "伤害效用",
-              "values": [["110%", 0]],
-              "displayMode": 0
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["20", 0]],
-              "displayMode": 0,
-              "type": 62
-            },
-            {
               "name": "智慧",
-              "values": [["50", 0]],
+              "values": [["155", 0]],
               "displayMode": 1,
               "type": 65
             }
           ],
-          "additionalProperties": [
-            {
-              "name": "经验值",
-              "values": [["95714 / 95714", 0]],
-              "displayMode": 2,
-              "progress": 1,
-              "type": 20
-            }
-          ],
-          "nextLevelRequirements": [
-            {
-              "name": "等级",
-              "values": [["24", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "智慧",
-              "values": [["58", 0]],
-              "displayMode": 1
-            }
-          ],
-          "secDescrText": "朝目标地点扔出一枚爆炸投射物，并朝你周围的敌人发射额外投射物。这些投射物根据你的能量护盾造成混沌伤害。施放该法术会对你自己造成伤害。",
+          "secDescrText": "唱名唤魂，从目标灵柩唤醒其灵体并使它为你而战.",
           "explicitMods": [
-            "造成 21 - 31 混沌伤害",
-            "造成基础混沌伤害，等于你最大能量护盾的 15%",
-            "受到相当于能量护盾上限 40% 的混沌伤害",
-            "向 6 个周围的敌人额外发射投射物"
+            "最多召唤 2 个灵体",
+            "召唤生物获得 +40% 元素抗性",
+            "召唤生物的总移动速度额外增加 55%",
+            "召唤生物移动速度达到极限",
+            "唤醒的灵体为等级 70"
           ],
           "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
           "frameType": 4,
@@ -2425,31 +2767,30 @@
           "verified": false,
           "w": 1,
           "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9EZXNlY3JhdGUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/7e2985eec3/Desecrate.png",
+          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9BbmltYXRlQXJtb3VyIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/825632a807/AnimateArmour.png",
           "support": false,
-          "league": "S26赛季",
-          "id": "3f9315b524c484bf35450f662ccfa8ed47bba42b708f3d28c219214c2987f33a",
+          "league": "S28赛季",
+          "id": "dbc9771776c0b586a9f67c464dcd5b66be85b33daea5ab3bfc27db38433bbd76",
           "name": "",
-          "typeLine": "亵渎",
-          "baseType": "亵渎",
+          "typeLine": "幻化守卫",
+          "baseType": "幻化守卫",
           "ilvl": 0,
           "identified": true,
-          "corrupted": true,
           "properties": [
             {
-              "name": "法术, 效果区域, 持续时间, 混沌",
+              "name": "法术, 召唤生物",
               "values": [],
               "displayMode": 0
             },
             {
               "name": "等级",
-              "values": [["2", 0]],
+              "values": [["20(最高等级)", 0]],
               "displayMode": 0,
               "type": 5
             },
             {
               "name": "消耗",
-              "values": [["12 点魔力", 0]],
+              "values": [["20 点魔力", 0]],
               "displayMode": 0
             },
             {
@@ -2459,109 +2800,6 @@
             },
             {
               "name": "品质",
-              "values": [["+23%", 1]],
-              "displayMode": 0,
-              "type": 6
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["20", 0]],
-              "displayMode": 0,
-              "type": 62
-            },
-            {
-              "name": "敏捷",
-              "values": [["31", 0]],
-              "displayMode": 1,
-              "type": 64
-            },
-            {
-              "name": "智慧",
-              "values": [["22", 0]],
-              "displayMode": 1,
-              "type": 65
-            }
-          ],
-          "additionalProperties": [
-            {
-              "name": "经验值",
-              "values": [["95714 / 95714", 0]],
-              "displayMode": 2,
-              "progress": 1,
-              "type": 20
-            }
-          ],
-          "nextLevelRequirements": [
-            {
-              "name": "等级",
-              "values": [["24", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "敏捷",
-              "values": [["37", 0]],
-              "displayMode": 1
-            },
-            {
-              "name": "智慧",
-              "values": [["25", 0]],
-              "displayMode": 1
-            }
-          ],
-          "secDescrText": "腐化一块地面，根据当前区域中的怪物召唤灵柩，并持续对敌人造成混沌伤害。若你正在使用召唤灵体技能时，则有几率生成生成与最近召唤的灵体相同的灵体灵柩。灵体灵柩无法与非召唤生物技能互动。",
-          "explicitMods": [
-            "每秒造成 11.3 基础混沌伤害",
-            "基础持续时间为 4.00 秒",
-            "施法速度加快 23%",
-            "生成 5 个灵柩",
-            "生成灵柩的等级与区域等级相同，最多 24 级",
-            "最多允许 10 个灵柩"
-          ],
-          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
-          "frameType": 4,
-          "socket": 1,
-          "colour": "D"
-        },
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9Cb25lT2ZmZXJpbmciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/56bfbd6835/BoneOffering.png",
-          "support": false,
-          "league": "S26赛季",
-          "id": "3cc36ab71daa542b47356a08ede07b3aecffeced4a3a570f1c4e9aba284be0e4",
-          "name": "",
-          "typeLine": "骸骨奉献",
-          "baseType": "骸骨奉献",
-          "ilvl": 0,
-          "identified": true,
-          "corrupted": true,
-          "properties": [
-            {
-              "name": "召唤生物, 法术, 持续时间",
-              "values": [],
-              "displayMode": 0
-            },
-            {
-              "name": "等级",
-              "values": [["21(最高等级)", 0]],
-              "displayMode": 0,
-              "type": 5
-            },
-            {
-              "name": "消耗",
-              "values": [["34 点魔力", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "施放时间",
-              "values": [["1.00 秒", 0]],
-              "displayMode": 0
-            },
-            {
-              "name": "品质",
               "values": [["+20%", 1]],
               "displayMode": 0,
               "type": 6
@@ -2570,29 +2808,143 @@
           "requirements": [
             {
               "name": "等级",
-              "values": [["72", 0]],
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "力量",
+              "values": [["98", 0]],
+              "displayMode": 1,
+              "type": 63
+            },
+            {
+              "name": "智慧",
+              "values": [["68", 0]],
+              "displayMode": 1,
+              "type": 65
+            }
+          ],
+          "secDescrText": "为一位隐形守卫幻化一把近战武器或一件护甲，使其为你而战。可以为同一个守卫附加多个幻化物品。无法为其幻化未鉴定的物品。无法用于陷阱或地雷。如果守卫被击败，你无法再该地图再次召唤幻化守卫。",
+          "explicitMods": [
+            "召唤生物移动速度加快 40%",
+            "召唤生物的最大生命总增 38%",
+            "可以使用需要等级 100 的物品",
+            "召唤生物造成的伤害增加38%"
+          ],
+          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 1,
+          "colour": "S"
+        },
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L01pbmlvbkxpZmUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/efcc549806/MinionLife.png",
+          "support": true,
+          "league": "S28赛季",
+          "id": "0e4c5cddfae776eb9f28a01c779eaa090567304ab40eaf0baf0905e06424f3ce",
+          "name": "",
+          "typeLine": "召唤生物生命(辅)",
+          "baseType": "召唤生物生命(辅)",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "辅助, 召唤生物",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "消耗及保留加成",
+              "values": [["120%", 0]],
+              "displayMode": 0
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
               "displayMode": 0,
               "type": 62
             },
             {
               "name": "智慧",
-              "values": [["159", 0]],
+              "values": [["111", 0]],
               "displayMode": 1,
               "type": 65
             }
           ],
-          "secDescrText": "献祭一具灵柩, 使你的召唤生物获得格挡攻击与法术的能力. 这个技能会持续献祭附近的灵柩, 每具献祭的灵柩将会延长强化召唤生物的时间.",
-          "explicitMods": [
-            "基础持续时间为 5.00 秒",
-            "每额外消耗 1 具灵柩，基础持续时间延长 1.00 秒",
-            "召唤生物的攻击伤害格挡几率提高 +35%",
-            "召唤生物的法术伤害格挡几率提高 +35%",
-            "奉献的效果提高 10%",
-            "使召唤生物的生命在它们近期内有过格挡的情况下每秒回复 4%"
-          ],
-          "descrText": "将其放置于物品上同样颜色的插槽来获得这项技能。点击右键从插槽中移除。",
+          "secDescrText": "辅助召唤生物技能。",
+          "explicitMods": ["被辅助技能的召唤生物最大生命总值总增 49%"],
+          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
           "frameType": 4,
           "socket": 2,
+          "colour": "I"
+        },
+        {
+          "verified": false,
+          "w": 1,
+          "h": 1,
+          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0RlZmVuc2l2ZU1pbmlvbiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/604a531a0b/DefensiveMinion.png",
+          "support": true,
+          "league": "S28赛季",
+          "id": "4280d3a1af0f9b863a72a4b0b4f32090399c627619eab9b99819a4f24eb6d8c7",
+          "name": "",
+          "typeLine": "肉盾（辅）",
+          "baseType": "肉盾（辅）",
+          "ilvl": 0,
+          "identified": true,
+          "properties": [
+            {
+              "name": "辅助, 召唤生物",
+              "values": [],
+              "displayMode": 0
+            },
+            {
+              "name": "等级",
+              "values": [["20(最高等级)", 0]],
+              "displayMode": 0,
+              "type": 5
+            },
+            {
+              "name": "消耗及保留加成",
+              "values": [["120%", 0]],
+              "displayMode": 0
+            }
+          ],
+          "requirements": [
+            {
+              "name": "等级",
+              "values": [["70", 0]],
+              "displayMode": 0,
+              "type": 62
+            },
+            {
+              "name": "智慧",
+              "values": [["111", 0]],
+              "displayMode": 1,
+              "type": 65
+            }
+          ],
+          "secDescrText": "辅助召唤生物技能。",
+          "explicitMods": [
+            "被辅助技能创造的召唤生物击中时有 20% 的几率嘲讽",
+            "被辅助技能的召唤生物移动速度加快 29%",
+            "被辅助技能的召唤生物对你附近的敌人造成的击中和异常状态伤害总增 30%",
+            "被辅助技能创造的召唤生物受到的伤害总降 24%",
+            "被辅助技能创造的召唤生物转为【防御】"
+          ],
+          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
+          "frameType": 4,
+          "socket": 3,
           "colour": "I"
         }
       ]
@@ -2600,317 +2952,82 @@
     {
       "verified": false,
       "w": 2,
-      "h": 4,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kQXhlcy9Ud29IYW5kQXhlMTFVbmlxdWUiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/544409d7f6/TwoHandAxe11Unique.png",
-      "league": "S26赛季",
-      "id": "852686be1e74f15164c078e4a133f924b405adab6307c3b6cc40e80d5079963a",
+      "h": 2,
+      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1NoaWVsZERleDMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/10a005f978/ShieldDex3.png",
+      "league": "S28赛季",
+      "id": "abf9afb2608a30ecb006486a9f44e1f9bea6c1662793f95f117320b49cc241ce",
       "sockets": [
         {
           "group": 0,
-          "attr": "S",
-          "sColour": "R"
+          "attr": "D",
+          "sColour": "G"
         },
         {
-          "group": 1,
-          "attr": "S",
-          "sColour": "R"
+          "group": 0,
+          "attr": "D",
+          "sColour": "G"
         },
         {
-          "group": 2,
-          "attr": "S",
-          "sColour": "R"
+          "group": 0,
+          "attr": "D",
+          "sColour": "G"
         }
       ],
-      "name": "冈姆的霸业",
-      "typeLine": "卡鲁巨斧",
-      "baseType": "卡鲁巨斧",
-      "rarity": "Unique",
-      "ilvl": 85,
+      "name": "灾变 坚堡",
+      "typeLine": "漆彩轻盾",
+      "baseType": "漆彩轻盾",
+      "rarity": "Rare",
+      "ilvl": 59,
       "identified": true,
-      "corrupted": true,
       "properties": [
         {
-          "name": "双手斧",
-          "values": [],
-          "displayMode": 0
-        },
-        {
-          "name": "物理伤害",
-          "values": [["277-433", 1]],
+          "name": "格挡几率",
+          "values": [["24%", 0]],
           "displayMode": 0,
-          "type": 9
+          "type": 15
         },
         {
-          "name": "攻击暴击率",
-          "values": [["5.00%", 0]],
+          "name": "闪避值",
+          "values": [["531", 1]],
           "displayMode": 0,
-          "type": 12
-        },
-        {
-          "name": "每秒攻击次数",
-          "values": [["1.05", 0]],
-          "displayMode": 0,
-          "type": 13
-        },
-        {
-          "name": "武器范围：{0} 米",
-          "values": [["1.3", 0]],
-          "displayMode": 3,
-          "type": 14
+          "type": 17
         }
       ],
       "requirements": [
         {
           "name": "等级",
-          "values": [["72", 0]],
+          "values": [["60", 0]],
           "displayMode": 0,
-          "type": 62,
-          "suffix": "(宝石)"
-        },
-        {
-          "name": "力量",
-          "values": [["151", 0]],
-          "displayMode": 1,
-          "type": 63
+          "type": 62
         },
         {
           "name": "敏捷",
-          "values": [["43", 0]],
+          "values": [["154", 0]],
           "displayMode": 1,
           "type": 64
         }
       ],
-      "implicitMods": ["插槽中的宝石受 10 级动量辅助"],
+      "implicitMods": ["移动速度加快 6%"],
       "explicitMods": [
-        "物理伤害提高 129%",
-        "每击败一名敌人获得20点生命",
-        "+171 命中值",
-        "终结",
-        "近战击中时获得 5 点怒火",
-        "每一点怒火使你获得相当于物理伤害 1% 的额外火焰伤害"
+        "闪避值提高 7%",
+        "+96 最大生命",
+        "每秒再生 20.6 生命",
+        "+10% 闪电抗性",
+        "晕眩回复和格挡回复提高 7%"
       ],
-      "flavourText": ["冈姆屠戮，灭尽孱弱血统，\r", "各族恐惧，造就绝对服从。"],
-      "frameType": 3,
+      "craftedMods": ["攻击速度加快 11%"],
+      "frameType": 2,
       "x": 0,
       "y": 0,
-      "inventoryId": "Weapon2",
-      "socketedItems": [
-        {
-          "verified": false,
-          "w": 1,
-          "h": 1,
-          "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L1N1cHBvcnRQbHVzL0JydXRhbGl0eVBsdXMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/9553670260/BrutalityPlus.png",
-          "support": true,
-          "league": "S26赛季",
-          "id": "9fa2a99e2cbd3101ee35de08f2f95f7fd6303fb8cdf74f99d500c4b813e830d0",
-          "name": "",
-          "typeLine": "残暴（强辅）",
-          "baseType": "残暴（强辅）",
-          "ilvl": 0,
-          "identified": true,
-          "properties": [
-            {
-              "name": "物理, 辅助",
-              "values": [],
-              "displayMode": 0
-            },
-            {
-              "name": "等级",
-              "values": [["1", 0]],
-              "displayMode": 0,
-              "type": 5
-            },
-            {
-              "name": "消耗及保留加成",
-              "values": [["140%", 0]],
-              "displayMode": 0
-            }
-          ],
-          "requirements": [
-            {
-              "name": "等级",
-              "values": [["72", 0]],
-              "displayMode": 0,
-              "type": 62
-            },
-            {
-              "name": "力量",
-              "values": [["114", 0]],
-              "displayMode": 1,
-              "type": 63
-            }
-          ],
-          "additionalProperties": [
-            {
-              "name": "经验值",
-              "values": [["149550087 / 407097645", 0]],
-              "displayMode": 2,
-              "progress": 0.37,
-              "type": 20
-            }
-          ],
-          "secDescrText": "辅助任意造成伤害的技能。",
-          "explicitMods": [
-            "被辅助技能造成的物理伤害总增 40%",
-            "被辅助技能无法造成混沌伤害",
-            "被辅助技能无法造成元素伤害"
-          ],
-          "descrText": "这是一颗辅助宝石。它并不会为你的角色增加属性数值，但会强化与其连接的技能宝石。将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石。点击右键从插槽中移除。",
-          "frameType": 4,
-          "socket": 1,
-          "colour": "S"
-        }
-      ]
-    },
-    {
-      "verified": false,
-      "w": 1,
-      "h": 2,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3Mvc3ByaW50IiwidyI6MSwiaCI6Miwic2NhbGUiOjEsImxldmVsIjoxLCJmcyI6dHJ1ZX1d/e0bf74a30f/sprint.png",
-      "league": "S26赛季",
-      "id": "eaa3ba2997429cd35b4b775a38e5c95ea9d83e2456ddeca2343471859b3a9369",
-      "name": "",
-      "typeLine": "炼金的彩虹之水银药剂",
-      "baseType": "水银药剂",
-      "rarity": "Magic",
-      "ilvl": 85,
-      "identified": true,
-      "properties": [
-        {
-          "name": "品质",
-          "values": [["+20%", 1]],
-          "displayMode": 0,
-          "type": 6
-        },
-        {
-          "name": "持续 {0} 秒",
-          "values": [["5.40", 1]],
-          "displayMode": 3
-        },
-        {
-          "name": "每次使用会从 {1} 充能次数中消耗 {0} 次",
-          "values": [
-            ["30", 0],
-            ["60", 0]
-          ],
-          "displayMode": 3
-        },
-        {
-          "name": "目前有 {0} 充能次数",
-          "values": [["60", 0]],
-          "displayMode": 3
-        }
-      ],
-      "requirements": [
-        {
-          "name": "等级",
-          "values": [["64", 0]],
-          "displayMode": 0,
-          "type": 62
-        }
-      ],
-      "utilityMods": ["移动速度加快 40%"],
-      "enchantMods": ["效果提高 70%", "生效期间不可充能"],
-      "explicitMods": [
-        "生效时间缩短 25%",
-        "效果提高 25%",
-        "生效期间，元素抗性额外提高 20%"
-      ],
-      "descrText": "点击右键以喝下药剂。只有装备于腰带上时才会充能。击败怪物时会回复充能次数。",
-      "frameType": 1,
-      "x": 3,
-      "y": 0,
-      "inventoryId": "Flask"
-    },
-    {
-      "verified": false,
-      "w": 1,
-      "h": 2,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzksMTQseyJmIjoiMkRJdGVtcy9GbGFza3MvZ3Jhbml0ZSIsInciOjEsImgiOjIsInNjYWxlIjoxLCJsZXZlbCI6MSwiZnMiOnRydWV9XQ/425d5f6b4c/granite.png",
-      "league": "S26赛季",
-      "id": "1f591517f67be7339e45a64bdbcdade9a7d58f1f83ea6b7f0be1bececd80e41c",
-      "name": "",
-      "typeLine": "业余者的犰狳之坚岩药剂",
-      "baseType": "坚岩药剂",
-      "rarity": "Magic",
-      "ilvl": 85,
-      "identified": true,
-      "properties": [
-        {
-          "name": "品质",
-          "values": [["+20%", 1]],
-          "displayMode": 0,
-          "type": 6
-        },
-        {
-          "name": "持续 {0} 秒",
-          "values": [["5.10", 1]],
-          "displayMode": 3
-        },
-        {
-          "name": "每次使用会从 {1} 充能次数中消耗 {0} 次",
-          "values": [
-            ["30", 0],
-            ["60", 0]
-          ],
-          "displayMode": 3
-        },
-        {
-          "name": "目前有 {0} 充能次数",
-          "values": [["60", 0]],
-          "displayMode": 3
-        }
-      ],
-      "requirements": [
-        {
-          "name": "等级",
-          "values": [["67", 0]],
-          "displayMode": 0,
-          "type": 62
-        }
-      ],
-      "utilityMods": ["+1500 护甲"],
-      "enchantMods": ["效果提高 70%", "生效期间不可充能"],
-      "explicitMods": [
-        "生效时间缩短 29%",
-        "效果提高 25%",
-        "生效期间，护甲提高 60%"
-      ],
-      "descrText": "点击右键以喝下药剂。只有装备于腰带上时才会充能。击败怪物时会回复充能次数。",
-      "frameType": 1,
-      "x": 4,
-      "y": 0,
-      "inventoryId": "Flask"
-    },
-    {
-      "verified": false,
-      "w": 1,
-      "h": 1,
-      "icon": "https://poecdn.game.qq.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvTWlycm9yUmluZyIsInciOjEsImgiOjEsInNjYWxlIjoxLCJkdXBsaWNhdGVkIjp0cnVlLCJyZWxpYyI6OX1d/1c954eeedd/MirrorRing.png",
-      "league": "S26赛季",
-      "id": "30356dc432200566dad1709b8d0b3e0b3449306b8fed712cfb0e7580cc273cc5",
-      "isRelic": true,
-      "foilVariation": 9,
-      "name": "卡兰德之触",
-      "typeLine": "戒指",
-      "baseType": "戒指",
-      "rarity": "Unique",
-      "ilvl": 84,
-      "identified": true,
-      "duplicated": true,
-      "explicitMods": ["反射你的另一枚戒指"],
-      "flavourText": ["一边是你的选择。\r", "另一边是它的孪生。"],
-      "frameType": 10,
-      "x": 0,
-      "y": 0,
-      "inventoryId": "Ring2"
+      "inventoryId": "Offhand2",
+      "socketedItems": []
     }
   ],
   "character": {
-    "name": "S26清风可乐",
+    "name": "飞飞飞丶飞起来",
     "realm": "pc",
-    "class": "Necromancer",
-    "league": "S26赛季",
-    "level": 100
+    "class": "Deadeye",
+    "league": "S28赛季",
+    "level": 98
   }
 }
