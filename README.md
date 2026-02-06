@@ -1,3 +1,7 @@
+# 归档
+
+⚠️  本项目已经被[cn-poe-utils](https://github.com/cn-poe-community/cn-poe-utils)取代。
+
 # cn-poe-translator
 
 POE 中英文数据翻译。目前支持：
